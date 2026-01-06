@@ -1,0 +1,30 @@
+2.Download Code and APP 
+========================
+
+This section will guide you through downloading the necessary code and applications.
+
+**Step 1: Download the Code**
+------------------------------
+You can download the kit's program code by visiting the link below:
+
+* :download:`Main Code <https://codeload.github.com/lafvintech/LAFVIN_DrawingBot_Doc/zip/refs/heads/main>`
+
+**Step 2: Download the Companion App**
+------------------------------------------
+You can download the mobile application by clicking the links below or scanning the QR codes:
+
+.. figure:: img/LA061_Android.png
+   :align: left
+   :name: android-app
+
+   Android App
+
+.. figure:: img/LA061_IOS.png
+   :align: left
+   :name: ios-app
+
+   IOS App
+
+* :download:`Android <https://github.com/lafvintech/RaspberryPICar/releases/download/v1.0.0/RaspPICar.apk>`
+
+* :download:`iOS <https://apps.apple.com/cn/app/drawing-bot/id6739835157>`
