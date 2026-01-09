@@ -10,9 +10,11 @@
 from pygments.lexers import Python3Lexer
 import time
 
-project = '<NAME>'
-copyright = f'{time.localtime().tm_year}, Lafvin'
+project = 'LAFVIN Retro Game Kit'
+copyright = f'{time.localtime().tm_year}, LAFVIN'
 author = 'LAFVIN'
+language = 'zh_CN'
+source_encoding = 'utf-8'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

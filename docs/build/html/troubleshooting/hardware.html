@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>硬件问题排查 &mdash; LAFVIN Retro Game Kit  文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="软件问题排查" href="software.html" />
+    <link rel="prev" title="故障排除" href="troubleshooting.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+    <a href="https://www.lafvintech.com/" class="logo-link">
+        <img src="https://lafvintech.com/cdn/shop/files/logo_V2_300x@2x.png?v=1642487152" class="logo" alt="Logo"/>
+    </a>
+    
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">产品信息</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_this_kit.html">产品介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../component_list.html">组件清单</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../assembly.html">组装教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tfcard/tfcard.html">TF 卡准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/firmware.html">固件烧录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tutorial/tutorial.html">Tutorial</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/usage.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/advanced.html">高级功能</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">故障排除</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="troubleshooting.html">故障排除</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id2">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id3">问题分类</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#id6">快速诊断流程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="troubleshooting.html#id7">获取帮助</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">硬件问题排查</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">屏幕不显示</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">无声音输出</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">按键无响应</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf">无法识别 TF 卡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">供电问题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">其他硬件问题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19">硬件检查清单</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="software.html">软件问题排查</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LAFVIN Retro Game Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="troubleshooting.html">故障排除</a></li>
+      <li class="breadcrumb-item active">硬件问题排查</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/troubleshooting/hardware.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hardware-troubleshooting">
+<span id="id1"></span><h1>硬件问题排查<a class="headerlink" href="#hardware-troubleshooting" title="Link to this heading"></a></h1>
+<p>本章节列出了常见的硬件问题及其解决方法。</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>在进行任何硬件检查或维修前，请务必断开电源！通电状态下插拔模块可能导致硬件损坏。</p>
+</div>
+<section id="id2">
+<h2>屏幕不显示<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<section id="id3">
+<h3>症状<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>开机后屏幕完全无显示（黑屏）</p></li>
+<li><p>屏幕显示异常（花屏、闪烁、颜色不正常）</p></li>
+<li><p>屏幕背光亮但无内容显示</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>可能原因和解决方法<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>检查供电</strong></p>
+<ul class="simple">
+<li><p>确认 Type-C 线已正确连接到 ESP32S3 模块</p></li>
+<li><p>尝试更换 USB 电源适配器（建议使用 5V/2A 或更高规格）</p></li>
+<li><p>检查 ESP32S3 上的电源指示灯是否亮起</p></li>
+<li><p>尝试更换 Type-C 数据线</p></li>
+</ul>
+</li>
+<li><p><strong>检查屏幕连接</strong></p>
+<ul class="simple">
+<li><p>断开电源</p></li>
+<li><p>确认 TFT 屏幕排线已正确插入 ESP32S3 的屏幕接口</p></li>
+<li><p>检查排线是否有损坏或折痕</p></li>
+<li><p>重新插拔屏幕排线，确保插紧</p></li>
+<li><p>检查屏幕接口的引脚是否有弯曲或损坏</p></li>
+</ul>
+</li>
+<li><p><strong>检查跳线连接</strong></p>
+<ul class="simple">
+<li><p>参考 <a class="reference internal" href="../assembly.html"><span class="doc">组装教程</span></a> 中的引脚对应表</p></li>
+<li><p>检查所有跳线是否连接到正确的引脚</p></li>
+<li><p>确认跳线没有松动或脱落</p></li>
+<li><p>检查跳线是否有损坏</p></li>
+</ul>
+</li>
+<li><p><strong>检查固件</strong></p>
+<ul class="simple">
+<li><p>重新烧录固件（参考 <a class="reference internal" href="../firmware/flash_tool.html"><span class="doc">使用烧录工具</span></a>）</p></li>
+<li><p>确认使用的是最新版本的固件</p></li>
+<li><p>检查烧录过程是否成功完成</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>如果屏幕背光亮但无内容，通常是固件问题，尝试重新烧录固件。</p>
+</div>
+</section>
+</section>
+<section id="id5">
+<h2>无声音输出<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="id6">
+<h3>症状<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>游戏运行正常但完全无声音</p></li>
+<li><p>声音断断续续或有杂音</p></li>
+<li><p>音量无法调节</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>可能原因和解决方法<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>检查功放模块连接</strong></p>
+<ul class="simple">
+<li><p>断开电源</p></li>
+<li><p>确认功放模块已正确安装在面包板上</p></li>
+<li><p>检查功放模块的跳线连接是否正确</p></li>
+<li><p>参考 <a class="reference internal" href="../assembly.html"><span class="doc">组装教程</span></a> 中的功放模块安装步骤</p></li>
+</ul>
+</li>
+<li><p><strong>检查音频输出设备</strong></p>
+<ul class="simple">
+<li><p>确认扬声器或耳机已正确连接到功放模块</p></li>
+<li><p>尝试更换扬声器或耳机</p></li>
+<li><p>检查音频线是否有损坏</p></li>
+</ul>
+</li>
+<li><p><strong>检查音量设置</strong></p>
+<ul class="simple">
+<li><p>进入系统设置菜单</p></li>
+<li><p>检查音量是否被设置为 0</p></li>
+<li><p>尝试调高音量（参考 <a class="reference internal" href="../usage/settings.html"><span class="doc">设置调节说明</span></a>）</p></li>
+</ul>
+</li>
+<li><p><strong>检查跳线连接</strong></p>
+<ul class="simple">
+<li><p>确认功放模块的所有引脚都已正确连接</p></li>
+<li><p>检查音频信号线和电源线是否连接正确</p></li>
+<li><p>参考组装教程中的引脚对应表</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>某些游戏可能本身没有声音，请尝试运行其他游戏进行测试。</p>
+</div>
+</section>
+</section>
+<section id="id8">
+<h2>按键无响应<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<section id="id9">
+<h3>症状<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>所有按键都无响应</p></li>
+<li><p>部分按键无响应</p></li>
+<li><p>按键响应延迟或不稳定</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>可能原因和解决方法<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>检查按键安装</strong></p>
+<ul class="simple">
+<li><p>断开电源</p></li>
+<li><p>确认按键已正确插入面包板</p></li>
+<li><p>检查按键引脚是否完全插入面包板孔中</p></li>
+<li><p>确认按键方向正确（按键有方向性）</p></li>
+</ul>
+</li>
+<li><p><strong>检查跳线连接</strong></p>
+<ul class="simple">
+<li><p>参考 <a class="reference internal" href="../assembly.html"><span class="doc">组装教程</span></a> 中的按键跳线连接图</p></li>
+<li><p>检查每个按键的跳线是否连接到正确的 GPIO 引脚</p></li>
+<li><p>确认跳线没有松动</p></li>
+<li><p>检查跳线是否有损坏或接触不良</p></li>
+</ul>
+</li>
+<li><p><strong>测试按键</strong></p>
+<ul class="simple">
+<li><p>使用万用表测试按键是否正常工作</p></li>
+<li><p>按下按键时，对应引脚应该导通</p></li>
+<li><p>如果按键损坏，请更换新的按键</p></li>
+</ul>
+</li>
+<li><p><strong>检查面包板</strong></p>
+<ul class="simple">
+<li><p>面包板的某些孔可能接触不良</p></li>
+<li><p>尝试将按键移到面包板的其他位置</p></li>
+<li><p>确认面包板质量良好</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>请勿用力按压按键，可能导致按键损坏或面包板变形。</p>
+</div>
+</section>
+</section>
+<section id="tf">
+<h2>无法识别 TF 卡<a class="headerlink" href="#tf" title="Link to this heading"></a></h2>
+<section id="id11">
+<h3>症状<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>系统提示”未检测到 TF 卡”</p></li>
+<li><p>TF 卡插入后无反应</p></li>
+<li><p>游戏列表为空</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>可能原因和解决方法<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>检查 TF 卡格式</strong></p>
+<ul class="simple">
+<li><p>确认 TF 卡已格式化为 FAT32 格式</p></li>
+<li><p>重新格式化 TF 卡（参考 <a class="reference internal" href="../tfcard/format.html"><span class="doc">格式化 TF 卡</span></a>）</p></li>
+<li><p>确认 TF 卡容量不超过 32GB（建议使用 8GB-32GB）</p></li>
+</ul>
+</li>
+<li><p><strong>检查 TF 卡插入</strong></p>
+<ul class="simple">
+<li><p>断开电源</p></li>
+<li><p>重新插入 TF 卡，确保插入到位</p></li>
+<li><p>检查 TF 卡方向是否正确（金属触点朝下）</p></li>
+<li><p>确认听到”咔哒”声表示插入到位</p></li>
+</ul>
+</li>
+<li><p><strong>检查 TF 卡模块连接</strong></p>
+<ul class="simple">
+<li><p>断开电源</p></li>
+<li><p>确认 TF 卡模块已正确安装在面包板上</p></li>
+<li><p>检查 TF 卡模块的跳线连接是否正确</p></li>
+<li><p>参考 <a class="reference internal" href="../assembly.html"><span class="doc">组装教程</span></a> 中的 TF 卡模块安装步骤</p></li>
+</ul>
+</li>
+<li><p><strong>检查 TF 卡质量</strong></p>
+<ul class="simple">
+<li><p>尝试使用其他 TF 卡</p></li>
+<li><p>确认 TF 卡没有物理损坏</p></li>
+<li><p>在电脑上测试 TF 卡是否可以正常读写</p></li>
+</ul>
+</li>
+<li><p><strong>检查文件结构</strong></p>
+<ul class="simple">
+<li><p>确认 TF 卡根目录下有正确的文件夹结构</p></li>
+<li><p>参考 <a class="reference internal" href="../tfcard/file_structure.html"><span class="doc">文件夹结构和文件格式</span></a> 了解正确的文件夹结构</p></li>
+<li><p>首次使用时，系统会自动创建文件夹</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>建议使用品牌 TF 卡（如 SanDisk、Samsung），避免使用劣质 TF 卡。</p>
+</div>
+</section>
+</section>
+<section id="id13">
+<h2>供电问题<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<section id="id14">
+<h3>症状<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>设备无法开机</p></li>
+<li><p>设备运行不稳定，频繁重启</p></li>
+<li><p>电源指示灯不亮或闪烁</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>可能原因和解决方法<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>检查电源适配器</strong></p>
+<ul class="simple">
+<li><p>使用 5V/2A 或更高规格的 USB 电源适配器</p></li>
+<li><p>避免使用电脑 USB 口供电（电流可能不足）</p></li>
+<li><p>尝试更换电源适配器</p></li>
+</ul>
+</li>
+<li><p><strong>检查 Type-C 线</strong></p>
+<ul class="simple">
+<li><p>确认使用的是数据线，而非仅充电线</p></li>
+<li><p>尝试更换 Type-C 线</p></li>
+<li><p>检查线缆是否有损坏</p></li>
+</ul>
+</li>
+<li><p><strong>检查连接</strong></p>
+<ul class="simple">
+<li><p>确认 Type-C 线已牢固插入 ESP32S3</p></li>
+<li><p>检查 Type-C 接口是否有灰尘或异物</p></li>
+<li><p>重新插拔 Type-C 线</p></li>
+</ul>
+</li>
+<li><p><strong>检查功耗</strong></p>
+<ul class="simple">
+<li><p>如果连接了过多外设，可能导致功耗过大</p></li>
+<li><p>尝试断开部分外设进行测试</p></li>
+<li><p>使用更高功率的电源适配器</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>请勿使用劣质电源适配器，可能导致设备损坏或存在安全隐患。</p>
+</div>
+</section>
+</section>
+<section id="id16">
+<h2>其他硬件问题<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
+<section id="id17">
+<h3>面包板接触不良<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<p><strong>症状</strong>: 设备工作不稳定，时好时坏</p>
+<p><strong>解决方法</strong>:</p>
+<ul class="simple">
+<li><p>检查所有模块和跳线是否插紧</p></li>
+<li><p>尝试重新插拔所有连接</p></li>
+<li><p>更换质量更好的面包板</p></li>
+<li><p>考虑使用焊接方式固定连接（适合有经验的用户）</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>元件过热<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
+<p><strong>症状</strong>: ESP32S3 或其他模块发热严重</p>
+<p><strong>解决方法</strong>:</p>
+<ul class="simple">
+<li><p>检查是否有短路情况</p></li>
+<li><p>确认跳线连接正确</p></li>
+<li><p>改善散热条件，避免在密闭空间使用</p></li>
+<li><p>如果持续过热，请断开电源并检查硬件连接</p></li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">危险</p>
+<p>如果发现元件冒烟或有焦味，请立即断开电源！这可能表示严重的硬件故障。</p>
+</div>
+</section>
+</section>
+<section id="id19">
+<h2>硬件检查清单<a class="headerlink" href="#id19" title="Link to this heading"></a></h2>
+<p>在联系技术支持前，请完成以下检查清单：</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>检查项目</p></th>
+<th class="head"><p>状态</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>电源适配器规格是否符合要求（5V/2A 或以上）</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type-C 线是否正常工作</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-even"><td><p>ESP32S3 电源指示灯是否亮起</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-odd"><td><p>TFT 屏幕排线是否插紧</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-even"><td><p>所有模块是否正确安装在面包板上</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-odd"><td><p>所有跳线连接是否正确</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-even"><td><p>按键是否正确安装</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-odd"><td><p>TF 卡是否格式化为 FAT32</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-even"><td><p>TF 卡是否正确插入</p></td>
+<td><p>☐</p></td>
+</tr>
+<tr class="row-odd"><td><p>固件是否成功烧录</p></td>
+<td><p>☐</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>如果以上检查都没有问题，但设备仍然无法正常工作，请参考 <a class="reference internal" href="software.html"><span class="doc">软件问题排查</span></a> 进行软件问题排查。</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="troubleshooting.html" class="btn btn-neutral float-left" title="故障排除" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="software.html" class="btn btn-neutral float-right" title="软件问题排查" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, LAFVIN。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

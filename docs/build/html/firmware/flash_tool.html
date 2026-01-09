@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>使用烧录工具 &mdash; LAFVIN Retro Game Kit  文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="烧录问题排查" href="troubleshooting.html" />
+    <link rel="prev" title="下载固件" href="download.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+    <a href="https://www.lafvintech.com/" class="logo-link">
+        <img src="https://lafvintech.com/cdn/shop/files/logo_V2_300x@2x.png?v=1642487152" class="logo" alt="Logo"/>
+    </a>
+    
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">产品信息</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_this_kit.html">产品介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../component_list.html">组件清单</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../assembly.html">组装教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tfcard/tfcard.html">TF 卡准备</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="firmware.html">固件烧录</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="firmware.html#id2">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="firmware.html#id3">什么是固件烧录?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="firmware.html#id4">准备工作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="firmware.html#id7">烧录流程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="firmware.html#id8">详细步骤</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="download.html">下载固件</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">使用烧录工具</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#esptool">方法一:使用 esptool (推荐)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#esp-flash-download-tool-windows">方法二:使用 ESP Flash Download Tool (仅 Windows)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">验证烧录成功</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">常见烧录参数说明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">下一步</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html">烧录问题排查</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="firmware.html#id9">快速导航</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tutorial/tutorial.html">Tutorial</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/usage.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/advanced.html">高级功能</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">故障排除</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">故障排除</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LAFVIN Retro Game Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="firmware.html">固件烧录</a></li>
+      <li class="breadcrumb-item active">使用烧录工具</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/firmware/flash_tool.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="firmware-flash-tool">
+<span id="id1"></span><h1>使用烧录工具<a class="headerlink" href="#firmware-flash-tool" title="Link to this heading"></a></h1>
+<p>本章节介绍如何使用烧录工具将固件写入 ESP32S3 主控模块。我们提供两种烧录方法:使用 esptool 命令行工具(适合所有操作系统)和使用 ESP Flash Download Tool 图形界面工具(仅 Windows)。</p>
+<section id="esptool">
+<h2>方法一:使用 esptool (推荐)<a class="headerlink" href="#esptool" title="Link to this heading"></a></h2>
+<p>esptool 是 Espressif 官方提供的命令行烧录工具,支持 Windows、macOS 和 Linux 系统。</p>
+<section id="id2">
+<h3>安装 esptool<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p><strong>使用 pip 安装</strong> (推荐):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>esptool
+</pre></div>
+</div>
+<p><strong>验证安装</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>esptool.py<span class="w"> </span>version
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>如果您的系统没有安装 Python,请先安装 Python 3.7 或更高版本。</p>
+</div>
+</section>
+<section id="esp32s3">
+<h3>连接 ESP32S3<a class="headerlink" href="#esp32s3" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>使用 Type-C 数据线将 ESP32S3 主控模块连接到电脑</p></li>
+<li><p>确保使用的是支持数据传输的线缆(不能只是充电线)</p></li>
+<li><p>连接后,ESP32S3 上的电源指示灯应该亮起</p></li>
+</ol>
+<a class="reference internal image-reference" href="img/firmware/connect_esp32s3.jpg"><img alt="连接 ESP32S3 到电脑" class="align-center" src="img/firmware/connect_esp32s3.jpg" style="width: 600px;" /></a>
+<p>[占位符:需要 ESP32S3 通过 Type-C 线连接到电脑的图片]</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>请使用质量可靠的 Type-C 数据线,劣质线缆可能导致烧录失败或数据传输错误!</p>
+</div>
+</section>
+<section id="com">
+<h3>查找 COM 端口<a class="headerlink" href="#com" title="Link to this heading"></a></h3>
+<p><strong>Windows 系统</strong>:</p>
+<ol class="arabic simple">
+<li><p>打开”设备管理器”</p></li>
+<li><p>展开”端口(COM 和 LPT)”</p></li>
+<li><p>找到类似”USB-SERIAL CH340 (COM3)”的设备</p></li>
+<li><p>记下端口号(如 COM3)</p></li>
+</ol>
+<a class="reference internal image-reference" href="img/firmware/windows_device_manager.jpg"><img alt="Windows 设备管理器" class="align-center" src="img/firmware/windows_device_manager.jpg" style="width: 500px;" /></a>
+<p>[占位符:需要 Windows 设备管理器显示 COM 端口的截图]</p>
+<p><strong>macOS 系统</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/dev/cu.*
+</pre></div>
+</div>
+<p>通常显示为 <code class="docutils literal notranslate"><span class="pre">/dev/cu.usbserial-XXXX</span></code> 或 <code class="docutils literal notranslate"><span class="pre">/dev/cu.wchusbserial-XXXX</span></code></p>
+<p><strong>Linux 系统</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/dev/ttyUSB*
+</pre></div>
+</div>
+<p>通常显示为 <code class="docutils literal notranslate"><span class="pre">/dev/ttyUSB0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">/dev/ttyUSB1</span></code></p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>如果找不到 COM 端口,可能需要安装 CH340 驱动程序。请参考 <a class="reference internal" href="troubleshooting.html"><span class="doc">烧录问题排查</span></a> 章节。</p>
+</div>
+</section>
+<section id="id3">
+<h3>烧录固件<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p><strong>基本烧录命令</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>esptool.py<span class="w"> </span>--chip<span class="w"> </span>esp32s3<span class="w"> </span>--port<span class="w"> </span>COM3<span class="w"> </span>--baud<span class="w"> </span><span class="m">921600</span><span class="w"> </span>write_flash<span class="w"> </span>0x0<span class="w"> </span>firmware.bin
+</pre></div>
+</div>
+<p><strong>参数说明</strong>:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--chip</span> <span class="pre">esp32s3</span></code></p></td>
+<td><p>指定芯片型号为 ESP32S3</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--port</span> <span class="pre">COM3</span></code></p></td>
+<td><p>指定 COM 端口(根据实际情况修改)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--baud</span> <span class="pre">921600</span></code></p></td>
+<td><p>设置波特率为 921600(可选:115200、460800、921600)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">write_flash</span></code></p></td>
+<td><p>执行写入 Flash 操作</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0x0</span></code></p></td>
+<td><p>烧录起始地址</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">firmware.bin</span></code></p></td>
+<td><p>固件文件路径</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>完整烧录命令示例</strong> (包含所有文件):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>esptool.py<span class="w"> </span>--chip<span class="w"> </span>esp32s3<span class="w"> </span>--port<span class="w"> </span>COM3<span class="w"> </span>--baud<span class="w"> </span><span class="m">921600</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--before<span class="w"> </span>default_reset<span class="w"> </span>--after<span class="w"> </span>hard_reset<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>write_flash<span class="w"> </span>-z<span class="w"> </span>--flash_mode<span class="w"> </span>dio<span class="w"> </span>--flash_freq<span class="w"> </span>80m<span class="w"> </span>--flash_size<span class="w"> </span>16MB<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>0x0<span class="w"> </span>bootloader.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>0x8000<span class="w"> </span>partition-table.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>0x10000<span class="w"> </span>firmware.bin
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>如果固件包只包含单个 <code class="docutils literal notranslate"><span class="pre">firmware.bin</span></code> 文件,使用基本烧录命令即可。</p>
+</div>
+<p><strong>macOS/Linux 端口示例</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># macOS</span>
+esptool.py<span class="w"> </span>--chip<span class="w"> </span>esp32s3<span class="w"> </span>--port<span class="w"> </span>/dev/cu.usbserial-XXXX<span class="w"> </span>--baud<span class="w"> </span><span class="m">921600</span><span class="w"> </span>write_flash<span class="w"> </span>0x0<span class="w"> </span>firmware.bin
+
+<span class="c1"># Linux</span>
+esptool.py<span class="w"> </span>--chip<span class="w"> </span>esp32s3<span class="w"> </span>--port<span class="w"> </span>/dev/ttyUSB0<span class="w"> </span>--baud<span class="w"> </span><span class="m">921600</span><span class="w"> </span>write_flash<span class="w"> </span>0x0<span class="w"> </span>firmware.bin
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h3>烧录过程<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>执行烧录命令后,您将看到类似以下的输出:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>esptool.py v4.6
+Serial port COM3
+Connecting....
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: xx:xx:xx:xx:xx:xx
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00xxxxxx...
+Compressed 12345678 bytes to 6789012...
+Writing at 0x00000000... (10 %)
+Writing at 0x00010000... (20 %)
+...
+Writing at 0x00100000... (100 %)
+Wrote 12345678 bytes (6789012 compressed) at 0x00000000 in 123.4 seconds
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>烧录过程通常需要 1-3 分钟,请耐心等待。不要在烧录过程中断开连接或关闭程序!</p>
+</div>
+</section>
+</section>
+<section id="esp-flash-download-tool-windows">
+<h2>方法二:使用 ESP Flash Download Tool (仅 Windows)<a class="headerlink" href="#esp-flash-download-tool-windows" title="Link to this heading"></a></h2>
+<p>ESP Flash Download Tool 是 Espressif 提供的图形界面烧录工具,操作更直观,适合不熟悉命令行的用户。</p>
+<section id="id5">
+<h3>下载工具<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>访问 Espressif 官方网站</p></li>
+<li><p>下载 Flash Download Tools</p></li>
+<li><p>解压缩到本地文件夹</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>[占位符:需要提供 Flash Download Tool 下载链接]</p>
+<p>下载地址: <code class="docutils literal notranslate"><span class="pre">https://www.espressif.com/en/support/download/other-tools</span></code></p>
+</div>
+</section>
+<section id="id6">
+<h3>启动工具<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>运行 <code class="docutils literal notranslate"><span class="pre">flash_download_tool_x.x.x.exe</span></code></p></li>
+<li><p>选择芯片类型: <strong>ESP32-S3</strong></p></li>
+<li><p>选择工作模式: <strong>Developer Mode</strong></p></li>
+<li><p>点击 <strong>OK</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="img/firmware/flash_tool_start.jpg"><img alt="Flash Download Tool 启动界面" class="align-center" src="img/firmware/flash_tool_start.jpg" style="width: 400px;" /></a>
+<p>[占位符:需要 Flash Download Tool 启动界面的截图]</p>
+</section>
+<section id="id7">
+<h3>配置烧录参数<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>在主界面中配置以下参数:</p>
+<p><strong>1. 添加固件文件</strong>:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>勾选</p></th>
+<th class="head"><p>文件路径</p></th>
+<th class="head"><p>烧录地址</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>☑</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">bootloader.bin</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0x0</span></code></p></td>
+<td><p>引导加载程序(可选)</p></td>
+</tr>
+<tr class="row-odd"><td><p>☑</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">partition-table.bin</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0x8000</span></code></p></td>
+<td><p>分区表(可选)</p></td>
+</tr>
+<tr class="row-even"><td><p>☑</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">firmware.bin</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0x10000</span></code></p></td>
+<td><p>主固件文件</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>如果只有单个 <code class="docutils literal notranslate"><span class="pre">firmware.bin</span></code> 文件,烧录地址设置为 <code class="docutils literal notranslate"><span class="pre">0x0</span></code></p>
+</div>
+<p><strong>2. SPI 配置</strong>:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>设置值</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SPI SPEED</p></td>
+<td><p>80 MHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI MODE</p></td>
+<td><p>DIO</p></td>
+</tr>
+<tr class="row-even"><td><p>FLASH SIZE</p></td>
+<td><p>16 MB</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. COM 端口设置</strong>:</p>
+<ul class="simple">
+<li><p><strong>COM</strong>: 选择正确的 COM 端口(如 COM3)</p></li>
+<li><p><strong>BAUD</strong>: 选择波特率 921600</p></li>
+</ul>
+<a class="reference internal image-reference" href="img/firmware/flash_tool_config.jpg"><img alt="Flash Download Tool 配置界面" class="align-center" src="img/firmware/flash_tool_config.jpg" style="width: 700px;" /></a>
+<p>[占位符:需要 Flash Download Tool 配置完成的截图,显示文件路径、地址和参数设置]</p>
+</section>
+<section id="id8">
+<h3>开始烧录<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>确认所有参数配置正确</p></li>
+<li><p>点击 <strong>START</strong> 按钮开始烧录</p></li>
+<li><p>等待烧录完成</p></li>
+</ol>
+<p>烧录进度显示:</p>
+<ul class="simple">
+<li><p>绿色进度条显示烧录进度</p></li>
+<li><p>底部状态栏显示当前操作</p></li>
+<li><p>完成后显示 <strong>FINISH</strong> 绿色提示</p></li>
+</ul>
+<a class="reference internal image-reference" href="img/firmware/flash_tool_progress.jpg"><img alt="Flash Download Tool 烧录进度" class="align-center" src="img/firmware/flash_tool_progress.jpg" style="width: 700px;" /></a>
+<p>[占位符:需要 Flash Download Tool 烧录过程的截图,显示进度条]</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>烧录过程中请勿断开 USB 连接或关闭程序,否则可能导致固件损坏!</p>
+</div>
+</section>
+</section>
+<section id="id9">
+<h2>验证烧录成功<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<section id="id10">
+<h3>方法一:查看烧录工具输出<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p><strong>esptool 成功标志</strong>:</p>
+<ul class="simple">
+<li><p>显示 <code class="docutils literal notranslate"><span class="pre">Hash</span> <span class="pre">of</span> <span class="pre">data</span> <span class="pre">verified.</span></code></p></li>
+<li><p>显示 <code class="docutils literal notranslate"><span class="pre">Leaving...</span></code></p></li>
+<li><p>显示 <code class="docutils literal notranslate"><span class="pre">Hard</span> <span class="pre">resetting</span> <span class="pre">via</span> <span class="pre">RTS</span> <span class="pre">pin...</span></code></p></li>
+<li><p>没有错误信息</p></li>
+</ul>
+<p><strong>Flash Download Tool 成功标志</strong>:</p>
+<ul class="simple">
+<li><p>显示绿色 <strong>FINISH</strong> 提示</p></li>
+<li><p>进度条达到 100%</p></li>
+<li><p>状态栏显示 <code class="docutils literal notranslate"><span class="pre">完成</span></code></p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>方法二:测试设备启动<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>断开 ESP32S3 与电脑的连接</p></li>
+<li><p>将 ESP32S3 安装到游戏机上</p></li>
+<li><p>连接 TFT 屏幕和其他组件</p></li>
+<li><p>通过 Type-C 供电</p></li>
+<li><p>观察屏幕是否显示启动画面或菜单</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>如果屏幕显示正常,说明固件烧录成功。如果没有显示或显示异常,请参考 <a class="reference internal" href="troubleshooting.html"><span class="doc">烧录问题排查</span></a> 章节。</p>
+</div>
+</section>
+<section id="id12">
+<h3>方法三:读取固件信息<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p>使用 esptool 读取芯片信息:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>esptool.py<span class="w"> </span>--port<span class="w"> </span>COM3<span class="w"> </span>flash_id
+</pre></div>
+</div>
+<p>输出应显示 Flash 大小为 16MB,说明固件已正确写入。</p>
+</section>
+</section>
+<section id="id13">
+<h2>常见烧录参数说明<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<section id="id14">
+<h3>波特率选择<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 40.0%" />
+<col style="width: 40.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>波特率</p></th>
+<th class="head"><p>烧录速度</p></th>
+<th class="head"><p>稳定性</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>115200</p></td>
+<td><p>慢(约 5-8 分钟)</p></td>
+<td><p>最稳定,推荐用于排查问题</p></td>
+</tr>
+<tr class="row-odd"><td><p>460800</p></td>
+<td><p>中等(约 2-3 分钟)</p></td>
+<td><p>较稳定</p></td>
+</tr>
+<tr class="row-even"><td><p>921600</p></td>
+<td><p>快(约 1-2 分钟)</p></td>
+<td><p>稳定,推荐日常使用</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>如果烧录过程中出现错误,可以尝试降低波特率到 115200 重试。</p>
+</div>
+</section>
+<section id="flash">
+<h3>Flash 模式说明<a class="headerlink" href="#flash" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>模式</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>QIO</p></td>
+<td><p>Quad I/O,最快速度,需要 4 条数据线</p></td>
+</tr>
+<tr class="row-odd"><td><p>QOUT</p></td>
+<td><p>Quad Output,快速读取</p></td>
+</tr>
+<tr class="row-even"><td><p>DIO</p></td>
+<td><p>Dual I/O,推荐使用,兼容性好</p></td>
+</tr>
+<tr class="row-odd"><td><p>DOUT</p></td>
+<td><p>Dual Output,兼容性最好</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>ESP32S3N16R8 推荐使用 <strong>DIO</strong> 模式,兼容性和性能平衡最佳。</p>
+</div>
+</section>
+<section id="id15">
+<h3>烧录地址说明<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 20.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>文件</p></th>
+<th class="head"><p>地址</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>bootloader.bin</p></td>
+<td><p>0x0</p></td>
+<td><p>引导加载程序,位于 Flash 起始位置</p></td>
+</tr>
+<tr class="row-odd"><td><p>partition-table.bin</p></td>
+<td><p>0x8000</p></td>
+<td><p>分区表,定义 Flash 布局</p></td>
+</tr>
+<tr class="row-even"><td><p>firmware.bin</p></td>
+<td><p>0x10000</p></td>
+<td><p>主固件,应用程序代码</p></td>
+</tr>
+<tr class="row-odd"><td><p>单文件固件</p></td>
+<td><p>0x0</p></td>
+<td><p>包含所有内容的完整固件</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>烧录地址必须正确,否则设备无法启动!如果不确定,请使用固件包提供的说明。</p>
+</div>
+</section>
+</section>
+<section id="id16">
+<h2>下一步<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
+<p>固件烧录成功后,请继续:</p>
+<ol class="arabic simple">
+<li><p>完成硬件组装(如果尚未完成):参考 <a class="reference internal" href="../assembly.html"><span class="doc">组装教程</span></a></p></li>
+<li><p>准备 TF 卡:参考 <a class="reference internal" href="../tfcard/tfcard.html"><span class="doc">TF 卡准备</span></a></p></li>
+<li><p>开始使用游戏机:参考 <a class="reference internal" href="../usage/usage.html"><span class="doc">使用说明</span></a></p></li>
+</ol>
+<p>如果烧录过程中遇到问题,请查看 <a class="reference internal" href="troubleshooting.html"><span class="doc">烧录问题排查</span></a> 章节。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="download.html" class="btn btn-neutral float-left" title="下载固件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="troubleshooting.html" class="btn btn-neutral float-right" title="烧录问题排查" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, LAFVIN。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,529 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>模拟器说明 &mdash; LAFVIN Retro Game Kit  文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="高级功能" href="../advanced/advanced.html" />
+    <link rel="prev" title="设置调节说明" href="settings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+    <a href="https://www.lafvintech.com/" class="logo-link">
+        <img src="https://lafvintech.com/cdn/shop/files/logo_V2_300x@2x.png?v=1642487152" class="logo" alt="Logo"/>
+    </a>
+    
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">产品信息</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_this_kit.html">产品介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../component_list.html">组件清单</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../assembly.html">组装教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tfcard/tfcard.html">TF 卡准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/firmware.html">固件烧录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tutorial/tutorial.html">Tutorial</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用指南</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="usage.html">使用说明</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="usage.html#id2">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#id4">快速开始</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#id5">使用流程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="usage.html#id6">详细内容</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="power_on.html">开机和供电</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buttons.html">按键说明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="menu.html">菜单系统说明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html">设置调节说明</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">模拟器说明</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">模拟器概述</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">支持的游戏平台</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf">TF 卡文件夹结构</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">支持的文件格式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">基本操作说明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">模拟器特定功能</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">游戏存档</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">模拟器设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">性能优化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">常见问题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#id7">常见问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#id8">下一步</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/advanced.html">高级功能</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">故障排除</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">故障排除</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LAFVIN Retro Game Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="usage.html">使用说明</a></li>
+      <li class="breadcrumb-item active">模拟器说明</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/usage/emulators.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="emulators">
+<span id="id1"></span><h1>模拟器说明<a class="headerlink" href="#emulators" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>模拟器概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>LAFVIN Retro Game Kit 内置了多个游戏平台的模拟器,支持运行经典的复古游戏。每个模拟器都针对 ESP32S3 进行了优化,提供流畅的游戏体验。</p>
+</section>
+<section id="id3">
+<h2>支持的游戏平台<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>系统支持以下 13 个游戏平台:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 35.0%" />
+<col style="width: 40.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>平台名称</p></th>
+<th class="head"><p>英文名称</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>任天堂红白机</p></td>
+<td><p>NES (Nintendo Entertainment System)</p></td>
+<td><p>8 位经典游戏机</p></td>
+</tr>
+<tr class="row-odd"><td><p>超级任天堂</p></td>
+<td><p>SNES (Super Nintendo)</p></td>
+<td><p>16 位游戏机</p></td>
+</tr>
+<tr class="row-even"><td><p>Game Boy</p></td>
+<td><p>GB (Game Boy)</p></td>
+<td><p>任天堂掌机</p></td>
+</tr>
+<tr class="row-odd"><td><p>Game Boy Color</p></td>
+<td><p>GBC (Game Boy Color)</p></td>
+<td><p>彩色掌机</p></td>
+</tr>
+<tr class="row-even"><td><p>Game &amp; Watch</p></td>
+<td><p>Game &amp; Watch</p></td>
+<td><p>任天堂早期掌机</p></td>
+</tr>
+<tr class="row-odd"><td><p>世嘉 SG-1000</p></td>
+<td><p>SG-1000</p></td>
+<td><p>世嘉 8 位游戏机</p></td>
+</tr>
+<tr class="row-even"><td><p>世嘉 Master System</p></td>
+<td><p>SMS (Sega Master System)</p></td>
+<td><p>世嘉 8 位游戏机</p></td>
+</tr>
+<tr class="row-odd"><td><p>世嘉 MD/Genesis</p></td>
+<td><p>MD/Genesis (Mega Drive)</p></td>
+<td><p>世嘉 16 位游戏机</p></td>
+</tr>
+<tr class="row-even"><td><p>Game Gear</p></td>
+<td><p>GG (Game Gear)</p></td>
+<td><p>世嘉彩色掌机</p></td>
+</tr>
+<tr class="row-odd"><td><p>Colecovision</p></td>
+<td><p>Colecovision</p></td>
+<td><p>早期家用游戏机</p></td>
+</tr>
+<tr class="row-even"><td><p>PC Engine</p></td>
+<td><p>PCE (PC Engine)</p></td>
+<td><p>NEC 16 位游戏机</p></td>
+</tr>
+<tr class="row-odd"><td><p>Atari Lynx</p></td>
+<td><p>Lynx</p></td>
+<td><p>Atari 彩色掌机</p></td>
+</tr>
+<tr class="row-even"><td><p>DOOM</p></td>
+<td><p>DOOM</p></td>
+<td><p>经典第一人称射击游戏</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tf">
+<h2>TF 卡文件夹结构<a class="headerlink" href="#tf" title="Link to this heading"></a></h2>
+<p>游戏文件存储在 TF 卡的对应文件夹中。首次插入 TF 卡时,系统会自动创建以下文件夹结构:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>/
+├── NES/          # 任天堂红白机游戏
+├── SNES/         # 超级任天堂游戏
+├── GB/           # Game Boy 游戏
+├── GBC/          # Game Boy Color 游戏
+├── GW/           # Game &amp; Watch 游戏
+├── SG1000/       # SG-1000 游戏
+├── SMS/          # Master System 游戏
+├── MD/           # Mega Drive/Genesis 游戏
+├── GG/           # Game Gear 游戏
+├── COLECO/       # Colecovision 游戏
+├── PCE/          # PC Engine 游戏
+├── LYNX/         # Atari Lynx 游戏
+└── DOOM/         # DOOM WAD 文件
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>请将游戏文件放入对应的文件夹中,系统会自动识别并显示在游戏库中。</p>
+</div>
+</section>
+<section id="id4">
+<h2>支持的文件格式<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>各模拟器支持的 ROM 文件格式:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>平台</p></th>
+<th class="head"><p>文件格式</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>NES</p></td>
+<td><p>.nes</p></td>
+<td><p>Nintendo Entertainment System ROM</p></td>
+</tr>
+<tr class="row-odd"><td><p>SNES</p></td>
+<td><p>.smc, .sfc</p></td>
+<td><p>Super Nintendo ROM</p></td>
+</tr>
+<tr class="row-even"><td><p>GB</p></td>
+<td><p>.gb</p></td>
+<td><p>Game Boy ROM</p></td>
+</tr>
+<tr class="row-odd"><td><p>GBC</p></td>
+<td><p>.gbc</p></td>
+<td><p>Game Boy Color ROM</p></td>
+</tr>
+<tr class="row-even"><td><p>Game &amp; Watch</p></td>
+<td><p>.gw</p></td>
+<td><p>Game &amp; Watch ROM</p></td>
+</tr>
+<tr class="row-odd"><td><p>SG-1000</p></td>
+<td><p>.sg</p></td>
+<td><p>SG-1000 ROM</p></td>
+</tr>
+<tr class="row-even"><td><p>SMS</p></td>
+<td><p>.sms</p></td>
+<td><p>Sega Master System ROM</p></td>
+</tr>
+<tr class="row-odd"><td><p>MD/Genesis</p></td>
+<td><p>.md, .bin, .gen</p></td>
+<td><p>Mega Drive / Genesis ROM</p></td>
+</tr>
+<tr class="row-even"><td><p>Game Gear</p></td>
+<td><p>.gg</p></td>
+<td><p>Game Gear ROM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Colecovision</p></td>
+<td><p>.col</p></td>
+<td><p>Colecovision ROM</p></td>
+</tr>
+<tr class="row-even"><td><p>PC Engine</p></td>
+<td><p>.pce</p></td>
+<td><p>PC Engine ROM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Atari Lynx</p></td>
+<td><p>.lnx</p></td>
+<td><p>Atari Lynx ROM</p></td>
+</tr>
+<tr class="row-even"><td><p>DOOM</p></td>
+<td><p>.wad</p></td>
+<td><p>DOOM WAD 文件</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>请确保您拥有游戏文件的合法使用权。本产品不提供任何游戏 ROM 文件。</p>
+</div>
+</section>
+<section id="id5">
+<h2>基本操作说明<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="id6">
+<h3>启动游戏<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>确保 TF 卡已正确插入并包含游戏文件</p></li>
+<li><p>在主菜单中选择 <strong>游戏库</strong></p></li>
+<li><p>选择游戏平台</p></li>
+<li><p>浏览并选择要玩的游戏</p></li>
+<li><p>按 A 键启动游戏</p></li>
+</ol>
+<a class="reference internal image-reference" href="img/usage/game_start.jpg"><img alt="启动游戏界面" class="align-center" src="img/usage/game_start.jpg" style="width: 600px;" /></a>
+<p>[占位符:需要游戏启动界面截图,显示游戏加载过程]</p>
+</section>
+<section id="id7">
+<h3>游戏中操作<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>在游戏运行时:</p>
+<ul class="simple">
+<li><p>使用 <strong>方向键</strong> 控制角色移动</p></li>
+<li><p>使用 <strong>A/B 键</strong> 进行游戏操作</p></li>
+<li><p>按 <strong>Start 键</strong> 暂停游戏</p></li>
+<li><p>按 <strong>Menu 键</strong> 打开游戏菜单</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>退出游戏<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>按 <strong>Menu 键</strong> 打开游戏菜单</p></li>
+<li><p>选择 <strong>返回主菜单</strong></p></li>
+<li><p>或长按 <strong>Menu 键</strong> 直接返回主菜单</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>退出游戏前建议先保存进度,避免游戏进度丢失。</p>
+</div>
+</section>
+</section>
+<section id="id9">
+<h2>模拟器特定功能<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<section id="nes">
+<h3>NES 模拟器<a class="headerlink" href="#nes" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>支持 Mapper 0-255</p></li>
+<li><p>支持 Zapper 光枪游戏(通过按键模拟)</p></li>
+<li><p>支持 Game Genie 金手指代码</p></li>
+</ul>
+</section>
+<section id="snes">
+<h3>SNES 模拟器<a class="headerlink" href="#snes" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>支持 Mode 7 图形</p></li>
+<li><p>支持 Super FX 芯片游戏</p></li>
+<li><p>支持 SA-1 芯片游戏</p></li>
+</ul>
+</section>
+<section id="game-boy-gbc">
+<h3>Game Boy / GBC 模拟器<a class="headerlink" href="#game-boy-gbc" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>支持 Game Boy 和 Game Boy Color 游戏</p></li>
+<li><p>自动识别游戏类型</p></li>
+<li><p>支持彩色调色板选择</p></li>
+</ul>
+</section>
+<section id="md-genesis">
+<h3>MD/Genesis 模拟器<a class="headerlink" href="#md-genesis" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>支持 Mega Drive 和 Genesis 游戏</p></li>
+<li><p>支持 32X 扩展(部分游戏)</p></li>
+<li><p>支持 Sega CD 音频(部分游戏)</p></li>
+</ul>
+</section>
+<section id="doom">
+<h3>DOOM 模拟器<a class="headerlink" href="#doom" title="Link to this heading"></a></h3>
+<p>DOOM 模拟器支持运行 DOOM 及其 MOD:</p>
+<ul class="simple">
+<li><p>支持 DOOM、DOOM II、Final DOOM</p></li>
+<li><p>支持自定义 WAD 文件</p></li>
+<li><p>详细说明请参考 <a class="reference internal" href="../advanced/doom_mods.html"><span class="doc">DOOM 模组</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="id10">
+<h2>游戏存档<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<section id="id11">
+<h3>自动存档<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<p>某些模拟器支持自动存档功能:</p>
+<ul class="simple">
+<li><p>游戏会在特定时刻自动保存</p></li>
+<li><p>存档文件保存在 TF 卡的 <code class="docutils literal notranslate"><span class="pre">/SAVES/</span></code> 文件夹中</p></li>
+<li><p>下次启动游戏时会自动加载存档</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>手动存档<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p>在游戏中按 <strong>Menu 键</strong>,选择 <strong>保存进度</strong>:</p>
+<ol class="arabic simple">
+<li><p>选择存档槽位(通常有 4 个槽位)</p></li>
+<li><p>按 A 键确认保存</p></li>
+<li><p>系统会显示保存成功提示</p></li>
+</ol>
+</section>
+<section id="id13">
+<h3>加载存档<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>在游戏中按 <strong>Menu 键</strong>,选择 <strong>加载进度</strong>:</p>
+<ol class="arabic simple">
+<li><p>选择要加载的存档槽位</p></li>
+<li><p>按 A 键确认加载</p></li>
+<li><p>游戏会从存档点继续</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>不是所有游戏都支持存档功能,具体取决于游戏本身和模拟器的支持情况。</p>
+</div>
+</section>
+</section>
+<section id="id14">
+<h2>模拟器设置<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<p>每个模拟器都有独立的设置选项:</p>
+<section id="id15">
+<h3>通用设置<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>帧率显示</strong>: 显示当前游戏帧率</p></li>
+<li><p><strong>音频同步</strong>: 启用/禁用音频同步</p></li>
+<li><p><strong>视频滤镜</strong>: 选择视频滤镜效果</p></li>
+<li><p><strong>纵横比</strong>: 调整画面比例</p></li>
+</ul>
+</section>
+<section id="id16">
+<h3>高级设置<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<p>更多高级设置选项请参考 <a class="reference internal" href="../advanced/emulator_config.html"><span class="doc">模拟器配置</span></a></p>
+</section>
+</section>
+<section id="id17">
+<h2>性能优化<a class="headerlink" href="#id17" title="Link to this heading"></a></h2>
+<p>如果游戏运行不流畅,可以尝试以下优化:</p>
+<ol class="arabic simple">
+<li><p><strong>降低音频质量</strong>: 在模拟器设置中降低音频采样率</p></li>
+<li><p><strong>禁用视频滤镜</strong>: 关闭不必要的视频效果</p></li>
+<li><p><strong>调整帧率限制</strong>: 根据游戏调整帧率上限</p></li>
+<li><p><strong>关闭帧率显示</strong>: 减少 CPU 负担</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>大部分游戏都能流畅运行,只有少数复杂游戏可能需要优化设置。</p>
+</div>
+</section>
+<section id="id18">
+<h2>常见问题<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<section id="id19">
+<h3>游戏无法启动<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<p><strong>可能原因</strong>:</p>
+<ul class="simple">
+<li><p>ROM 文件格式不正确</p></li>
+<li><p>ROM 文件已损坏</p></li>
+<li><p>模拟器不支持该游戏</p></li>
+</ul>
+<p><strong>解决方法</strong>:</p>
+<ol class="arabic simple">
+<li><p>检查文件格式是否正确</p></li>
+<li><p>尝试重新下载 ROM 文件</p></li>
+<li><p>查看模拟器兼容性列表</p></li>
+</ol>
+</section>
+<section id="id20">
+<h3>游戏运行缓慢<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
+<p><strong>可能原因</strong>:</p>
+<ul class="simple">
+<li><p>游戏对硬件要求较高</p></li>
+<li><p>启用了过多的视频效果</p></li>
+</ul>
+<p><strong>解决方法</strong>:</p>
+<ol class="arabic simple">
+<li><p>参考上面的性能优化建议</p></li>
+<li><p>尝试降低游戏速度倍率</p></li>
+<li><p>关闭不必要的功能</p></li>
+</ol>
+</section>
+<section id="id21">
+<h3>存档无法保存<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p><strong>可能原因</strong>:</p>
+<ul class="simple">
+<li><p>TF 卡空间不足</p></li>
+<li><p>TF 卡写保护</p></li>
+<li><p>游戏不支持存档</p></li>
+</ul>
+<p><strong>解决方法</strong>:</p>
+<ol class="arabic simple">
+<li><p>检查 TF 卡剩余空间</p></li>
+<li><p>确认 TF 卡没有写保护</p></li>
+<li><p>查看游戏是否支持存档功能</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>如果遇到其他问题,请参考 <a class="reference internal" href="../troubleshooting/troubleshooting.html"><span class="doc">故障排除</span></a> 章节。</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="settings.html" class="btn btn-neutral float-left" title="设置调节说明" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../advanced/advanced.html" class="btn btn-neutral float-right" title="高级功能" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, LAFVIN。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

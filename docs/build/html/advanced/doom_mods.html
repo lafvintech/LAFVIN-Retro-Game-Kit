@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOOM 模组 &mdash; LAFVIN Retro Game Kit  文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="故障排除" href="../troubleshooting/troubleshooting.html" />
+    <link rel="prev" title="模拟器配置" href="emulator_config.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+    <a href="https://www.lafvintech.com/" class="logo-link">
+        <img src="https://lafvintech.com/cdn/shop/files/logo_V2_300x@2x.png?v=1642487152" class="logo" alt="Logo"/>
+    </a>
+    
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">产品信息</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_this_kit.html">产品介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../component_list.html">组件清单</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../assembly.html">组装教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tfcard/tfcard.html">TF 卡准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/firmware.html">固件烧录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tutorial/tutorial.html">Tutorial</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用指南</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage/usage.html">使用说明</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="advanced.html">高级功能</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#id2">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#id3">功能列表</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="advanced.html#id5">快速导航</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="emulator_config.html">模拟器配置</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">DOOM 模组</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">DOOM 模组概述</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wad">什么是 WAD 文件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">支持的 DOOM 版本</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">添加 WAD 文件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">运行 DOOM 游戏</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">DOOM 游戏控制</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">推荐的 DOOM 模组</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">DOOM 设置选项</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">问题排查</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">获取更多模组</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id29">相关章节</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#id6">相关章节</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">故障排除</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">故障排除</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LAFVIN Retro Game Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="advanced.html">高级功能</a></li>
+      <li class="breadcrumb-item active">DOOM 模组</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/advanced/doom_mods.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="doom">
+<span id="doom-mods"></span><h1>DOOM 模组<a class="headerlink" href="#doom" title="Link to this heading"></a></h1>
+<p>本章节介绍如何使用 LAFVIN Retro Game Kit 的 DOOM 模组功能,添加自定义 WAD 文件,体验更多 DOOM 内容。</p>
+<section id="id1">
+<h2>DOOM 模组概述<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>LAFVIN Retro Game Kit 内置了 DOOM 模拟器,支持运行原版 DOOM 以及各种社区制作的 DOOM 模组(MOD)。通过添加自定义 WAD 文件,您可以体验数千个由玩家社区创作的关卡、游戏模式和完全改造的游戏。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>DOOM 是 id Software 开发的经典第一人称射击游戏。本系统使用开源的 DOOM 引擎实现。</p>
+</div>
+</section>
+<section id="wad">
+<h2>什么是 WAD 文件<a class="headerlink" href="#wad" title="Link to this heading"></a></h2>
+<p>WAD (Where’s All the Data) 文件是 DOOM 游戏的数据文件格式,包含游戏的所有资源:</p>
+<ul class="simple">
+<li><p><strong>IWAD (Internal WAD)</strong>: 完整的游戏数据文件,如 DOOM、DOOM II 的主文件</p></li>
+<li><p><strong>PWAD (Patch WAD)</strong>: 补丁或模组文件,用于修改或扩展游戏内容</p></li>
+</ul>
+<section id="id2">
+<h3>WAD 文件类型<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>类型</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>IWAD</p></td>
+<td><p>完整游戏文件(如 doom.wad, doom2.wad)</p></td>
+</tr>
+<tr class="row-odd"><td><p>PWAD</p></td>
+<td><p>模组文件(新关卡、材质、音效等)</p></td>
+</tr>
+<tr class="row-even"><td><p>TC (Total Conversion)</p></td>
+<td><p>完全改造模组(全新的游戏体验)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id3">
+<h2>支持的 DOOM 版本<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>系统支持以下 DOOM 游戏版本:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>游戏</p></th>
+<th class="head"><p>IWAD 文件名</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>DOOM (Shareware)</p></td>
+<td><p>doom1.wad</p></td>
+<td><p>免费版本,包含第一章</p></td>
+</tr>
+<tr class="row-odd"><td><p>The Ultimate DOOM</p></td>
+<td><p>doom.wad</p></td>
+<td><p>完整版,包含 4 章</p></td>
+</tr>
+<tr class="row-even"><td><p>DOOM II</p></td>
+<td><p>doom2.wad</p></td>
+<td><p>DOOM 续作</p></td>
+</tr>
+<tr class="row-odd"><td><p>Final DOOM: TNT</p></td>
+<td><p>tnt.wad</p></td>
+<td><p>Final DOOM 扩展包</p></td>
+</tr>
+<tr class="row-even"><td><p>Final DOOM: Plutonia</p></td>
+<td><p>plutonia.wad</p></td>
+<td><p>Final DOOM 扩展包</p></td>
+</tr>
+<tr class="row-odd"><td><p>FreeDoom</p></td>
+<td><p>freedoom1.wad, freedoom2.wad</p></td>
+<td><p>开源免费替代版本</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>如果您没有原版 DOOM 游戏,可以使用免费的 FreeDoom 作为替代。</p>
+</div>
+</section>
+<section id="id4">
+<h2>添加 WAD 文件<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<section id="id5">
+<h3>准备 WAD 文件<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>获取 WAD 文件</strong></p>
+<ul class="simple">
+<li><p>从合法渠道购买原版 DOOM 游戏</p></li>
+<li><p>下载免费的 FreeDoom</p></li>
+<li><p>从 DOOM 社区网站下载模组(如 Doomworld、idgames Archive)</p></li>
+</ul>
+</li>
+<li><p><strong>检查文件格式</strong></p>
+<ul class="simple">
+<li><p>确保文件扩展名为 <cite>.wad</cite></p></li>
+<li><p>文件名使用英文和数字,避免特殊字符</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>请确保您拥有 WAD 文件的合法使用权。未经授权使用商业游戏文件可能违反版权法。</p>
+</div>
+</section>
+<section id="wad-tf">
+<h3>将 WAD 文件复制到 TF 卡<a class="headerlink" href="#wad-tf" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>将 TF 卡从游戏机中取出</p></li>
+<li><p>将 TF 卡插入电脑的读卡器</p></li>
+<li><p>打开 TF 卡,找到 <cite>DOOM</cite> 文件夹</p></li>
+<li><p>将 WAD 文件复制到 <cite>DOOM</cite> 文件夹中</p></li>
+</ol>
+<p>文件夹结构示例:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>/DOOM/
+├── doom.wad              # IWAD: The Ultimate DOOM
+├── doom2.wad             # IWAD: DOOM II
+├── freedoom1.wad         # IWAD: FreeDoom Phase 1
+├── freedoom2.wad         # IWAD: FreeDoom Phase 2
+├── btsx_e1.wad           # PWAD: Back to Saturn X Episode 1
+├── valiant.wad           # PWAD: Valiant
+└── ancient_aliens.wad    # PWAD: Ancient Aliens
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>IWAD 文件是必需的。PWAD 模组需要配合 IWAD 文件使用。</p>
+</div>
+</section>
+</section>
+<section id="id6">
+<h2>运行 DOOM 游戏<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="id7">
+<h3>启动 DOOM<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>将 TF 卡插回游戏机</p></li>
+<li><p>开机后进入主菜单</p></li>
+<li><p>选择 <strong>DOOM</strong> 图标</p></li>
+<li><p>系统会自动检测 DOOM 文件夹中的 WAD 文件</p></li>
+</ol>
+</section>
+<section id="id8">
+<h3>选择 WAD 文件<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<p>如果 DOOM 文件夹中有多个 WAD 文件:</p>
+<ol class="arabic simple">
+<li><p>系统会显示 WAD 文件列表</p></li>
+<li><p>使用方向键选择要运行的 WAD 文件</p></li>
+<li><p>按 <strong>A</strong> 键确认启动</p></li>
+</ol>
+<a class="reference internal image-reference" href="img/usage/doom_wad_list.jpg"><img alt="DOOM WAD 文件列表" class="align-center" src="img/usage/doom_wad_list.jpg" style="width: 600px;" /></a>
+<p>[占位符:需要 DOOM WAD 文件选择界面的截图]</p>
+</section>
+<section id="pwad">
+<h3>加载 PWAD 模组<a class="headerlink" href="#pwad" title="Link to this heading"></a></h3>
+<p>要运行 PWAD 模组:</p>
+<ol class="arabic simple">
+<li><p>选择基础 IWAD 文件(如 doom2.wad)</p></li>
+<li><p>系统会询问是否加载 PWAD</p></li>
+<li><p>选择要加载的 PWAD 文件</p></li>
+<li><p>按 <strong>Start</strong> 键开始游戏</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>某些 PWAD 需要特定的 IWAD 才能运行。请查看模组说明。</p>
+</div>
+</section>
+</section>
+<section id="id9">
+<h2>DOOM 游戏控制<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<section id="id10">
+<h3>基本操作<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>按键</p></th>
+<th class="head"><p>功能</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>方向键</p></td>
+<td><p>前进/后退/左转/右转</p></td>
+</tr>
+<tr class="row-odd"><td><p>A 键</p></td>
+<td><p>开火</p></td>
+</tr>
+<tr class="row-even"><td><p>B 键</p></td>
+<td><p>使用/开门/激活开关</p></td>
+</tr>
+<tr class="row-odd"><td><p>Start 键</p></td>
+<td><p>暂停菜单</p></td>
+</tr>
+<tr class="row-even"><td><p>Select 键</p></td>
+<td><p>切换武器</p></td>
+</tr>
+<tr class="row-odd"><td><p>Menu 键</p></td>
+<td><p>快速菜单</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id11">
+<h3>高级操作<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>按键组合</p></th>
+<th class="head"><p>功能</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Select + 上/下</p></td>
+<td><p>快速切换武器</p></td>
+</tr>
+<tr class="row-odd"><td><p>B 键(长按)</p></td>
+<td><p>奔跑</p></td>
+</tr>
+<tr class="row-even"><td><p>Menu + A</p></td>
+<td><p>快速保存</p></td>
+</tr>
+<tr class="row-odd"><td><p>Menu + B</p></td>
+<td><p>快速加载</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>在设置中可以自定义 DOOM 的按键映射,包括启用”自动奔跑”等选项。</p>
+</div>
+</section>
+</section>
+<section id="id12">
+<h2>推荐的 DOOM 模组<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<section id="id13">
+<h3>新手友好模组<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>以下模组适合初次体验 DOOM 模组的玩家:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>模组名称</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FreeDoom</p></td>
+<td><p>完全免费的 DOOM 替代品,适合入门</p></td>
+</tr>
+<tr class="row-odd"><td><p>DOOM: The Way id Did</p></td>
+<td><p>原版风格的新关卡</p></td>
+</tr>
+<tr class="row-even"><td><p>Eviternity</p></td>
+<td><p>高质量的 32 关卡包</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id14">
+<h3>经典模组<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<p>DOOM 社区的经典作品:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>模组名称</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Alien Vendetta</p></td>
+<td><p>经典的 32 关卡包</p></td>
+</tr>
+<tr class="row-odd"><td><p>Scythe 1 &amp; 2</p></td>
+<td><p>快节奏的关卡设计</p></td>
+</tr>
+<tr class="row-even"><td><p>Hell Revealed 1 &amp; 2</p></td>
+<td><p>高难度挑战</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id15">
+<h3>完全改造模组<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<p>这些模组提供全新的游戏体验:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>模组名称</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Brutal DOOM</p></td>
+<td><p>增强版 DOOM,更血腥的战斗</p></td>
+</tr>
+<tr class="row-odd"><td><p>Castlevania: Simon’s Destiny</p></td>
+<td><p>恶魔城主题的 DOOM 模组</p></td>
+</tr>
+<tr class="row-even"><td><p>Adventures of Square</p></td>
+<td><p>独特的方块主角冒险</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>某些大型模组可能对性能有较高要求。如果遇到卡顿,请尝试调整设置或使用较小的模组。</p>
+</div>
+</section>
+</section>
+<section id="id16">
+<h2>DOOM 设置选项<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
+<section id="id17">
+<h3>画面设置<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<p>在 DOOM 游戏中按 <strong>Menu</strong> 键,选择 <strong>Options</strong> &gt; <strong>Display</strong>:</p>
+<ul class="simple">
+<li><p><strong>分辨率</strong>: 调整游戏分辨率</p></li>
+<li><p><strong>全屏/窗口</strong>: 切换显示模式</p></li>
+<li><p><strong>视野角度 (FOV)</strong>: 调整视野范围(70-120 度)</p></li>
+<li><p><strong>亮度</strong>: 调整画面亮度</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>音频设置<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
+<p>选择 <strong>Options</strong> &gt; <strong>Sound</strong>:</p>
+<ul class="simple">
+<li><p><strong>音效音量</strong>: 调整游戏音效音量</p></li>
+<li><p><strong>音乐音量</strong>: 调整背景音乐音量</p></li>
+<li><p><strong>音乐格式</strong>: 选择 MIDI 或 OPL 音乐</p></li>
+</ul>
+</section>
+<section id="id19">
+<h3>游戏设置<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<p>选择 <strong>Options</strong> &gt; <strong>Gameplay</strong>:</p>
+<ul class="simple">
+<li><p><strong>难度</strong>: 选择游戏难度(I’m Too Young to Die ~ Nightmare)</p></li>
+<li><p><strong>自动瞄准</strong>: 启用或禁用垂直自动瞄准</p></li>
+<li><p><strong>自由视角</strong>: 启用鼠标视角(如果支持)</p></li>
+<li><p><strong>永久奔跑</strong>: 启用后默认为奔跑状态</p></li>
+</ul>
+</section>
+</section>
+<section id="id20">
+<h2>问题排查<a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
+<section id="id21">
+<h3>WAD 文件无法识别<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p><strong>症状</strong>: 系统无法识别或加载 WAD 文件</p>
+<p><strong>解决方法</strong>:</p>
+<ol class="arabic simple">
+<li><p>检查文件扩展名是否为 <a href="#id22"><span class="problematic" id="id23">`</span></a>.wad`(小写)</p></li>
+<li><p>确认文件没有损坏(尝试在电脑上验证)</p></li>
+<li><p>检查文件名是否包含特殊字符</p></li>
+<li><p>确保文件放在正确的 <cite>DOOM</cite> 文件夹中</p></li>
+</ol>
+</section>
+<section id="id24">
+<h3>PWAD 模组无法运行<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<p><strong>症状</strong>: PWAD 模组加载后游戏崩溃或显示错误</p>
+<p><strong>解决方法</strong>:</p>
+<ol class="arabic simple">
+<li><p>检查 PWAD 是否需要特定的 IWAD</p></li>
+<li><p>确认 PWAD 文件完整且未损坏</p></li>
+<li><p>尝试只加载 IWAD,不加载 PWAD</p></li>
+<li><p>查看模组说明文件,确认兼容性</p></li>
+</ol>
+</section>
+<section id="id25">
+<h3>游戏运行缓慢<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<p><strong>症状</strong>: DOOM 游戏帧率低或卡顿</p>
+<p><strong>解决方法</strong>:</p>
+<ol class="arabic simple">
+<li><p>降低游戏分辨率</p></li>
+<li><p>禁用某些视觉效果</p></li>
+<li><p>尝试使用较小的模组</p></li>
+<li><p>检查 TF 卡读取速度(建议使用 Class 10 或更高)</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>某些大型 TC 模组可能超出系统性能限制。</p>
+</div>
+</section>
+</section>
+<section id="id26">
+<h2>获取更多模组<a class="headerlink" href="#id26" title="Link to this heading"></a></h2>
+<section id="id27">
+<h3>推荐的模组资源网站<a class="headerlink" href="#id27" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Doomworld</strong>: <a class="reference external" href="https://www.doomworld.com/">https://www.doomworld.com/</a></p></li>
+<li><p><strong>idgames Archive</strong>: <a class="reference external" href="https://www.doomworld.com/idgames/">https://www.doomworld.com/idgames/</a></p></li>
+<li><p><strong>ModDB</strong>: <a class="reference external" href="https://www.moddb.com/games/doom">https://www.moddb.com/games/doom</a></p></li>
+<li><p><strong>ZDoom Forums</strong>: <a class="reference external" href="https://forum.zdoom.org/">https://forum.zdoom.org/</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>下载模组前请阅读模组说明,确认系统兼容性和所需的 IWAD。</p>
+</div>
+</section>
+<section id="id28">
+<h3>模组安装指南<a class="headerlink" href="#id28" title="Link to this heading"></a></h3>
+<p>大多数模组的安装步骤:</p>
+<ol class="arabic simple">
+<li><p>下载模组的 <cite>.wad</cite> 文件</p></li>
+<li><p>阅读模组附带的说明文件(通常是 <cite>.txt</cite> 文件)</p></li>
+<li><p>确认所需的 IWAD 版本</p></li>
+<li><p>将 <cite>.wad</cite> 文件复制到 TF 卡的 <cite>DOOM</cite> 文件夹</p></li>
+<li><p>在游戏中选择对应的 IWAD 和 PWAD</p></li>
+</ol>
+</section>
+</section>
+<section id="id29">
+<h2>相关章节<a class="headerlink" href="#id29" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="emulator_config.html"><span class="doc">模拟器配置</span></a> - 模拟器配置说明</p></li>
+<li><p><a class="reference internal" href="../tfcard/tfcard.html#tfcard"><span class="std std-ref">TF 卡文件结构</span></a> - TF 卡准备</p></li>
+<li><p><a class="reference internal" href="../troubleshooting/troubleshooting.html#troubleshooting"><span class="std std-ref">故障排除</span></a> - 常见问题解决</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>DOOM 社区非常活跃,每年都有大量优秀的新模组发布。定期访问社区网站可以发现更多精彩内容!</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="emulator_config.html" class="btn btn-neutral float-left" title="模拟器配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../troubleshooting/troubleshooting.html" class="btn btn-neutral float-right" title="故障排除" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, LAFVIN。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
