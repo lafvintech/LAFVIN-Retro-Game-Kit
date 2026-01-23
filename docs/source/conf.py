@@ -13,6 +13,7 @@ import time
 project = 'LAFVIN Retro Game Kit'
 copyright = f'{time.localtime().tm_year}, LAFVIN'
 author = 'LAFVIN'
+# 主要语言设置为中文，但文档内容包含中英双语
 language = 'zh_CN'
 source_encoding = 'utf-8'
 

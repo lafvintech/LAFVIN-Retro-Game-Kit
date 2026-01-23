@@ -1,81 +1,81 @@
 .. _firmware:
 
-================
-固件烧录
-================
-
-概述
-====
+=====================================
+固件烧录(基本ok,差一些图片和图片更换)
+======================================
 
 LAFVIN Retro Game Kit 使用开源固件,需要用户将固件烧录到 ESP32S3 主控模块才能正常工作。本章节将指导您完成固件的下载、烧录和验证过程。
 
 .. note::
    固件烧录是一次性操作,除非需要更新固件版本,否则无需重复烧录。
 
-什么是固件烧录?
-================
+在烧录之前需要先安装CP210X的驱动,可以参考这个章节 :ref:`.. _install_driver:` 
 
-固件是运行在 ESP32S3 芯片上的软件程序,它控制着游戏机的所有功能,包括:
+固件上传
+===============
+**如果你是windows系统,你可以根据下面的教程来烧录固件到esp32s3**
 
-- 游戏模拟器引擎
-- 显示屏驱动
-- 音频输出控制
-- 按键输入处理
-- TF 卡文件系统管理
-- 菜单系统和用户界面
+1. Double-click 代码文件夹中的flash download tools工具,open Flash Download Tools, then select the options as shown below:
 
-烧录固件就是将这个程序写入到 ESP32S3 的 Flash 存储器中的过程。
+.. list-table::
+   :widths: 50
+   :header-rows: 0
 
-准备工作
-========
+.. figure:: ../img/firmware/flashtool1.png
+   :width: 60%
 
-在开始烧录固件之前,请确保您已准备好以下物品:
+2. Follow these steps to upload the firmware:
 
-硬件准备
---------
+    A. Click the “Select File” button to choose your downloaded firmware file (.bin format)
+    
+    B. In the address input box after the bin file selection box, enter 0 or 0x0 (this means the firmware will be downloaded to the starting position of the development board’s memory)
+    
+    C. Select the COM port corresponding to ESP32-C6 from the port selection dropdown menu (you can check it in Windows Device Manager)
+    
+    D. Set the baud rate (we use 115200 here)
+    
+    E. Click the “START” button to begin downloading the firmware to the ESP32-C6 development board
 
-- ESP32S3N16R8 主控模块
-- Type-C 数据线(支持数据传输,不能只是充电线)
-- 电脑(Windows、macOS 或 Linux)
+.. image:: ../img/firmware/flashtool2.png
 
-软件准备
---------
+1. After the download is complete, press the RST button on the development board. The board will automatically restart and enter 模拟器选择界面
 
-- 固件文件(.bin 格式)
-- 烧录工具(esptool 或 ESP Flash Download Tool)
-- USB 驱动程序(部分系统需要)
+**如果你是MacOS用户,你可以参考下面的教程**
 
-.. warning::
-   请使用支持数据传输的 Type-C 线,仅支持充电的线缆无法进行固件烧录!
+1. 确保已经下载和解压固件到本地
 
-烧录流程
-========
+2. We have stored the bin files in the Firmware folder
 
-固件烧录的基本流程如下:
+.. image:: 项目在macos下文件夹的图片
 
-1. **下载固件** - 获取最新版本的固件文件
-2. **安装烧录工具** - 准备固件烧录工具
-3. **连接设备** - 将 ESP32S3 通过 Type-C 线连接到电脑
-4. **配置参数** - 设置烧录地址和参数
-5. **开始烧录** - 执行烧录操作
-6. **验证成功** - 确认固件烧录成功
+3. We need to prepare a Type-C to USB-A data cable to connect your Mac computer and the development board
 
-详细步骤
-========
+4. 使用打开`Flash Tool <https://espressif.github.io/esp-launchpad/>`_  (这个网站是乐鑫官方的在线烧录工具)
 
-.. toctree::
-   :maxdepth: 2
+.. image:: ../img/firmware/mac1.png
 
-   download
-   flash_tool
-   troubleshooting
+5. Click the Connect button at the top, and a window will pop up on the left side to select your device and connect
 
-快速导航
-========
+.. image:: ../img/firmware/mac2.png
 
-- :doc:`download` - 下载固件文件
-- :doc:`flash_tool` - 使用烧录工具
-- :doc:`troubleshooting` - 烧录问题排查
+6. After the connection is complete, you can see that the Connect button changes to Disconnect, indicating successful connection. We click the DIY button
 
-.. tip::
-   如果这是您第一次烧录固件,建议按照文档顺序逐步操作。如果遇到问题,请查看 :doc:`troubleshooting` 章节。
+.. image:: ../img/firmware/mac3.png
+
+7. Fill in 0 in the Flash Address field, and select Firmware in the Selected File section
+
+.. image:: ../img/firmware/mac4.png
+
+.. image:: ../img/firmware/mac5.png
+
+8. After selection is complete, click the Program button to start flashing
+
+.. image:: ../img/firmware/mac5-1.png
+
+.. image:: ../img/firmware/mac6.png
+
+9.  After flashing is complete, click the Reset Device button in the upper right corner to restart the device, and you will see the screen display normally
+
+.. image:: ../img/firmware/mac7.png
+
+.. image:: ../img/firmware/mac8.png

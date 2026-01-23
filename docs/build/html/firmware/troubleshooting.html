@@ -24,7 +24,7 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="Tutorial" href="../Tutorial/tutorial.html" />
-    <link rel="prev" title="使用烧录工具" href="flash_tool.html" /> 
+    <link rel="prev" title="固件烧录(全部重构)" href="firmware.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -54,15 +54,13 @@
 <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../assembly.html">组装教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assembly.html#quick-assembly">方式一：快速组装模式（使用扩展底板）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assembly.html#breadboard-assembly">方式二：面包板模式（完全自定义接线）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assembly.html#id17">通电前最后确认(两种方式通用)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tfcard/tfcard.html">TF 卡准备</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="firmware.html">固件烧录</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="firmware.html#id2">概述</a></li>
-<li class="toctree-l2"><a class="reference internal" href="firmware.html#id3">什么是固件烧录?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="firmware.html#id4">准备工作</a></li>
-<li class="toctree-l2"><a class="reference internal" href="firmware.html#id7">烧录流程</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="firmware.html#id8">详细步骤</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="download.html">下载固件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flash_tool.html">使用烧录工具</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="firmware.html">固件烧录(全部重构)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="firmware.html#id2">固件上传</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="firmware.html#id3">详细步骤</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">烧录问题排查</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id2">常见问题快速索引</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#com">问题 1: 找不到 COM 端口</a></li>
@@ -80,7 +78,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="firmware.html#id9">快速导航</a></li>
+<li class="toctree-l2"><a class="reference internal" href="firmware.html#id4">快速导航</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Tutorial/tutorial.html">Tutorial</a></li>
@@ -109,7 +107,7 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="firmware.html">固件烧录</a></li>
+          <li class="breadcrumb-item"><a href="firmware.html">固件烧录(全部重构)</a></li>
       <li class="breadcrumb-item active">烧录问题排查</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/firmware/troubleshooting.rst.txt" rel="nofollow"> 查看页面源码</a>
@@ -140,7 +138,6 @@
 <h3>症状<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>设备管理器中没有显示 COM 端口</p></li>
-<li><p>esptool 提示找不到设备</p></li>
 <li><p>Flash Download Tool 的 COM 下拉列表为空</p></li>
 </ul>
 </section>
@@ -595,7 +592,7 @@ esptool.py<span class="w"> </span>--chip<span class="w"> </span>esp32s3<span cla
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="flash_tool.html" class="btn btn-neutral float-left" title="使用烧录工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="firmware.html" class="btn btn-neutral float-left" title="固件烧录(全部重构)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="../Tutorial/tutorial.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

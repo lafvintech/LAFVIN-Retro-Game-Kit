@@ -25,7 +25,6 @@
 ----
 
 - 设备管理器中没有显示 COM 端口
-- esptool 提示找不到设备
 - Flash Download Tool 的 COM 下拉列表为空
 
 可能原因和解决方法

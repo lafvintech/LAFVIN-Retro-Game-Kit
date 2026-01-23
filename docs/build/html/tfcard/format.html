@@ -22,9 +22,7 @@
       <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="文件夹结构和文件格式" href="file_structure.html" />
-    <link rel="prev" title="TF 卡准备" href="tfcard.html" /> 
+    <link rel="search" title="搜索" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,28 +50,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../component_list.html">组件清单</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../assembly.html">组装教程</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="tfcard.html">TF 卡准备</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tfcard.html#id1">概述</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tfcard.html#id2">容量要求</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="tfcard.html#id5">准备步骤</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">格式化 TF 卡</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">概述</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fat32">为什么需要 FAT32?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">格式化方法</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">验证格式化</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id13">常见问题</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id17">下一步</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="file_structure.html">文件夹结构和文件格式</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="tfcard.html#id6">常见问题</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/firmware.html">固件烧录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tfcard.html">TF 卡准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/firmware.html">固件烧录(全部重构)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Tutorial/tutorial.html">Tutorial</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用指南</span></p>
@@ -100,7 +80,6 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="tfcard.html">TF 卡准备</a></li>
       <li class="breadcrumb-item active">格式化 TF 卡</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tfcard/format.rst.txt" rel="nofollow"> 查看页面源码</a>
@@ -140,7 +119,7 @@
 <section id="windows">
 <h3>Windows 系统<a class="headerlink" href="#windows" title="Link to this heading"></a></h3>
 <section id="id3">
-<h4>方法一:使用文件资源管理器(推荐)<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<h4>使用文件资源管理器(推荐)<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p>将 TF 卡插入读卡器,连接到电脑</p></li>
 <li><p>打开”此电脑”或”我的电脑”</p></li>
@@ -149,7 +128,7 @@
 <li><p>在格式化窗口中设置:</p>
 <ul class="simple">
 <li><p><strong>文件系统</strong>: 选择 <strong>FAT32</strong></p></li>
-<li><p><strong>分配单元大小</strong>: 默认(或选择 32KB)</p></li>
+<li><p><strong>分配单元大小</strong>: 默认</p></li>
 <li><p><strong>卷标</strong>: 可选,如”RETROGAME”</p></li>
 <li><p><strong>快速格式化</strong>: 勾选(推荐)</p></li>
 </ul>
@@ -160,47 +139,11 @@
 <a class="reference internal image-reference" href="img/usage/format_windows.jpg"><img alt="Windows 格式化界面" class="align-center" src="img/usage/format_windows.jpg" style="width: 500px;" /></a>
 <p>[占位符:需要 Windows 格式化对话框的截图]</p>
 </section>
-<section id="id4">
-<h4>方法二:使用命令提示符<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
-<p>如果 TF 卡容量大于 32GB,Windows 文件资源管理器可能不提供 FAT32 选项,可以使用命令行:</p>
-<ol class="arabic">
-<li><p>按 <code class="docutils literal notranslate"><span class="pre">Win</span> <span class="pre">+</span> <span class="pre">X</span></code>,选择”命令提示符(管理员)”或”Windows PowerShell(管理员)”</p></li>
-<li><p>输入以下命令(假设 TF 卡盘符为 E:):</p>
-<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span>format E: /FS:FAT32 /Q
-</pre></div>
-</div>
-</li>
-<li><p>按回车键,确认操作</p></li>
-<li><p>等待格式化完成</p></li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">警告</p>
-<p>请确认盘符正确,格式化错误的磁盘会导致数据丢失!</p>
-</div>
-</section>
-<section id="id5">
-<h4>方法三:使用第三方工具<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
-<p>对于大容量 TF 卡(64GB 及以上),推荐使用第三方工具:</p>
-<p><strong>推荐工具</strong>:</p>
-<ul class="simple">
-<li><p><strong>Rufus</strong>: <a class="reference external" href="https://rufus.ie/">https://rufus.ie/</a></p></li>
-<li><p><strong>FAT32 Format</strong>: <a class="reference external" href="http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm">http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm</a></p></li>
-<li><p><strong>MiniTool Partition Wizard</strong>: <a class="reference external" href="https://www.partitionwizard.com/">https://www.partitionwizard.com/</a></p></li>
-</ul>
-<p>使用 Rufus 格式化步骤:</p>
-<ol class="arabic simple">
-<li><p>下载并运行 Rufus</p></li>
-<li><p>在”设备”下拉菜单中选择 TF 卡</p></li>
-<li><p>在”文件系统”中选择 <strong>FAT32</strong></p></li>
-<li><p>点击”开始”按钮</p></li>
-<li><p>等待格式化完成</p></li>
-</ol>
-</section>
 </section>
 <section id="macos">
 <h3>macOS 系统<a class="headerlink" href="#macos" title="Link to this heading"></a></h3>
-<section id="id6">
-<h4>方法一:使用磁盘工具(推荐)<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
+<section id="id4">
+<h4>方法一:使用磁盘工具(推荐)<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p>将 TF 卡插入读卡器,连接到 Mac</p></li>
 <li><p>打开”应用程序” → “实用工具” → “磁盘工具”</p></li>
@@ -219,8 +162,8 @@
 <a class="reference internal image-reference" href="img/usage/format_macos.jpg"><img alt="macOS 磁盘工具界面" class="align-center" src="img/usage/format_macos.jpg" style="width: 600px;" /></a>
 <p>[占位符:需要 macOS 磁盘工具的截图]</p>
 </section>
-<section id="id7">
-<h4>方法二:使用终端命令<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
+<section id="id5">
+<h4>方法二:使用终端命令<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
 <ol class="arabic">
 <li><p>打开”终端”应用</p></li>
 <li><p>查看 TF 卡的设备名称:</p>
@@ -265,8 +208,8 @@
 <li><p>等待完成</p></li>
 </ol>
 </section>
-<section id="id8">
-<h4>方法二:使用命令行<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
+<section id="id6">
+<h4>方法二:使用命令行<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <ol class="arabic">
 <li><p>查看 TF 卡的设备名称:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>lsblk
@@ -292,26 +235,26 @@
 </section>
 </section>
 </section>
-<section id="id9">
-<h2>验证格式化<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<section id="id7">
+<h2>验证格式化<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>格式化完成后,请验证 TF 卡是否正确格式化:</p>
-<section id="id10">
-<h3>Windows 系统<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<section id="id8">
+<h3>Windows 系统<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>右键点击 TF 卡盘符,选择”属性”</p></li>
 <li><p>在”常规”选项卡中,查看”文件系统”是否显示为 <strong>FAT32</strong></p></li>
 </ol>
 </section>
-<section id="id11">
-<h3>macOS 系统<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<section id="id9">
+<h3>macOS 系统<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>打开”磁盘工具”</p></li>
 <li><p>选择 TF 卡</p></li>
 <li><p>查看右侧信息面板,确认”格式”为 <strong>MS-DOS (FAT32)</strong></p></li>
 </ol>
 </section>
-<section id="id12">
-<h3>Linux 系统<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<section id="id10">
+<h3>Linux 系统<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <p>使用以下命令查看文件系统类型:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>file<span class="w"> </span>-s<span class="w"> </span>/dev/sdb1
 </pre></div>
@@ -319,16 +262,16 @@
 <p>输出应包含 “FAT (32 bit)”。</p>
 </section>
 </section>
-<section id="id13">
-<h2>常见问题<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
-<section id="id14">
-<h3>无法格式化为 FAT32?<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<section id="id11">
+<h2>常见问题<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
+<section id="id12">
+<h3>无法格式化为 FAT32?<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <p><strong>问题</strong>: Windows 文件资源管理器不提供 FAT32 选项</p>
 <p><strong>原因</strong>: Windows 对大于 32GB 的磁盘不提供 FAT32 格式化选项</p>
 <p><strong>解决方法</strong>: 使用第三方工具(如 Rufus)或命令行方法</p>
 </section>
-<section id="id15">
-<h3>格式化失败?<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<section id="id13">
+<h3>格式化失败?<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <p><strong>可能原因</strong>:</p>
 <ol class="arabic simple">
 <li><p>TF 卡有写保护,请检查读卡器上的写保护开关</p></li>
@@ -336,8 +279,8 @@
 <li><p>读卡器故障,尝试更换读卡器</p></li>
 </ol>
 </section>
-<section id="id16">
-<h3>格式化后容量变小?<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<section id="id14">
+<h3>格式化后容量变小?<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
 <p><strong>原因</strong>: TF 卡可能有多个分区,或者有坏块</p>
 <p><strong>解决方法</strong>:</p>
 <ol class="arabic simple">
@@ -347,8 +290,8 @@
 </ol>
 </section>
 </section>
-<section id="id17">
-<h2>下一步<a class="headerlink" href="#id17" title="Link to this heading"></a></h2>
+<section id="id15">
+<h2>下一步<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
 <p>格式化完成后,请继续阅读 <a class="reference internal" href="file_structure.html"><span class="doc">文件夹结构和文件格式</span></a> 了解如何准备游戏文件。</p>
 </section>
 </section>
@@ -356,10 +299,7 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="tfcard.html" class="btn btn-neutral float-left" title="TF 卡准备" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="file_structure.html" class="btn btn-neutral float-right" title="文件夹结构和文件格式" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

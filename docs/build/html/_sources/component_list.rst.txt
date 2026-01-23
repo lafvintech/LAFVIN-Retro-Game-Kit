@@ -1,6 +1,6 @@
 .. _component-list:
 
-组件清单
+组件清单(OK,缺图片)
 ============================
 
 套件组件总览
@@ -27,61 +27,69 @@
      - 数量
      - 说明
    * - 1
-     - ESP32S3N16R8 主控模块
+     - ESP32S3模块 (确认)
      - 1
      - 主控芯片,16MB Flash + 8MB PSRAM
    * - 2
-     - LAFVIN TFCard 模块
+     - LAFVIN TFCard Module (确认)
      - 1
      - TF 卡读取模块,用于存储游戏文件
    * - 3
-     - LAFVIN 功放模块
+     - LAFVIN Amplifier Module (确认)
      - 1
      - 音频输出模块,驱动扬声器
    * - 4
-     - LAFVIN Retro game 扩展底板
+     - LAFVIN Retro Game Hub (确认)
      - 1
      - 专用扩展板,简化连接
    * - 5
-     - 2.8 英寸 TFT 显示屏
+     - 2.4 Inch TFT-SPI Screen (确认)
      - 1
      - 彩色显示屏,分辨率 320x240
    * - 6
-     - 小按钮(6x6mm)
+     - Button(6x6mm) (确认)
      - 10
      - 游戏控制按键(方向键、功能键等)
    * - 7
-     - 大按钮(12x12mm)
+     - Button(12x12mm) (确认)
      - 4
-     - 主要功能按键(A、B、Start、Select)
+     - 面包板AB按键
    * - 8
-     - 按钮帽
+     - Button Cap (确认)
      - 4
      - 大按钮的按键帽,提升手感
    * - 9
-     - 280 面包板
+     - 830 面包板 (确认)
      - 2
-     - 用于组装电路,无需焊接
+     - 用于组装电路
    * - 10
-     - 硬质跳线
+     - Jumper Wires Box (确认)
      - 若干
      - 固定长度跳线,用于模块连接
    * - 11
-     - 软质公对公跳线
+     - 65 Jumper Wire (确认)
      - 若干
      - 灵活跳线,用于按键连接
    * - 12
-     - Type-C 数据线
+     - Type C Cable (确认)
      - 1
      - 用于供电和固件烧录
    * - 13
-     - 扬声器
+     - 8Ω2W Speaker (确认)
      - 1
      - 音频输出设备
    * - 14
-     - TF 卡(可选)
+     - Memory Card (确认)
      - 1
      - 用于存储游戏 ROM 文件
+   * - 15
+     - Memory Card Reader (确认)
+     - 1
+     - 用于存储游戏 ROM 文件
+   * - 16
+     - M2x4mm Screw Set (确认)
+     - 2
+     - includes screws, pillars & nuts
 
 主要组件详细说明
 ----------------------------
@@ -89,12 +97,9 @@
 ESP32S3N16R8 主控模块
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/esp32s3.jpg
-   :alt: ESP32S3N16R8 主控模块
+.. image:: ./img/components/esp32s3.png
    :align: center
-   :width: 400px
-
-[占位符:ESP32S3 主控模块图片]
+   :width: 150px
 
 **主要特性:**
 
@@ -111,7 +116,6 @@ LAFVIN TFCard 模块
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/tfcard_module.jpg
-   :alt: TFCard 模块
    :align: center
    :width: 400px
 
@@ -130,7 +134,6 @@ LAFVIN 功放模块
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/amplifier.jpg
-   :alt: 功放模块
    :align: center
    :width: 400px
 
@@ -145,11 +148,10 @@ LAFVIN 功放模块
 
 **作用:** 放大音频信号并驱动扬声器,提供游戏音效和背景音乐输出。
 
-2.8 英寸 TFT 显示屏
+2.4 英寸 TFT 显示屏
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/tft_screen.jpg
-   :alt: TFT 显示屏
    :align: center
    :width: 400px
 
@@ -157,7 +159,7 @@ LAFVIN 功放模块
 
 **主要特性:**
 
-- 尺寸: 2.8 英寸
+- 尺寸: 2.4 英寸
 - 分辨率: 320x240 像素
 - 彩色显示,支持 65K 色
 - SPI 接口
@@ -169,7 +171,6 @@ LAFVIN Retro game 扩展底板
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/extension_board.jpg
-   :alt: 扩展底板
    :align: center
    :width: 400px
 
@@ -187,8 +188,7 @@ LAFVIN Retro game 扩展底板
 按键组件
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/buttons.jpg
-   :alt: 按键组件
+.. image:: img/components/button.png
    :align: center
    :width: 400px
 
@@ -197,13 +197,13 @@ LAFVIN Retro game 扩展底板
 **小按钮 (6x6mm):**
 
 - 数量: 10 个
-- 用途: 方向键(上、下、左、右)、Menu、Option 等功能键
+- 用途: 用于面包板搭建方向键(上、下、左、右)、Menu、Option、Start、Select 等功能键
 - 轻触式按键,手感清脆
 
 **大按钮 (12x12mm):**
 
 - 数量: 4 个
-- 用途: A、B、Start、Select 主要游戏按键
+- 用途: 用于面包板搭建A、B按键
 - 配有按键帽,提升操作手感
 
 **作用:** 提供用户输入接口,控制游戏角色和系统菜单。
@@ -231,56 +231,6 @@ LAFVIN Retro game 扩展底板
 ----------------------------
 
 收到套件后,请按照以下清单检查组件是否齐全:
-
-.. list-table::
-   :header-rows: 1
-   :widths: 60 20 20
-
-   * - 组件
-     - 数量
-     - 状态
-   * - ESP32S3N16R8 主控模块
-     - 1
-     - ☐
-   * - LAFVIN TFCard 模块
-     - 1
-     - ☐
-   * - LAFVIN 功放模块
-     - 1
-     - ☐
-   * - LAFVIN Retro game 扩展底板
-     - 1
-     - ☐
-   * - 2.8 英寸 TFT 显示屏
-     - 1
-     - ☐
-   * - 小按钮(6x6mm)
-     - 10
-     - ☐
-   * - 大按钮(12x12mm)
-     - 4
-     - ☐
-   * - 按钮帽
-     - 4
-     - ☐
-   * - 280 面包板
-     - 2
-     - ☐
-   * - 硬质跳线
-     - 若干
-     - ☐
-   * - 软质公对公跳线
-     - 若干
-     - ☐
-   * - Type-C 数据线
-     - 1
-     - ☐
-   * - 扬声器
-     - 1
-     - ☐
-   * - TF 卡(可选)
-     - 1
-     - ☐
 
 .. tip::
    如发现组件缺失或损坏,请及时联系售后服务。

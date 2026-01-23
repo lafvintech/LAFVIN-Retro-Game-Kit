@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="开机和供电" href="power_on.html" />
-    <link rel="prev" title="6.Testing and Verification" href="../Tutorial/6.testing.html" /> 
+    <link rel="next" title="高级功能" href="../advanced/advanced.html" />
+    <link rel="prev" title="TF 卡准备" href="../tfcard.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,42 +48,30 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">产品信息</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../about_this_kit.html">产品介绍</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../component_list.html">组件清单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_this_kit.html">产品介绍(OK,缺图片)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../component_list.html">组件清单(OK,缺图片)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../download_code.html">下载项目所需的软件代码(ok,缺图片)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../assembly.html">组装教程</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tfcard/tfcard.html">TF 卡准备</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/firmware.html">固件烧录</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Tutorial/tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware.html">固件上传</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tfcard.html">TF 卡准备</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">使用指南</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">使用说明</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">概述</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id3">主要功能</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">快速开始</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">使用流程</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">详细内容</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="power_on.html">开机和供电</a></li>
-<li class="toctree-l3"><a class="reference internal" href="buttons.html">按键说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="menu.html">菜单系统说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="settings.html">设置调节说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="emulators.html">模拟器说明</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">常见问题</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">下一步</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">快速开始</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">使用流程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">常见问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">下一步</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/advanced.html">高级功能</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">故障排除</span></p>
+<p class="caption" role="heading"><span class="caption-text">附录</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">故障排除</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendix/appendix.html">Appendix</a></li>
 </ul>
 
         </div>
@@ -112,120 +100,58 @@
              
   <section id="usage">
 <span id="id1"></span><h1>使用说明<a class="headerlink" href="#usage" title="Link to this heading"></a></h1>
-<p>欢迎使用 LAFVIN Retro Game Kit!本章节将指导您如何使用游戏机,包括开机、按键操作、菜单系统、设置调节和模拟器使用。</p>
+<p>欢迎使用 LAFVIN Retro Game Kit!本章节将指导您如何使用游戏机,包括通电开机、按键操作、菜单系统、设置调节和模拟器使用。</p>
 <section id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机,支持多种经典游戏平台。通过 Type-C 接口供电,使用 2.8 英寸 TFT 屏幕显示,配备完整的游戏按键和音频输出。</p>
-<section id="id3">
-<h3>主要功能<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><strong>多平台支持</strong>: 支持 NES、SNES、GB、GBC、SMS、GG、MD、PCE、LYNX、DOOM 等多个游戏平台</p></li>
-<li><p><strong>便捷操作</strong>: 直观的按键布局和菜单系统</p></li>
-<li><p><strong>灵活设置</strong>: 可调节音量、亮度、游戏速度和界面语言</p></li>
-<li><p><strong>TF 卡存储</strong>: 支持大容量 TF 卡,可存储大量游戏</p></li>
-<li><p><strong>即插即用</strong>: Type-C 供电,无需复杂设置</p></li>
-</ul>
-</section>
-</section>
-<section id="id4">
-<h2>快速开始<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<h2>快速开始<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
-<li><p><strong>供电开机</strong>: 使用 Type-C 线连接电源,详见 <a class="reference internal" href="power_on.html"><span class="doc">开机和供电</span></a></p></li>
-<li><p><strong>了解按键</strong>: 熟悉游戏控制按键和系统功能按键,详见 <a class="reference internal" href="buttons.html"><span class="doc">按键说明</span></a></p></li>
-<li><p><strong>使用菜单</strong>: 学习如何浏览和选择游戏,详见 <a class="reference internal" href="menu.html"><span class="doc">菜单系统说明</span></a></p></li>
-<li><p><strong>调节设置</strong>: 根据需要调整音量、亮度等设置,详见 <a class="reference internal" href="settings.html"><span class="doc">设置调节说明</span></a></p></li>
-<li><p><strong>选择模拟器</strong>: 了解各个模拟器的使用方法,详见 <a class="reference internal" href="emulators.html"><span class="doc">模拟器说明</span></a></p></li>
+<li><p><strong>供电开机</strong>: 使用 Type-C 线连接电源适配器（建议 5V/2A 或更高规格）</p></li>
+<li><p><strong>了解按键</strong>:</p>
+<ul class="simple">
+<li><p>左侧：方向键（D-PAD）- 上下左右移动</p></li>
+<li><p>右侧：A/B 按键 - 确认/取消、跳跃/攻击</p></li>
+<li><p>中间：Select/Start 按键 - 选择/开始游戏</p></li>
+<li><p>顶部：Menu/Option 按键 - 系统菜单/游戏设置</p></li>
+</ul>
+</li>
+<li><p><strong>使用菜单</strong>: 开机后自动进入启动器界面，使用方向键切换模拟器平台，按 A 键确认选择</p></li>
+<li><p><strong>调节设置</strong>:</p>
+<ul class="simple">
+<li><p>Option 按键：调节系统亮度、音量、时区、字体调节游戏速度等设置</p></li>
+<li><p>Menu 按键：游戏中调出菜单，进行存档、读档、退出游戏等操作</p></li>
+</ul>
+</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>首次使用前,请确保已完成硬件组装和固件烧录,并准备好 TF 卡。</p>
 </div>
 </section>
-<section id="id5">
-<h2>使用流程<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="id3">
+<h2>使用流程<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>基本使用流程如下:</p>
 <ol class="arabic simple">
 <li><p>连接 Type-C 电源线</p></li>
-<li><p>系统自动开机并显示主菜单</p></li>
-<li><p>使用方向键浏览游戏列表</p></li>
-<li><p>按 A 键选择游戏</p></li>
+<li><p>系统自动开机并显示启动器</p></li>
+<li><p>进入对应平台后选择游戏,使用A进入游戏</p></li>
 <li><p>游戏运行后使用游戏按键进行操作</p></li>
-<li><p>按 Menu 键可返回主菜单或调整设置</p></li>
+<li><p>按 Menu 键可返回主菜单或存档</p></li>
 </ol>
 </section>
-<section id="id6">
-<h2>详细内容<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="power_on.html">开机和供电</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="power_on.html#id2">供电方式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="power_on.html#id7">开机步骤</a></li>
-<li class="toctree-l2"><a class="reference internal" href="power_on.html#id14">关机方法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="power_on.html#id19">电源管理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="power_on.html#id22">故障排查</a></li>
-<li class="toctree-l2"><a class="reference internal" href="power_on.html#id26">下一步</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="buttons.html">按键说明</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="buttons.html#id2">按键布局</a></li>
-<li class="toctree-l2"><a class="reference internal" href="buttons.html#id3">按键功能</a></li>
-<li class="toctree-l2"><a class="reference internal" href="buttons.html#id6">按键组合</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="menu.html">菜单系统说明</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="menu.html#id2">菜单概述</a></li>
-<li class="toctree-l2"><a class="reference internal" href="menu.html#id3">主菜单界面</a></li>
-<li class="toctree-l2"><a class="reference internal" href="menu.html#id4">菜单导航</a></li>
-<li class="toctree-l2"><a class="reference internal" href="menu.html#id6">游戏库浏览</a></li>
-<li class="toctree-l2"><a class="reference internal" href="menu.html#id9">游戏中菜单</a></li>
-<li class="toctree-l2"><a class="reference internal" href="menu.html#id11">快速操作</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="settings.html">设置调节说明</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="settings.html#id2">设置菜单</a></li>
-<li class="toctree-l2"><a class="reference internal" href="settings.html#id3">音量调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="settings.html#id6">亮度调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="settings.html#id9">游戏速度调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="settings.html#id11">语言切换</a></li>
-<li class="toctree-l2"><a class="reference internal" href="settings.html#id14">其他设置选项</a></li>
-<li class="toctree-l2"><a class="reference internal" href="settings.html#id18">恢复默认设置</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="emulators.html">模拟器说明</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id2">模拟器概述</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id3">支持的游戏平台</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#tf">TF 卡文件夹结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id4">支持的文件格式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id5">基本操作说明</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id9">模拟器特定功能</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id10">游戏存档</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id14">模拟器设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id17">性能优化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="emulators.html#id18">常见问题</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">小技巧</p>
-<p>建议首次使用时先阅读按键说明和菜单系统,以便快速上手。</p>
-</div>
-</section>
-<section id="id7">
-<h2>常见问题<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<section id="id4">
+<h2>常见问题<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p><strong>Q: 如何返回主菜单?</strong></p>
-<p>A: 在游戏中按 Menu 键即可返回主菜单。</p>
-<p><strong>Q: 如何调节音量?</strong></p>
-<p>A: 按 Menu 键打开菜单,选择”设置”选项,然后选择”音量”进行调节。详见 <a class="reference internal" href="settings.html"><span class="doc">设置调节说明</span></a>。</p>
+<p>A: 在游戏中按 Menu 后选择Quit退出游戏。</p>
+<p><strong>Q: 如何调节音量或者亮度?</strong></p>
+<p>A: 按 option 键,选择音量或者亮度选项,进行调节。</p>
 <p><strong>Q: 游戏运行速度太快或太慢怎么办?</strong></p>
-<p>A: 可以在设置中调节游戏速度。详见 <a class="reference internal" href="settings.html"><span class="doc">设置调节说明</span></a>。</p>
+<p>A: 可以在游戏中使用option按键选择加快或者减慢游戏速度</p>
 <p><strong>Q: 如何切换界面语言?</strong></p>
-<p>A: 在设置菜单中选择”语言”选项,可以在英语、德语、法语之间切换。详见 <a class="reference internal" href="settings.html"><span class="doc">设置调节说明</span></a>。</p>
+<p>A: 在启动器界面使用option按键可以选择”语言”选项,可以在英语、德语、法语之间切换。</p>
 </section>
-<section id="id8">
-<h2>下一步<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<section id="id5">
+<h2>下一步<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>如果遇到问题,请查看 <a class="reference internal" href="../troubleshooting/troubleshooting.html"><span class="doc">故障排除</span></a></p></li>
+<li><p>如果遇到问题,请查看 <span class="xref std std-doc">../troubleshooting/troubleshooting</span></p></li>
 <li><p>了解高级功能,请查看 <a class="reference internal" href="../advanced/advanced.html"><span class="doc">高级功能</span></a></p></li>
 </ul>
 </section>
@@ -235,8 +161,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="../Tutorial/6.testing.html" class="btn btn-neutral float-left" title="6.Testing and Verification" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="power_on.html" class="btn btn-neutral float-right" title="开机和供电" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tfcard.html" class="btn btn-neutral float-left" title="TF 卡准备" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../advanced/advanced.html" class="btn btn-neutral float-right" title="高级功能" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
