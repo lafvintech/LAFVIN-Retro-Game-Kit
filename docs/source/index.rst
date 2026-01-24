@@ -52,7 +52,7 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机套件,支持多
    :caption: 使用指南
 
    usage/usage
-   advanced/advanced
+   advanced
 
 .. toctree::
    :maxdepth: 2

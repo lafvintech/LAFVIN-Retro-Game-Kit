@@ -1,13 +1,10 @@
 .. _tfcard:
 
-=================
-TF 卡准备
-=================
+=====================
+TF 卡准备(ok,缺图片)
+=====================
 
 LAFVIN Retro Game Kit 使用 TF 卡(也称为 MicroSD 卡)来存储游戏文件。TF 卡通过 LAFVIN TFCard 模块读取,为游戏机提供大容量的游戏存储空间。
-
-.. note::
-   TF 卡是游戏机的核心存储介质,所有游戏文件都需要存储在 TF 卡中。
 
 套件附带一张1GB的SD卡(你也可以使用自己的内存卡)
 
@@ -97,6 +94,8 @@ below. At this point, you can see a new disk on the desktop named "SD".
 
 .. image:: path
 
+[这里放下载到本地文件夹中的SD卡文件]
+
 .. note:: 我们已经将相关的文件夹结构都整理好了,你只需要将自己的rom文件添加到对应平台的文件夹就可以运行
 
 
@@ -109,14 +108,14 @@ TF 卡无法识别怎么办?
 如果游戏机无法识别 TF 卡,请检查:
 
 1. TF 卡是否正确插入 TFCard 模块
-2. TF 卡是否格式化为 FAT/FAT32 文件系统
+2. TF 卡是否格式化为 FAT32 文件系统
 3. TF 卡是否有物理损坏
 4. TFCard 模块与 ESP32S3 的连接是否正确
 
-详细的故障排除方法请参考 :doc:`../troubleshooting/troubleshooting`。
+详细的故障排除方法请参考 :doc:`Appendix/Troubleshooting/troubleshooting` 。
 
 游戏文件从哪里获取?
-------------------
+----------------------
 
 .. note::
    用户需要自行准备合法的游戏文件。请确保您拥有游戏的合法使用权。

@@ -1,8 +1,8 @@
 .. _assembly:
 
-============
-组装教程
-============
+====================
+组装教程(OK,缺图片)
+====================
 
 欢迎来到 LAFVIN Retro Game Kit 组装教程!本教程提供两种组装方式,您可以根据自己的需求和经验选择。
 
@@ -14,7 +14,7 @@ LAFVIN Retro Game Kit 提供两种组装方式:
 **方式一：快速组装模式（推荐新手）** → :ref:`快速跳转 <quick-assembly>`
 
 - 使用 LAFVIN Retro Game Hub扩展底板
-- 模块即插即用,接线简单
+- 模块即插即用,无需接线
 - 组装时间约 15-20 分钟
 - 适合快速上手,开始游戏
 
@@ -410,8 +410,8 @@ ESP32S3N16R8 是整个游戏机的核心控制器。
 
 硬件组装完成后,您需要:
 
-1. :doc:`tfcard/tfcard` - 准备和格式化 TF 卡
-2. :doc:`firmware/firmware` - 烧录固件到 ESP32S3
+1. :doc:`tfcard` - 准备和格式化 TF 卡
+2. :doc:`firmware` - 烧录固件到 ESP32S3
 3. :doc:`usage/usage` - 学习如何使用游戏机
 
 如果在组装过程中遇到问题,请参考 :doc:`troubleshooting/troubleshooting`。

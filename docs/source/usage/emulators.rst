@@ -14,64 +14,54 @@ LAFVIN Retro Game Kit 内置了多个游戏平台的模拟器,支持运行经典
 
 系统支持以下 13 个游戏平台:
 
-.. list-table::
+.. list-table:: Supported Gaming Platforms
    :header-rows: 1
-   :widths: 25 35 40
+   :widths: 35 40 15
 
-   * - 平台名称
-     - 英文名称
-     - 说明
-     - 支持文件格式
-   * - 任天堂红白机
-     - NES (Nintendo Entertainment System)
-     - 8 位经典游戏机
+   * - Platform
+     - Description
+     - File Format
+   * - NES (Nintendo Entertainment System)
+     - 8-bit classic console
      - .nes
-   * - 超级任天堂
-     - SNES (Super Nintendo)
-     - 16 位游戏机
-     - .sfc
-   * - Game Boy
-     - GB (Game Boy)
-     - 任天堂掌机
+   * - SNES (Super Nintendo)
+     - 16-bit console
+     - .sfc, .smc
+   * - GB (Game Boy)
+     - Nintendo handheld
      - .gb
-   * - Game Boy Color
-     - GBC (Game Boy Color)
-     - 彩色掌机
+   * - GBC (Game Boy Color)
+     - Color handheld
      - .gbc
+   * - GBA (Game Boy Advance)
+     - Nintendo 32-bit handheld
+     - .gba
    * - Game & Watch
-     - Game & Watch
-     - 任天堂早期掌机
+     - Nintendo early handheld
      - .gw
-   * - 世嘉 Master System
-     - SMS (Sega Master System)
-     - 世嘉 8 位游戏机
-   * - Game Gear
-     - GG (Game Gear)
-     - 世嘉彩色掌机
+   * - SMS (Sega Master System)
+     - Sega 8-bit console
+     - .sms
+   * - GG (Game Gear)
+     - Sega color handheld
      - .gg
-   * - 世嘉 MD/Genesis
-     - MD/Genesis (Mega Drive)
-     - 世嘉 16 位游戏机
+   * - MD/Genesis (Mega Drive)
+     - Sega 16-bit console
      - .md, .bin
    * - Colecovision
-     - Colecovision
-     - 早期家用游戏机
+     - Early home console
      - .col
-   * - PC Engine
-     - PCE (PC Engine)
-     - NEC 16 位游戏机
+   * - PCE (PC Engine/TurboGrafx-16)
+     - NEC 16-bit console
      - .pce
    * - Atari Lynx
-     - Lynx
-     - Atari 彩色掌机
+     - Atari color handheld
      - .lnx
    * - DOOM
-     - DOOM
-     - 经典第一人称射击游戏
+     - Classic FPS game
      - .wad
    * - MSX
-     - MSX
-     - MSX个人电脑
+     - MSX personal computer
      - .rom
 
 TF 卡文件夹结构
@@ -99,9 +89,6 @@ TF 卡文件夹结构
 .. note::
    请将游戏文件放入对应的文件夹中,系统会自动识别并显示在游戏库中。
 
-.. warning::
-   请确保您拥有游戏文件的合法使用权。本产品只提供开源游戏 ROM 文件。
-
 基本操作说明
 ============
 
@@ -109,15 +96,15 @@ TF 卡文件夹结构
 --------
 
 1. 确保 TF 卡已正确插入并包含游戏文件
-2. 在主菜单中选择 **游戏库**
-3. 选择游戏平台
+2. 在主菜单中选择模拟器平台
+3. 选择并进入模拟器
 4. 浏览并选择要玩的游戏
 5. 按 A 键启动游戏
 
 .. image:: ../img/usage/game_start.jpg
    :alt: 启动游戏界面
    :align: center
-   :width: 600px
+   :width: 600pxaaaaa
 
 [占位符:需要游戏启动界面截图,显示游戏加载过程]
 
@@ -135,11 +122,10 @@ TF 卡文件夹结构
 --------
 
 1. 按 **Menu 键** 打开游戏菜单
-2. 选择 **返回主菜单**
-3. 或长按 **Menu 键** 直接返回主菜单
+2. 选择 **Quit**
 
 .. tip::
-   退出游戏前建议先保存进度,避免游戏进度丢失。
+   退出游戏前建议选择"Save & Quit",避免游戏进度丢失。
 
 游戏存档
 ========
@@ -181,12 +167,13 @@ TF 卡文件夹结构
 
 1. 检查文件格式是否正确
 2. 尝试重新下载 ROM 文件
-3. 查看模拟器兼容性列表
 
-游戏运行缓慢
-------------
+游戏运行缓慢&卡顿
+-----------------
 
 **可能原因**:
 
 - 游戏对硬件要求较高
-- 启用了过多的视频效果
+
+
+- 了解高级功能,请查看 :doc:`../advanced`

@@ -99,7 +99,7 @@ ESP32S3N16R8 主控模块
 
 .. image:: ./img/components/esp32s3.png
    :align: center
-   :width: 150px
+   :width: 120px
 
 **主要特性:**
 
@@ -240,6 +240,7 @@ LAFVIN Retro game 扩展底板
 
 确认组件齐全后,您可以继续:
 
+- :ref:`下载文件 <download_code>` - 下载代码和相关文件
 - :ref:`组装教程 <assembly>` - 学习如何组装游戏机
 - :ref:`TF 卡准备 <tfcard>` - 准备 TF 卡和游戏文件
 - :ref:`固件烧录 <firmware>` - 烧录固件到 ESP32S3

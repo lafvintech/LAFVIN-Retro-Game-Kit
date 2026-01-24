@@ -10,9 +10,9 @@ Windows System
 
 ESP32-S3 uses CP210X for code downloading. Before using it, we need to install the CP210X driver on our computer.
 
-1. Connect your computer and ESP32-S3 with a USB cable (connect to the port indicated by the red arrow)
+1. Connect your computer and ESP32-S3 with a USB cable (connect to the port indicated by the red box)
 
-.. figure:: img/esp32s3-4.jpg
+.. figure:: img/mcu.png
    :align: center
 
 2. Go to your computer's main interface, select "This PC" and right-click to select "Manage".
@@ -39,28 +39,9 @@ You can install it following the video below
 .. video:: img/driver_ins.mp4
     :width: 100%
 
-.. _macos_upload:
-
 MacOS Firmware Upload
 ---------------------------
 
-1. First, find the macos folder in the Github repository, you can download the whole project to your local computer.
+MacOS 系统不需要单独安装驱动程序,系统会自动识别 CP210X 设备。
 
-.. figure:: img/macos0.png
-   :align: center
-
-2. We have prepared the flashing tools and files for macos in this folder
-
-.. figure:: img/macos1.png
-   :align: center
-
-3. You only need to open the terminal, then enter python3 mac.py, and this interface will appear
-
-4. Then press and hold the boot button of the ESP32-S3, insert the Type-C data cable, and press Enter to select the AI firmware you want. Here we choose xiaozhi-iot.bin
-
-.. figure:: img/macos2.png
-   :align: center
-
-5. Then click confirm, and the program will automatically complete the flashing process for you
-6. After flashing is complete, press the reset button on the ESP32S3, and wait for the device to restart
-7. After restarting, follow :ref:`xiaozhi_conf <xiaozhi_conf>` for network API configuration and adding the device in the backend
+固件烧录步骤请参考: :ref:`macos_firmware`

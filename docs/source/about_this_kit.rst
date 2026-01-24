@@ -1,14 +1,14 @@
 .. _about-this-kit:
 
-===============
-产品介绍(OK,缺图片)
-===============
+===================
+产品介绍
+===================
 
 ----------------------
 LAFVIN Retro Game Kit
 ----------------------
 
-.. image:: ./img/product/main_product.jpg
+.. image:: ./img/main_product.jpg
    :alt: LAFVIN Retro Game Kit 产品图
    :align: center
    :width: 600px
