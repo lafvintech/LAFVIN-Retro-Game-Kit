@@ -1,22 +1,23 @@
 .. _tfcard:
 
 =====================
-TF 卡准备(ok,缺图片)
+TF Card Preparation (OK, Images Needed)
 =====================
 
-LAFVIN Retro Game Kit 使用 TF 卡(也称为 MicroSD 卡)来存储游戏文件。TF 卡通过 LAFVIN TFCard 模块读取,为游戏机提供大容量的游戏存储空间。
+The LAFVIN Retro Game Kit uses a TF card (also known as MicroSD card) to store game files. The TF card is read through the LAFVIN TFCard module, providing large-capacity game storage for the gaming console.
 
-套件附带一张1GB的SD卡(你也可以使用自己的内存卡)
+The kit includes a 1GB SD card (you can also use your own memory card)
 
 .. tip::
-   实际可存储的游戏数量取决于游戏文件的大小。早期平台(如 NES、GB)的游戏文件较小,而后期平台(如 SNES、MD)的游戏文件较大。
+   The actual number of games that can be stored depends on the game file sizes. Early platform games (such as NES, GB) have smaller file sizes, while later platform games (such as SNES, MD) have larger file sizes.
 
-准备步骤
-========
-在使用 TF 卡之前,您需要完成以下步骤:
+Preparation Steps
+=================
+Before using the TF card, you need to complete the following steps:
 
-Format SD card
-^^^^^^^^^^^^^^^^^^
+Format SD Card
+^^^^^^^^^^^^^^
+
 Before starting the tutorial, we need to create a drive letter for the blank SD 
 card and format it. This step requires a card reader and SD card. Please prepare 
 them in advance. Below we will guide you to do it on different computer systems. 
@@ -49,8 +50,8 @@ default, just click Next.
 
 .. image:: img/other/format6.png
 
-6. File system is FAT(or FAT32). The Allocation unit size is 16K, and the Volume 
-label can be set to any name. After setting, click Next.(注意,如果你的卡大于2G,推荐使用FAT32格式化)
+6. File system is FAT (or FAT32). The Allocation unit size is 16K, and the Volume 
+label can be set to any name. After setting, click Next. (Note: If your card is larger than 2GB, it's recommended to use FAT32 formatting)
 
 .. image:: img/other/format7.png
 
@@ -75,7 +76,7 @@ ignore it.
 .. image:: img/other/format_mac2.png
 
 3. Select "Generic MassStorageClass Media", note that its size is about 1G. Please 
-do not choose wrong item. Click "Erase".
+do not choose the wrong item. Click "Erase".
 
 .. image:: img/other/format_mac3.png
 
@@ -88,42 +89,43 @@ below. At this point, you can see a new disk on the desktop named "SD".
 
 .. image:: img/other/format_mac5.png
 
-将游戏文件导入SD卡
-^^^^^^^^^^^^^^^^^^
-1. 使用读卡器打开SD卡,你可以将之前下载解压的压缩包文件,打开其中的SDCardFiles文件夹,并将所有文件复制到SD卡根目录
+Import Game Files to SD Card
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Open the SD card using a card reader. You can open the SDCardFiles folder from the previously downloaded and extracted zip package, and copy all files to the SD card root directory.
 
 .. image:: path
 
 [这里放下载到本地文件夹中的SD卡文件]
 
-.. note:: 我们已经将相关的文件夹结构都整理好了,你只需要将自己的rom文件添加到对应平台的文件夹就可以运行
+.. note:: We have already organized the relevant folder structure. You only need to add your own ROM files to the corresponding platform folders to run them.
 
 
-常见问题
-========
+Common Issues
+=============
 
-TF 卡无法识别怎么办?
---------------------
+What to Do If TF Card Cannot Be Recognized?
+--------------------------------------------
 
-如果游戏机无法识别 TF 卡,请检查:
+If the gaming console cannot recognize the TF card, please check:
 
-1. TF 卡是否正确插入 TFCard 模块
-2. TF 卡是否格式化为 FAT32 文件系统
-3. TF 卡是否有物理损坏
-4. TFCard 模块与 ESP32S3 的连接是否正确
+1. Is the TF card properly inserted into the TFCard module
+2. Is the TF card formatted as FAT32 file system
+3. Is the TF card physically damaged
+4. Is the TFCard module properly connected to ESP32S3
 
-详细的故障排除方法请参考 :doc:`Appendix/Troubleshooting/troubleshooting` 。
+For detailed troubleshooting methods, please refer to :doc:`Appendix/Troubleshooting/troubleshooting`.
 
-游戏文件从哪里获取?
-----------------------
+Where to Get Game Files?
+-------------------------
 
 .. note::
-   用户需要自行准备合法的游戏文件。请确保您拥有游戏的合法使用权。
+   Users need to prepare legal game files themselves. Please ensure you have legal rights to use the games.
 
-您可以:
+You can:
 
-- 从您拥有的游戏卡带中提取 ROM 文件
-- 使用自制游戏(Homebrew)
-- 使用开源游戏
+- Extract ROM files from game cartridges you own
+- Use homebrew games
+- Use open-source games
 
-出于版权尊重，本设备预装了开源的游戏和测试固件。如果您想获取更多游戏，推荐访问 itch.io Retro区 或 PDROMS 下载合法的 Homebrew 游戏。
+Out of respect for copyright, this device comes preloaded with open-source games and test firmware. If you want to get more games, we recommend visiting itch.io Retro section or PDROMS to download legal Homebrew games.

@@ -1,107 +1,107 @@
 .. _troubleshooting:
 
 ============
-故障排除
+Troubleshooting
 ============
 
-本章节帮助您解决使用 LAFVIN Retro Game Kit 过程中可能遇到的常见问题。
+This chapter helps you resolve common issues you may encounter while using the LAFVIN Retro Game Kit.
 
-概述
-====
-
-如果您在组装、烧录固件或使用游戏机时遇到问题，请按照以下步骤进行排查：
-
-1. **确认硬件连接正确** - 检查所有模块、跳线和按键是否正确连接
-2. **检查供电** - 确保使用合适的 Type-C 电源适配器（建议 5V/2A）
-3. **验证固件** - 确认固件已正确烧录到 ESP32S3
-4. **检查 TF 卡** - 确保 TF 卡格式正确（FAT32）且游戏文件放置正确
-
-问题分类
+Overview
 ========
 
-根据问题类型，请参考以下章节：
+If you encounter problems during assembly, firmware flashing, or using the gaming console, please follow these troubleshooting steps:
 
-硬件问题
---------
+1. **Confirm Hardware Connections** - Check that all modules, jumper wires, and buttons are correctly connected
+2. **Check Power Supply** - Ensure you're using an appropriate Type-C power adapter (recommended 5V/2A)
+3. **Verify Firmware** - Confirm firmware has been correctly flashed to ESP32S3
+4. **Check TF Card** - Ensure TF card is formatted correctly (FAT32) and game files are placed properly
 
-如果遇到以下问题，请参考 :doc:`hardware`：
+Problem Categories
+==================
 
-- 屏幕不显示或显示异常
-- 无声音输出
-- 按键无响应
-- 无法识别 TF 卡
-- 供电问题
+Based on problem type, please refer to the following sections:
 
-软件问题
---------
+Hardware Issues
+---------------
 
-如果遇到以下问题，请参考 :doc:`software`：
+If you encounter the following problems, please refer to :doc:`hardware`:
 
-- 固件烧录失败
-- 游戏无法加载
-- 系统运行异常
-- 设置无法保存
+- Screen not displaying or displaying abnormally
+- No audio output
+- Buttons not responding
+- Cannot recognize TF card
+- Power supply issues
+
+Software Issues
+---------------
+
+If you encounter the following problems, please refer to :doc:`software`:
+
+- Firmware flashing failure
+- Games cannot load
+- System running abnormally
+- Settings cannot be saved
 
 .. note::
-   在进行任何硬件检查或维修前，请务必断开电源，避免造成硬件损坏或人身伤害。
+   Before performing any hardware inspection or repair, always disconnect power to avoid hardware damage or personal injury.
 
-快速诊断流程
-============
+Quick Diagnosis Flow
+====================
 
-按照以下流程快速定位问题：
+Follow this flow to quickly locate problems:
 
 .. code-block:: text
 
-   开机后有问题？
+   Problems after power on?
    │
-   ├─ 屏幕无显示
-   │  └─ 检查供电 → 检查屏幕连接 → 重新烧录固件
+   ├─ Screen not displaying
+   │  └─ Check power → Check screen connection → Reflash firmware
    │
-   ├─ 无声音
-   │  └─ 检查功放模块连接 → 检查音量设置 → 检查跳线
+   ├─ No audio
+   │  └─ Check amplifier module connection → Check volume settings → Check jumper wires
    │
-   ├─ 按键无响应
-   │  └─ 检查按键安装 → 检查跳线连接 → 测试按键
+   ├─ Buttons not responding
+   │  └─ Check button installation → Check jumper wire connections → Test buttons
    │
-   └─ 无法识别 TF 卡
-      └─ 检查 TF 卡格式 → 重新格式化 → 检查 TF 卡模块连接
+   └─ Cannot recognize TF card
+      └─ Check TF card format → Reformat → Check TF card module connection
 
 .. toctree::
    :maxdepth: 2
-   :caption: 故障排除详细内容
+   :caption: Detailed Troubleshooting Content
 
    hardware
    software
 
-如果以上方法都无法解决您的问题，请通过以下方式获取技术支持：
+If none of the above methods resolve your issue, please obtain technical support through the following:
 
-联系方式
---------
+Contact Information
+-------------------
 
-- **技术支持邮箱**: tech_edu_service@outlook.com
+- **Technical Support Email**: tech_edu_service@outlook.com
 
-提交问题时请提供
-----------------
+Information to Provide When Submitting Issues
+----------------------------------------------
 
-为了更快地解决问题，请在联系技术支持时提供以下信息：
+To resolve issues faster, please provide the following information when contacting technical support:
 
 .. list-table::
    :header-rows: 1
    :widths: 40 60
 
-   * - 信息类型
-     - 说明
-   * - 产品型号
+   * - Information Type
+     - Description
+   * - Product Model
      - LAFVIN Retro Game Kit
-   * - 问题描述
-     - 详细描述遇到的问题和症状
-   * - 复现步骤
-     - 如何重现该问题的详细步骤
-   * - 已尝试的解决方法
-     - 列出已经尝试过的排查步骤
-   * - 硬件配置
-     - 使用的 TF 卡、电源适配器等信息
-   * - 错误信息
-     - 如有错误提示，请提供完整的错误信息
-   * - 照片或视频
-     - 如果可能，提供问题的照片或视频
+   * - Problem Description
+     - Detailed description of the problem and symptoms
+   * - Reproduction Steps
+     - Detailed steps on how to reproduce the problem
+   * - Attempted Solutions
+     - List troubleshooting steps already tried
+   * - Hardware Configuration
+     - Information about TF card, power adapter, etc.
+   * - Error Messages
+     - If there are error prompts, provide complete error information
+   * - Photos or Videos
+     - If possible, provide photos or videos of the problem

@@ -1,100 +1,100 @@
 .. _assembly:
 
 ====================
-组装教程(OK,缺图片)
+Assembly Tutorial
 ====================
 
-欢迎来到 LAFVIN Retro Game Kit 组装教程!本教程提供两种组装方式,您可以根据自己的需求和经验选择。
+Welcome to the LAFVIN Retro Game Kit assembly tutorial! This guide provides two assembly methods - choose based on your needs and experience level.
 
-组装概述
-========
+Assembly Overview
+=====================
 
-LAFVIN Retro Game Kit 提供两种组装方式:
+The LAFVIN Retro Game Kit offers two assembly methods:
 
-**方式一：快速组装模式（推荐新手）** → :ref:`快速跳转 <quick-assembly>`
+**Method 1: Quick Assembly Mode (Recommended for Beginners)** → :ref:`Jump to <quick-assembly>`
 
-- 使用 LAFVIN Retro Game Hub扩展底板
-- 模块即插即用,无需接线
-- 组装时间约 15-20 分钟
-- 适合快速上手,开始游戏
+- Uses LAFVIN Retro Game Hub expansion board
+- Plug-and-play modules, no wiring required
+- Assembly time: approximately 15-20 minutes
+- Ideal for quick start and immediate gaming
 
-**方式二：面包板模式（进阶玩家）** → :ref:`快速跳转 <breadboard-assembly>`
+**Method 2: Breadboard Mode (Advanced Users)** → :ref:`Jump to <breadboard-assembly>`
 
-- 使用标准面包板自由布局
-- 完全自定义硬件连接
-- 组装时间约 40-60 分钟
-- 适合学习硬件原理,便于调试和改装
+- Uses standard breadboard with flexible layout
+- Fully customizable hardware connections
+- Assembly time: approximately 40-60 minutes
+- Ideal for learning hardware principles, debugging, and modifications
 
-.. list-table:: 两种组装方式对比
+.. list-table:: Comparison of Two Assembly Methods
    :header-rows: 1
    :widths: 20 40 40
 
-   * - 对比项
-     - 快速组装模式
-     - 面包板模式
-   * - 难度
-     - ⭐⭐ 简单
-     - ⭐⭐⭐⭐ 进阶
-   * - 组装时间
-     - 10-15 分钟
-     - 40-60 分钟
-   * - 接线数量
-     - 少（使用扩展底板）
-     - 多（完全手动接线）
-   * - 灵活性
-     - 固定布局
-     - 完全自定义
-   * - 适合人群
-     - 快速体验
-     - 学习硬件
-   * - 调试难度
-     - 低
-     - 中等
-   * - 改装空间
-     - 有限
-     - 灵活
+   * - Comparison
+     - Quick Assembly Mode
+     - Breadboard Mode
+   * - Difficulty
+     - ⭐⭐ Simple
+     - ⭐⭐⭐⭐ Advanced
+   * - Assembly Time
+     - 10-15 minutes
+     - 40-60 minutes
+   * - Wiring Amount
+     - Minimal (uses expansion board)
+     - Extensive (fully manual wiring)
+   * - Flexibility
+     - Fixed layout
+     - Fully customizable
+   * - Target Users
+     - Quick experience
+     - Hardware learning
+   * - Debugging Difficulty
+     - Low
+     - Medium
+   * - Modification Space
+     - Limited
+     - Flexible
 
-**我们推荐使用第一种组装方式,能快速检查硬件是否正常运转和熟悉软件功能**
+**We recommend using the first assembly method for quick hardware verification and software familiarization**
 
 .. warning::
-   **重要提示：**
+   **Important Notice:**
    
-   无论选择哪种组装方式,请务必注意:
+   Regardless of which assembly method you choose, please note:
    
-   - 在组装过程中,确保所有模块处于断电状态
-   - 请勿在通电状态下插拔模块,可能导致硬件损坏
-   - 仔细核对引脚连接,避免接错导致烧毁元件
+   - Ensure all modules are powered off during assembly
+   - Do not plug or unplug modules while powered on - this may cause hardware damage
+   - Carefully verify pin connections to avoid incorrect wiring that could damage components
 
-所需工具
-========
+Required Tools
+==============
 
-- 建议准备:镊子(用于整理跳线)
-- 良好的照明环境
-- 平整的工作台面
+- Recommended: Tweezers (for organizing jumper wires)
+- Good lighting environment
+- Flat work surface
 
-组件清单
-========
+Component Checklist
+===================
 
-在开始组装前,请确认您已收到全部所有组件, 详细清单请参考 :doc:`component_list`。
+Before starting assembly, please confirm you have received all components. For detailed list, refer to :doc:`component_list`.
 
 .. _quick-assembly:
 
-方式一：快速组装模式
-====================================
+Method 1: Quick Assembly Mode
+==============================
 
-本方式使用 LAFVIN Retro Game 扩展底板,大部分连接已在底板上完成,您只需插入模块即可。
+This method uses the LAFVIN Retro Game expansion board. Most connections are already completed on the board - you simply need to insert the modules.
 
-步骤 1: 准备扩展底板
---------------------
+Step 1: Prepare the Expansion Board
+------------------------------------
 
-1.1 检查扩展底板
-^^^^^^^^^^^^^^^^
+1.1 Inspect the Expansion Board
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-取出 LAFVIN Retro Game 扩展底板,检查:
+Take out the LAFVIN Retro Game expansion board and check:
 
-- 底板表面无损坏
-- 所有插槽完好
-- 引脚标识清晰可见
+- Board surface is undamaged
+- All sockets are intact
+- Pin labels are clearly visible
 
 .. image:: ./img/assembly/extension_board.jpg
    :alt: LAFVIN Retro Game 扩展底板
@@ -103,20 +103,20 @@ LAFVIN Retro Game Kit 提供两种组装方式:
 
 [占位符:需要扩展底板的整体图片,标注各个插槽位置]
 
-步骤 2: 安装核心模块
---------------------
+Step 2: Install Core Modules
+-----------------------------
 
-2.1 安装 ESP32S3 主控模块
-^^^^^^^^^^^^^^^^^^^^^^^^^
+2.1 Install ESP32S3 Controller Module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-ESP32S3N16R8 是整个游戏机的核心控制器。
+The ESP32S3N16R8 is the core controller of the entire gaming console.
 
-**安装步骤:**
+**Installation Steps:**
 
-1. 将ESP32S3模块安装到地板背面的插槽
-2. 确认模块方向:天线方向应该与板子丝印同方向
-3. 将 ESP32S3 模块对准插槽,轻轻按下
-4. 确保所有引脚完全插入,模块与底板紧密贴合
+1. Install the ESP32S3 module into the socket on the back of the board
+2. Confirm module orientation: antenna direction should match the board silkscreen
+3. Align the ESP32S3 module with the socket and gently press down
+4. Ensure all pins are fully inserted and the module fits tightly against the board
 
 .. image:: ./img/assembly/esp32s3_on_board.jpg
    :alt: ESP32S3 安装到扩展底板
@@ -126,16 +126,16 @@ ESP32S3N16R8 是整个游戏机的核心控制器。
 [占位符:ESP32S3 模块安装到扩展底板的图片]
 
 .. warning::
-   安装时请勿用力过猛,避免损坏引脚。如果引脚无法顺利插入,请检查引脚是否对齐。
+   Do not apply excessive force during installation to avoid damaging pins. If pins cannot be inserted smoothly, check if they are properly aligned.
 
-2.2 安装 TFT 显示屏
-^^^^^^^^^^^^^^^^^^^
+2.2 Install TFT Display
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-**安装步骤:**
+**Installation Steps:**
 
-1. 找到扩展底板正面的上的DISPLAY区域
-2. 将 2.4 英寸 TFT 显示屏的排针对准排母
-3. 轻轻插入排母
+1. Locate the DISPLAY area on the front of the expansion board
+2. Align the 2.4-inch TFT display's pin headers with the socket
+3. Gently insert into the socket
 
 .. image:: ./img/assembly/tft_on_board.jpg
    :alt: TFT 显示屏连接到扩展底板
@@ -144,15 +144,15 @@ ESP32S3N16R8 是整个游戏机的核心控制器。
 
 [占位符:TFT 显示屏连接到扩展底板的图片]
 
-2.3 安装 TFCard 模块
-^^^^^^^^^^^^^^^^^^^^
+2.3 Install TFCard Module
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**安装步骤:**
+**Installation Steps:**
 
-1. 找到扩展底板上标有 "TFCard Module"区域的插槽
-2. 将 TFCard 模块排针对准排母
-3. 确保 TF 卡插槽朝外,便于插拔 TF 卡
-4. 轻轻按下,确保排针完全插入
+1. Locate the socket labeled "TFCard Module" on the expansion board
+2. Align the TFCard module's pin headers with the socket
+3. Ensure the TF card slot faces outward for easy card insertion/removal
+4. Gently press down to ensure pins are fully inserted
 
 .. image:: ./img/assembly/tfcard_on_board.jpg
    :alt: TFCard 模块安装到扩展底板
@@ -161,15 +161,15 @@ ESP32S3N16R8 是整个游戏机的核心控制器。
 
 [占位符:TFCard 模块安装到扩展底板的图片]
 
-2.4 安装功放模块
-^^^^^^^^^^^^^^^^
+2.4 Install Amplifier Module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**安装步骤:**
+**Installation Steps:**
 
-1. 找到扩展底板上标有 "Amplifier Module" 的插槽
-2. 将功放模块排针对准排母
-3. 确保音频输出接口朝外
-4. 轻轻按下,确保引脚完全插入,然后将扬声器安装到功放模块(有防呆接口)
+1. Locate the socket labeled "Amplifier Module" on the expansion board
+2. Align the amplifier module's pin headers with the socket
+3. Ensure the audio output interface faces outward
+4. Gently press down to ensure pins are fully inserted, then connect the speaker to the amplifier module (keyed connector)
 
 .. image:: ./img/assembly/amp_on_board.jpg
    :alt: 功放模块安装到扩展底板
@@ -178,18 +178,18 @@ ESP32S3N16R8 是整个游戏机的核心控制器。
 
 [占位符:功放模块安装到扩展底板的图片]
 
-步骤 3: 安装按键帽
-------------------
+Step 3: Install Button Caps
+----------------------------
 
-我们给方向和AB按键提供了按键帽,可以将按键帽安装到按键上
+We provide button caps for the directional and A/B buttons. You can install the button caps onto the buttons.
 
 .. image:: ./img/assembly/install_cap.jpg
    :alt: 安装按键帽
    :align: center
    :width: 600px
 
-快速组装完成
-------------
+Quick Assembly Complete
+-----------------------
 
 .. image:: ./img/assembly/quick_assembly_done.jpg
    :alt: 快速组装完成效果
@@ -198,232 +198,232 @@ ESP32S3N16R8 是整个游戏机的核心控制器。
 
 [占位符:使用扩展底板组装完成的整体效果图]
 
-恭喜!您已完成快速组装。扩展底板大大简化了接线过程,可以进行 :ref:`固件烧录 <firmware>` 进行快速测试
+Congratulations! You have completed the quick assembly. The expansion board greatly simplifies the wiring process. You can now proceed to :ref:`firmware flashing <firmware>` for quick testing.
 
 .. _breadboard-assembly:
 
-方式二：面包板模式
-====================================
+Method 2: Breadboard Mode
+==========================
 
-本方式使用标准面包板,需要手动完成所有接线。适合想深入了解硬件连接原理的进阶玩家。
+This method uses a standard breadboard and requires manual completion of all wiring. Suitable for advanced users who want to deeply understand hardware connection principles.
 
-步骤 1: 面包板准备
-------------------
+Step 1: Breadboard Preparation
+-------------------------------
 
-1.1 连接两块面包板
-^^^^^^^^^^^^^^^^^^
+1.1 Connect Two Breadboards
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**你可以参考我们的安装图,也可以自己设计自己的布局,连接图以及IO-模块对照表如下**
+**You can refer to our installation diagram or design your own layout. The connection diagram and IO-module reference table are as follows:**
 
 .. image:: ./img/assembly/breadboard_connect.png
    :align: center
    :width: 600px
 
-**TFT 显示屏引脚连接**
+**TFT Display Pin Connections**
 
-.. list-table:: TFT 显示屏引脚对应表
+.. list-table:: TFT Display Pin Mapping
    :header-rows: 1
    :widths: 25 25 50
 
-   * - TFT 引脚
-     - ESP32S3 引脚
-     - 说明
+   * - TFT Pin
+     - ESP32S3 Pin
+     - Description
    * - BL
      - GPIO 6
-     - 背光控制
+     - Backlight control
    * - CS
      - GPIO 7
-     - 片选信号
+     - Chip select signal
    * - DC
      - GPIO 15
-     - 数据/命令选择
+     - Data/command select
    * - RES
      - GPIO 16
-     - 复位信号
+     - Reset signal
    * - SDA
      - GPIO 17
-     - SPI 数据输出
+     - SPI data output
    * - SCL
      - GPIO 18
-     - SPI 时钟
+     - SPI clock
    * - VCC
      - 5V
-     - 电源
+     - Power supply
    * - GND
      - GND
-     - 地线
+     - Ground
 
-**TFCard 模块引脚连接**
+**TFCard Module Pin Connections**
 
-.. list-table:: TFCard 模块引脚对应表
+.. list-table:: TFCard Module Pin Mapping
    :header-rows: 1
    :widths: 25 25 50
 
-   * - TFCard 引脚
-     - ESP32S3 引脚
-     - 说明
+   * - TFCard Pin
+     - ESP32S3 Pin
+     - Description
    * - VCC
      - 3V3
-     - 电源
+     - Power supply
    * - GND
      - GND
-     - 地线
+     - Ground
    * - DO2
      - NC
-     - (不连接)
+     - (Not connected)
    * - CS
      - GPIO 1
-     - 片选信号
+     - Chip select signal
    * - CLK
      - GPIO 2
-     - SPI 时钟
+     - SPI clock
    * - MOSI
      - GPIO 42
-     - SPI 数据输出
+     - SPI data output
    * - MISO
      - GPIO 41
-     - SPI 数据输入
+     - SPI data input
    * - DO1
      - NC
-     - (不连接)
+     - (Not connected)
 
-**功放模块引脚连接**
+**Amplifier Module Pin Connections**
 
-.. list-table:: 功放模块引脚对应表
+.. list-table:: Amplifier Module Pin Mapping
    :header-rows: 1
    :widths: 25 25 50
 
-   * - 功放引脚
-     - ESP32S3 引脚
-     - 说明
+   * - Amplifier Pin
+     - ESP32S3 Pin
+     - Description
    * - VCC
      - 5V
-     - 电源(注意是 5V!)
+     - Power supply (Note: 5V!)
    * - GND
      - GND
-     - 地线
+     - Ground
    * - SD
-     - VCC(与功放模块的VCC短接)
-     - 功放使能(关断控制)
+     - VCC (shorted to amplifier VCC)
+     - Amplifier enable (shutdown control)
    * - DIN
      - GPIO 8
-     - I2S 数据输入
+     - I2S data input
    * - GAIN
      - NC
-     - 增益控制(不连接)
+     - Gain control (not connected)
    * - BCLK
      - GPIO 9
-     - I2S 位时钟
+     - I2S bit clock
    * - LRCLK
      - GPIO 10
-     - I2S 左右声道时钟
+     - I2S left/right channel clock
 
-**按键引脚连接**
+**Button Pin Connections**
 
-.. list-table:: 按键引脚对应表
+.. list-table:: Button Pin Mapping
    :header-rows: 1
    :widths: 30 25 45
 
-   * - 按键
-     - ESP32S3 引脚
-     - 说明
-   * - 方向键 - 上
+   * - Button
+     - ESP32S3 Pin
+     - Description
+   * - D-pad - Up
      - GPIO 11
-     - 方向控制 - 上
-   * - 方向键 - 下
+     - Direction control - Up
+   * - D-pad - Down
      - GPIO 12
-     - 方向控制 - 下
-   * - 方向键 - 左
+     - Direction control - Down
+   * - D-pad - Left
      - GPIO 13
-     - 方向控制 - 左
-   * - 方向键 - 右
+     - Direction control - Left
+   * - D-pad - Right
      - GPIO 14
-     - 方向控制 - 右
-   * - A 键
+     - Direction control - Right
+   * - A Button
      - GPIO 21
-     - 游戏按键 A (确认/跳跃)
-   * - B 键
+     - Game button A (Confirm/Jump)
+   * - B Button
      - GPIO 47
-     - 游戏按键 B (取消/攻击)
-   * - Start 键
+     - Game button B (Cancel/Attack)
+   * - Start Button
      - GPIO 39
-     - 开始/暂停游戏
-   * - Select 键
+     - Start/Pause game
+   * - Select Button
      - GPIO 40
-     - 选择功能
-   * - Menu 键
+     - Select function
+   * - Menu Button
      - GPIO 5
-     - 打开系统菜单
-   * - Option 键
+     - Open system menu
+   * - Option Button
      - GPIO 4
-     - 选项设置
+     - Option settings
 
 
-每个按键的一端连接到对应的 GPIO 引脚,另一端连接到 GND(地线)。ESP32S3 内部会启用上拉电阻,按键按下时引脚电平变为低电平。
+Each button has one end connected to the corresponding GPIO pin and the other end connected to GND (ground). The ESP32S3 will enable internal pull-up resistors, and the pin level becomes low when the button is pressed.
 
 .. warning::
-   **电源连接至关重要!**
-   电源和地如果连接错误可能会导致短路以及损坏硬件
+   **Power connections are critical!**
+   Incorrect power and ground connections may cause short circuits and hardware damage
 
 .. tip::
-   **接线技巧:**
+   **Wiring Tips:**
    
-   - 一次只连接一个模块,连接完成后再进行下一个
-   - 使用不同颜色的跳线区分不同功能
-   - 拍照记录接线过程,便于后续检查
-   - 使用镊子调整跳线位置
+   - Connect one module at a time, complete it before moving to the next
+   - Use different colored jumper wires to distinguish different functions
+   - Take photos of the wiring process for later reference
+   - Use tweezers to adjust jumper wire positions
 
-面包板模式组装完成
----------------------------
+Breadboard Mode Assembly Complete
+----------------------------------
 
-恭喜!您已完成面包板模式的组装。这种方式虽然复杂,但让您完全掌握了硬件连接原理。
+Congratulations! You have completed the breadboard mode assembly. Although this method is more complex, it gives you complete mastery of hardware connection principles.
 
 .. image:: ./img/assembly/breadboard_connect_done.jpg
    :alt: 面包板模式组装完成效果
    :align: center
    :width: 800px
 
-**通电前最后确认(两种方式通用)**
+**Final Verification Before Power-On (Applies to Both Methods)**
 
 .. danger::
-   **在首次通电前,请务必完成以下最后确认:**
+   **Before powering on for the first time, please complete the following final checks:**
    
-   1. ✓ 电源连接正确
-   2. ✓ 无短路现象(电源和地线未接触)
-   3. ✓ 所有模块安装牢固
-   4. ✓ 引脚连接已按表格核对
-   5. ✓ TFT 显示屏排线连接正确
+   1. ✓ Power connections are correct
+   2. ✓ No short circuits (power and ground lines not touching)
+   3. ✓ All modules are securely installed
+   4. ✓ Pin connections verified against tables
+   5. ✓ TFT display cable connections are correct
    
-   **如有任何疑问,请勿通电!先检查连接!**
+   **If you have any doubts, do not power on! Check connections first!**
 
-组装完成
-========
+Assembly Complete
+=================
 
-无论您选择哪种组装方式,现在硬件部分已经完成。
+Regardless of which assembly method you chose, the hardware portion is now complete.
 
 .. image:: ./img/assembly/breadboard_completed.png
    :align: center
    :width: 600px
 
-下一步
-======
-
-硬件组装完成后,您需要:
-
-1. :doc:`tfcard` - 准备和格式化 TF 卡
-2. :doc:`firmware` - 烧录固件到 ESP32S3
-3. :doc:`usage/usage` - 学习如何使用游戏机
-
-如果在组装过程中遇到问题,请参考 :doc:`troubleshooting/troubleshooting`。
-
-遇到问题？
+Next Steps
 ==========
 
-如果您在组装过程中遇到困难,请查看 :ref:`assembly-troubleshooting` 获取详细的故障排除指南。
+After hardware assembly is complete, you need to:
 
-您也可以:
+1. :doc:`tfcard` - Prepare and format the TF card
+2. :doc:`firmware` - Flash firmware to ESP32S3
+3. :doc:`usage/usage` - Learn how to use the gaming console
 
-- 访问 LAFVIN 官方网站获取更多资源
-- 联系技术支持团队
+If you encounter problems during assembly, please refer to :doc:`troubleshooting/troubleshooting`.
 
-祝您组装顺利,游戏愉快!
+Having Issues?
+==============
+
+If you encounter difficulties during assembly, please check :ref:`assembly-troubleshooting` for detailed troubleshooting guides.
+
+You can also:
+
+- Visit the LAFVIN official website for more resources
+- Contact the technical support team
+
+Wishing you smooth assembly and happy gaming!

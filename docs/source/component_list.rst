@@ -1,119 +1,118 @@
-.. _component-list:
+.. _component-list-en:
 
-组件清单(OK,缺图片)
-============================
+Component List
+===================================
 
-套件组件总览
-----------------------------
+Kit Components Overview
+-----------------------
 
 .. image:: ./img/components/all_components.jpg
-   :alt: 套件所有组件合照
    :align: center
    :width: 800px
 
 [占位符:需要所有组件的合照,展示套件中包含的所有14项组件]
 
-组件清单表
-----------------------------
+Component List Table
+--------------------
 
-以下是 LAFVIN Retro Game Kit 套件中包含的所有组件:
+The following are all components included in the LAFVIN Retro Game Kit:
 
 .. list-table::
    :header-rows: 1
    :widths: 10 40 15 35
 
-   * - 序号
-     - 组件名称
-     - 数量
-     - 说明
+   * - No.
+     - Component Name
+     - Quantity
+     - Description
    * - 1
-     - ESP32S3模块 (确认)
+     - ESP32S3 Module (Confirmed)
      - 1
-     - 主控芯片,16MB Flash + 8MB PSRAM
+     - Main controller, 16MB Flash + 8MB PSRAM
    * - 2
-     - LAFVIN TFCard Module (确认)
+     - LAFVIN TFCard Module (Confirmed)
      - 1
-     - TF 卡读取模块,用于存储游戏文件
+     - TF card reader module for storing game files
    * - 3
-     - LAFVIN Amplifier Module (确认)
+     - LAFVIN Amplifier Module (Confirmed)
      - 1
-     - 音频输出模块,驱动扬声器
+     - Audio output module to drive speaker
    * - 4
-     - LAFVIN Retro Game Hub (确认)
+     - LAFVIN Retro Game Hub (Confirmed)
      - 1
-     - 专用扩展板,简化连接
+     - Dedicated expansion board to simplify connections
    * - 5
-     - 2.4 Inch TFT-SPI Screen (确认)
+     - 2.4 Inch TFT-SPI Screen (Confirmed)
      - 1
-     - 彩色显示屏,分辨率 320x240
+     - Color display, 320x240 resolution
    * - 6
-     - Button(6x6mm) (确认)
+     - Button (6x6mm) (Confirmed)
      - 10
-     - 游戏控制按键(方向键、功能键等)
+     - Game control buttons (D-pad, function keys, etc.)
    * - 7
-     - Button(12x12mm) (确认)
+     - Button (12x12mm) (Confirmed)
      - 4
-     - 面包板AB按键
+     - Breadboard A/B buttons
    * - 8
-     - Button Cap (确认)
+     - Button Cap (Confirmed)
      - 4
-     - 大按钮的按键帽,提升手感
+     - Button caps for large buttons, improves feel
    * - 9
-     - 830 面包板 (确认)
+     - 830 Breadboard (Confirmed)
      - 2
-     - 用于组装电路
+     - For circuit assembly
    * - 10
-     - Jumper Wires Box (确认)
-     - 若干
-     - 固定长度跳线,用于模块连接
+     - Jumper Wires Box (Confirmed)
+     - Several
+     - Fixed-length jumper wires for module connections
    * - 11
-     - 65 Jumper Wire (确认)
-     - 若干
-     - 灵活跳线,用于按键连接
+     - 65 Jumper Wire (Confirmed)
+     - Several
+     - Flexible jumper wires for button connections
    * - 12
-     - Type C Cable (确认)
+     - Type C Cable (Confirmed)
      - 1
-     - 用于供电和固件烧录
+     - For power supply and firmware flashing
    * - 13
-     - 8Ω2W Speaker (确认)
+     - 8Ω2W Speaker (Confirmed)
      - 1
-     - 音频输出设备
+     - Audio output device
    * - 14
-     - Memory Card (确认)
+     - Memory Card (Confirmed)
      - 1
-     - 用于存储游戏 ROM 文件
+     - For storing game ROM files
    * - 15
-     - Memory Card Reader (确认)
+     - Memory Card Reader (Confirmed)
      - 1
-     - 用于存储游戏 ROM 文件
+     - For storing game ROM files
    * - 16
-     - M2x4mm Screw Set (确认)
+     - M2x4mm Screw Set (Confirmed)
      - 2
-     - includes screws, pillars & nuts
+     - Includes screws, pillars & nuts
 
-主要组件详细说明
-----------------------------
+Main Component Details
+----------------------
 
-ESP32S3N16R8 主控模块
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ESP32S3N16R8 Controller Module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/esp32s3.png
    :align: center
    :width: 120px
 
-**主要特性:**
+**Key Features:**
 
-- 芯片型号: ESP32-S3
-- Flash 容量: 16MB
-- PSRAM 容量: 8MB
-- 双核处理器,主频高达 240MHz
-- 支持 Wi-Fi 和 BLE 5.0
-- 丰富的 GPIO 接口
+- Chip Model: ESP32-S3
+- Flash Capacity: 16MB
+- PSRAM Capacity: 8MB
+- Dual-core processor, up to 240MHz
+- Supports Wi-Fi and BLE 5.0
+- Rich GPIO interfaces
 
-**作用:** 作为游戏机的核心处理器,负责运行游戏模拟器、处理图形渲染、音频输出和用户输入。
+**Function:** Serves as the core processor of the gaming console, responsible for running game emulators, handling graphics rendering, audio output, and user input.
 
-LAFVIN TFCard 模块
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LAFVIN TFCard Module
+~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/tfcard_module.jpg
    :align: center
@@ -121,17 +120,17 @@ LAFVIN TFCard 模块
 
 [占位符:TFCard 模块图片]
 
-**主要特性:**
+**Key Features:**
 
-- 支持标准 TF 卡(Micro SD 卡)
-- 支持 FAT32 文件系统
-- SPI 接口通信
-- 支持热插拔
+- Supports standard TF cards (Micro SD cards)
+- Supports FAT32 file system
+- SPI interface communication
+- Supports hot-swapping
 
-**作用:** 读取 TF 卡中存储的游戏 ROM 文件,为模拟器提供游戏数据。
+**Function:** Reads game ROM files stored on the TF card, providing game data for emulators.
 
-LAFVIN 功放模块
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LAFVIN Amplifier Module
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/amplifier.jpg
    :align: center
@@ -139,17 +138,17 @@ LAFVIN 功放模块
 
 [占位符:功放模块图片]
 
-**主要特性:**
+**Key Features:**
 
-- 内置音频功放芯片
-- 支持单声道输出
-- 可调节音量
-- 低功耗设计
+- Built-in audio amplifier chip
+- Supports mono output
+- Adjustable volume
+- Low power consumption design
 
-**作用:** 放大音频信号并驱动扬声器,提供游戏音效和背景音乐输出。
+**Function:** Amplifies audio signals and drives the speaker, providing game sound effects and background music output.
 
-2.4 英寸 TFT 显示屏
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2.4 Inch TFT Display
+~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/tft_screen.jpg
    :align: center
@@ -157,18 +156,18 @@ LAFVIN 功放模块
 
 [占位符:TFT 显示屏图片]
 
-**主要特性:**
+**Key Features:**
 
-- 尺寸: 2.4 英寸
-- 分辨率: 320x240 像素
-- 彩色显示,支持 65K 色
-- SPI 接口
-- 可视角度大
+- Size: 2.4 inches
+- Resolution: 320x240 pixels
+- Color display, supports 65K colors
+- SPI interface
+- Wide viewing angle
 
-**作用:** 显示游戏画面、菜单界面和系统信息。
+**Function:** Displays game screens, menu interfaces, and system information.
 
-LAFVIN Retro game 扩展底板
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LAFVIN Retro Game Expansion Board
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./img/components/extension_board.jpg
    :align: center
@@ -176,17 +175,17 @@ LAFVIN Retro game 扩展底板
 
 [占位符:扩展底板图片]
 
-**主要特性:**
+**Key Features:**
 
-- 专为 Retro Game Kit 设计
-- 预留标准接口
-- 简化模块连接
-- 提供稳定的电源分配
+- Designed specifically for Retro Game Kit
+- Standard interface reserved
+- Simplifies module connections
+- Provides stable power distribution
 
-**作用:** 作为各个模块的连接枢纽,简化组装过程,提供稳定的电气连接。
+**Function:** Serves as the connection hub for all modules, simplifying the assembly process and providing stable electrical connections.
 
-按键组件
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Button Components
+~~~~~~~~~~~~~~~~~
 
 .. image:: img/components/button.png
    :align: center
@@ -194,53 +193,53 @@ LAFVIN Retro game 扩展底板
 
 [占位符:按键组件图片,包括小按钮和大按钮]
 
-**小按钮 (6x6mm):**
+**Small Buttons (6x6mm):**
 
-- 数量: 10 个
-- 用途: 用于面包板搭建方向键(上、下、左、右)、Menu、Option、Start、Select 等功能键
-- 轻触式按键,手感清脆
+- Quantity: 10 pieces
+- Usage: For building D-pad (up, down, left, right), Menu, Option, Start, Select, and other function keys on breadboard
+- Tactile buttons with crisp feel
 
-**大按钮 (12x12mm):**
+**Large Buttons (12x12mm):**
 
-- 数量: 4 个
-- 用途: 用于面包板搭建A、B按键
-- 配有按键帽,提升操作手感
+- Quantity: 4 pieces
+- Usage: For building A and B buttons on breadboard
+- Comes with button caps to improve operation feel
 
-**作用:** 提供用户输入接口,控制游戏角色和系统菜单。
+**Function:** Provides user input interface to control game characters and system menus.
 
-供电说明
-----------------------------
+Power Supply Instructions
+-------------------------
 
 .. note::
-   本套件通过 **Type-C 接口** 供电,无需外部电池。
+   This kit is powered through a **Type-C interface**, no external battery required.
 
-**供电方式:**
+**Power Supply Method:**
 
-- 使用标准 Type-C 数据线连接到 ESP32S3 主控模块
-- 推荐使用 5V/2A 或更高功率的 USB 电源适配器
-- 也可以通过电脑 USB 接口供电(需确保供电充足)
+- Use a standard Type-C data cable to connect to the ESP32S3 controller module
+- Recommended to use a 5V/2A or higher power USB adapter
+- Can also be powered through a computer USB port (ensure sufficient power supply)
 
-**供电注意事项:**
+**Power Supply Precautions:**
 
 .. warning::
-   - 请使用质量可靠的 Type-C 数据线和电源适配器
-   - 供电不足可能导致屏幕闪烁、音频异常或系统不稳定
-   - 请勿在通电状态下插拔模块,以免损坏硬件
+   - Please use reliable Type-C data cables and power adapters
+   - Insufficient power may cause screen flickering, audio anomalies, or system instability
+   - Do not plug or unplug modules while powered on to avoid hardware damage
 
-检查清单
-----------------------------
+Checklist
+---------
 
-收到套件后,请按照以下清单检查组件是否齐全:
+After receiving the kit, please check the components according to the following checklist:
 
 .. tip::
-   如发现组件缺失或损坏,请及时联系售后服务。
+   If you find missing or damaged components, please contact after-sales service promptly.
 
-下一步
-----------------------------
+Next Steps
+----------
 
-确认组件齐全后,您可以继续:
+After confirming all components are complete, you can continue to:
 
-- :ref:`下载文件 <download_code>` - 下载代码和相关文件
-- :ref:`组装教程 <assembly>` - 学习如何组装游戏机
-- :ref:`TF 卡准备 <tfcard>` - 准备 TF 卡和游戏文件
-- :ref:`固件烧录 <firmware>` - 烧录固件到 ESP32S3
+- :ref:`Download Files <download_code>` - Download code and related files
+- :ref:`Assembly Tutorial <assembly>` - Learn how to assemble the gaming console
+- :ref:`TF Card Preparation <tfcard>` - Prepare TF card and game files
+- :ref:`Firmware Flashing <firmware>` - Flash firmware to ESP32S3

@@ -1,8 +1,8 @@
-.. _about-this-kit:
+.. _about-this-kit-en:
 
-===================
-产品介绍
-===================
+=====================
+Product Introduction
+=====================
 
 ----------------------
 LAFVIN Retro Game Kit
@@ -15,66 +15,66 @@ LAFVIN Retro Game Kit
 
 [占位符:需要产品主图,显示完整组装好的游戏机]
 
-产品简介
+Product Overview
 ================
 
-LAFVIN Retro Game Kit 是一款基于 ESP32S3N16R8 主控的复古游戏机套件。它结合了扩展底板、TF 卡模块、功放模块和 2.8 英寸 TFT 显示屏,支持多平台游戏模拟器运行,让您重温经典游戏的乐趣。
+The LAFVIN Retro Game Kit is a retro gaming console kit based on the ESP32S3N16R8 microcontroller. It combines an expansion board, TF card module, amplifier module, and a 2.8-inch TFT display, supporting multiple gaming platform emulators to let you relive the joy of classic games.
 
-这款套件采用开源固件,支持 13 个经典游戏平台,提供完整的 DIY 组装体验。无论您是复古游戏爱好者、编程学习者,还是 DIY 收藏家,这款套件都能为您带来独特的体验。
+This kit uses open-source firmware, supports 13 classic gaming platforms, and provides a complete DIY assembly experience. Whether you're a retro gaming enthusiast, programming learner, or DIY collector, this kit offers a unique experience.
 
-主要特性
+Key Features
 ===========
 
-.. _key-features:
+.. _key-features-en:
 
-主控规格
---------
+Controller Specifications
+--------------------------
 
-* **主控芯片**: ESP32S3N16R8
-* **Flash 容量**: 16MB
-* **PSRAM 容量**: 8MB
-* **处理器**: 双核 Xtensa LX7,主频高达 240MHz
-* **无线连接**: Wi-Fi 802.11 b/g/n 和 Bluetooth 5.0
+* **Main Controller**: ESP32S3N16R8
+* **Flash Capacity**: 16MB
+* **PSRAM Capacity**: 8MB
+* **Processor**: Dual-core Xtensa LX7, up to 240MHz
+* **Wireless Connectivity**: Wi-Fi 802.11 b/g/n and Bluetooth 5.0
 
-显示和音频
-----------
+Display and Audio
+-----------------
 
-* **显示屏**: 2.8 英寸 TFT 彩色显示屏
-* **分辨率**: 320x240 像素
-* **音频输出**: 集成功放模块,支持扬声器输出
-* **音量调节**: 支持软件调节音量
+* **Display**: 2.8-inch TFT color display
+* **Resolution**: 320x240 pixels
+* **Audio Output**: Integrated amplifier module with speaker output
+* **Volume Control**: Software-adjustable volume
 
-存储和扩展
-----------
+Storage and Expansion
+----------------------
 
-* **存储方式**: TF 卡(Micro SD 卡)
-* **支持容量**: 最大支持 32GB(FAT32 格式)
-* **文件管理**: 自动创建模拟器文件夹结构
+* **Storage Method**: TF card (Micro SD card)
+* **Supported Capacity**: Up to 32GB (FAT32 format)
+* **File Management**: Automatic emulator folder structure creation
 
-供电方式
---------
+Power Supply
+------------
 
-* **供电接口**: Type-C USB 接口
-* **电源要求**: 5V/2A(推荐)
-* **便携性**: 支持移动电源供电
+* **Power Interface**: Type-C USB port
+* **Power Requirements**: 5V/2A (recommended)
+* **Portability**: Supports power bank charging
 
-支持的游戏平台
-==============
+Supported Gaming Platforms
+===========================
 
-本套件支持以下 13 个经典游戏平台的模拟器:
+This kit supports emulators for the following 13 classic gaming platforms:
 
 .. list-table::
    :header-rows: 1
    :widths: 30 40 30
    :align: center
 
-   * - 平台名称
-     - 英文名称
-     - 支持文件格式
-   * - 任天堂红白机
+   * - Platform Name
+     - English Name
+     - Supported File Formats
+   * - Nintendo Famicom
      - NES (Nintendo Entertainment System)
      - .nes
-   * - 超级任天堂
+   * - Super Nintendo
      - SNES (Super Nintendo)
      - .smc, .sfc
    * - Game Boy
@@ -85,17 +85,17 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3N16R8 主控的复古游戏机套�
      - .gbc
    * - Game & Watch
      - Game & Watch
-     - 内置游戏
-   * - 世嘉 SG-1000
+     - Built-in games
+   * - Sega SG-1000
      - SG-1000
      - .sg
-   * - 世嘉 Master System
+   * - Sega Master System
      - SMS (Sega Master System)
      - .sms
-   * - 世嘉 MD/Genesis
+   * - Sega MD/Genesis
      - MD/Genesis (Mega Drive)
      - .md, .bin
-   * - 世嘉 Game Gear
+   * - Sega Game Gear
      - GG (Game Gear)
      - .gg
    * - Colecovision
@@ -112,33 +112,33 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3N16R8 主控的复古游戏机套�
      - .wad
 
 .. note::
-   游戏文件需要用户自行准备并放入 TF 卡对应的文件夹中。
+   Game files need to be prepared by users and placed in the corresponding folders on the TF card.
 
-应用场景
-========================
+Application Scenarios
+=====================
 
-.. _applications:
+.. _applications-en:
 
-复古游戏娱乐
-------------
+Retro Gaming Entertainment
+---------------------------
 
-* 重温童年经典游戏,体验 80-90 年代的游戏乐趣
-* 支持多个游戏平台,满足不同玩家的需求
-* 便携设计,随时随地享受游戏时光
+* Relive classic childhood games and experience the joy of 80s-90s gaming
+* Support for multiple gaming platforms to meet different players' needs
+* Portable design for gaming anytime, anywhere
 
-编程学习
---------
+Programming Learning
+--------------------
 
-* 基于开源固件,可以学习嵌入式开发
-* 了解游戏模拟器的工作原理
-* 实践 ESP32S3 的应用开发
+* Based on open-source firmware for embedded development learning
+* Understand the working principles of game emulators
+* Practice ESP32S3 application development
 
-DIY 收藏
---------
+DIY Collection
+--------------
 
-* 完整的 DIY 组装体验,培养动手能力
-* 可定制化的硬件配置
-* 独特的复古游戏机收藏品
+* Complete DIY assembly experience to develop hands-on skills
+* Customizable hardware configuration
+* Unique retro gaming console collectible
 
 .. note:: 
-   游戏ROM需要用户自行准备。套件包含所有必需硬件。
+   Game ROMs need to be prepared by users. The kit includes all necessary hardware.

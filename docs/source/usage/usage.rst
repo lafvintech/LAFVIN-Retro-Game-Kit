@@ -1,74 +1,74 @@
 .. _usage:
 
 ====================
-使用说明(ok缺图片)
+Usage Guide (OK, Images Needed)
 ====================
 
-欢迎使用 LAFVIN Retro Game Kit!本章节将指导您如何使用游戏机,包括通电开机、按键操作、菜单系统、设置调节和模拟器使用。
+Welcome to using the LAFVIN Retro Game Kit! This chapter will guide you on how to use the gaming console, including power on, button operations, menu system, settings adjustment, and emulator usage.
 
-快速开始
-========
+Quick Start
+===========
 
-1. **供电开机**: 使用 Type-C 线连接电源适配器（建议 5V/2A）
-2. **了解按键**: 
+1. **Power On**: Connect Type-C cable to power adapter (recommended 5V/2A)
+2. **Understand Buttons**: 
    
-   - 左侧：方向键（D-PAD）- 上下左右移动
-   - 右侧：A/B 按键 - 确认/取消、跳跃/攻击
-   - 中间：Select/Start 按键 - 选择/开始游戏
-   - 顶部：Menu/Option 按键 - 系统菜单/选项设置
+   - Left side: D-PAD (directional keys) - Move up, down, left, right
+   - Right side: A/B buttons - Confirm/Cancel, Jump/Attack
+   - Center: Select/Start buttons - Select/Start game
+   - Top: Menu/Option buttons - System menu/Option settings
 
-3. **使用菜单**: 开机后自动进入启动器界面，使用方向键切换模拟器平台，按 A 键确认选择
-4. **调节设置**: 
+3. **Use Menu**: After power on, automatically enters launcher interface. Use directional keys to switch emulator platforms, press A button to confirm selection
+4. **Adjust Settings**: 
    
-   - Option 按键：调节系统亮度、音量、时区、字体调节游戏速度等设置
-   - Menu 按键：游戏中调出菜单，进行存档、读档、退出游戏等操作
+   - Option button: Adjust system brightness, volume, time zone, font, game speed and other settings
+   - Menu button: Bring up menu during gameplay for save, load, quit game and other operations
 
 
 .. note::
-   首次使用前,请确保已完成硬件组装和固件烧录,并准备好 TF 卡。
+   Before first use, please ensure hardware assembly and firmware flashing are completed, and TF card is prepared.
 
-使用流程
-========
+Usage Flow
+==========
 
-基本使用流程如下:
+Basic usage flow is as follows:
 
-1. 连接 Type-C 电源线
-2. 系统自动开机并显示启动器
-3. 进入对应平台后选择游戏,使用A进入游戏
-4. 游戏运行后使用游戏按键进行操作
-5. 按 Menu 键可返回主菜单或存档
+1. Connect Type-C power cable
+2. System automatically powers on and displays launcher
+3. Enter corresponding platform and select game, use A to enter game
+4. After game runs, use game buttons for operations
+5. Press Menu button to return to main menu or save
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: 详细使用说明
+   :caption: Detailed Usage Instructions
 
    settings
    buttons
    emulators
 
 
-常见问题
-========
+Common Questions
+================
 
-**Q: 如何返回主菜单?**
+**Q: How to return to main menu?**
 
-A: 在游戏中按 Menu 后选择Quit退出游戏。
+A: Press Menu during gameplay, then select Quit to exit game.
 
-**Q: 如何调节音量或者亮度?**
+**Q: How to adjust volume or brightness?**
 
-A: 按 option 键,选择音量或者亮度选项,进行调节。
+A: Press Option button, select volume or brightness option to adjust.
 
-**Q: 游戏运行速度太快或太慢怎么办?**
+**Q: What if game running speed is too fast or too slow?**
 
-A: 可以在游戏中使用option按键选择加快或者减慢游戏速度
+A: You can use Option button during gameplay to select speed up or slow down game speed.
 
-**Q: 如何切换界面语言?**
+**Q: How to switch interface language?**
 
-A: 在启动器界面使用option按键可以选择"语言"选项,可以在英语、德语、法语之间切换。
+A: Use Option button on launcher interface to select "Language" option, can switch between English, German, and French.
 
-下一步
-======
+Next Steps
+==========
 
-- 如果遇到问题,请查看 :doc:`../Appendix/Troubleshooting/troubleshooting`
-- 了解高级功能,请查看 :doc:`../advanced`
+- If you encounter problems, please check :doc:`../Appendix/Troubleshooting/troubleshooting`
+- To learn about advanced features, please check :doc:`../advanced`

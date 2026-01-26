@@ -1,343 +1,334 @@
 .. _hardware-troubleshooting:
 
 ================
-硬件问题排查
+Hardware Troubleshooting
 ================
 
-本章节列出了常见的硬件问题及其解决方法。
+This chapter lists common hardware issues and their solutions.
 
 .. warning::
-   在进行任何硬件检查或维修前，请务必断开电源！通电状态下插拔模块可能导致硬件损坏。
+   Before performing any hardware inspection or repair, always disconnect power! Plugging or unplugging modules while powered on may cause hardware damage.
 
 .. _assembly-troubleshooting:
 
-组装问题
-========
+Assembly Issues
+===============
 
 .. _assembly-pin-insertion:
 
-组装时引脚插不进去
-------------------
+Pins Won't Insert During Assembly
+----------------------------------
 
-**症状**: 模块引脚无法顺利插入插槽或面包板
+**Symptoms**: Module pins cannot be smoothly inserted into sockets or breadboard
 
-**解决方法**:
+**Solutions**:
 
-- 请勿用力过猛，避免损坏引脚
-- 检查引脚是否对齐插槽
-- 轻轻调整引脚角度，确保垂直插入
-- 检查引脚是否有弯曲，用镊子小心调整
-- 确认插槽或面包板孔位没有异物
+- Do not apply excessive force to avoid damaging pins
+- Check if pins are aligned with socket
+- Gently adjust pin angle to ensure vertical insertion
+- Check if pins are bent, carefully adjust with tweezers
+- Confirm socket or breadboard holes have no foreign objects
 
 .. _assembly-wiring-confusion:
 
-面包板跳线太多容易搞混
-----------------------
+Too Many Breadboard Jumper Wires, Easy to Confuse
+--------------------------------------------------
 
-**症状**: 接线复杂，容易接错
+**Symptoms**: Complex wiring, easy to connect incorrectly
 
-**解决方法**:
+**Solutions**:
 
-- 使用不同颜色的跳线区分功能（如：红色-电源，黑色-地线，其他颜色-信号线）
-- 一次只连接一个模块，完成后再进行下一个
-- 每完成一个模块，在引脚对应表确认
-- 拍照记录接线过程，便于后续检查和调试
-- 使用镊子调整跳线位置，保持布局整齐
+- Use different colored jumper wires to distinguish functions (e.g., red-power, black-ground, other colors-signal)
+- Connect only one module at a time, complete it before moving to the next
+- After completing each module, verify against the pin mapping table
+- Take photos of the wiring process for later reference and debugging
+- Use tweezers to adjust jumper wire positions, keep layout tidy
 
 .. _assembly-button-installation:
 
-按键安装问题
-------------
+Button Installation Issues
+---------------------------
 
-**症状**: 按键是否需要焊接？如何安装？
+**Symptoms**: Do buttons need soldering? How to install?
 
-**解决方法**:
+**Solutions**:
 
-- 不需要焊接，所有按键都是插入式设计
-- 直接将按键引脚插入面包板即可
-- 确保按键引脚完全插入面包板孔中
-- 按键一端连接 GPIO，另一端连接 GND
+- No soldering required, all buttons are plug-in design
+- Simply insert button pins into breadboard
+- Ensure button pins are fully inserted into breadboard holes
+- One end of button connects to GPIO, other end connects to GND
 
 .. _assembly-mixing-modes:
 
-两种组装方式可以混用吗
-----------------------
+Can Two Assembly Methods Be Mixed?
+-----------------------------------
 
-**症状**: 想同时使用扩展底板和面包板
+**Symptoms**: Want to use both expansion board and breadboard simultaneously
 
-**解决方法**:
+**Solutions**:
 
-- 不建议混用
-- 扩展底板和面包板的引脚定义可能不同
-- 请选择一种方式完成组装
-- 如需改装，建议使用面包板模式
+- Not recommended to mix
+- Expansion board and breadboard may have different pin definitions
+- Please choose one method to complete assembly
+- If modification needed, breadboard mode is recommended
 
 .. _assembly-button-layout:
 
-按键布局可以调整吗
-------------------
+Can Button Layout Be Adjusted?
+-------------------------------
 
-**症状**: 想自定义按键位置
+**Symptoms**: Want to customize button positions
 
-**解决方法**:
+**Solutions**:
 
-- 可以根据个人习惯调整按键位置
-- 需要相应修改固件中的引脚配置
-- 建议先按标准布局完成组装和测试
-- 熟悉后再进行自定义改装
+- Can adjust button positions according to personal preference
+- Need to modify pin configuration in firmware accordingly
+- Recommended to complete assembly and testing with standard layout first
+- Customize after becoming familiar
 
 .. _hardware-screen-issue:
 
-屏幕不显示
-==========
+Screen Not Displaying
+=====================
 
-症状
-----
+Symptoms
+--------
 
-- 开机后屏幕完全无显示（黑屏）
-- 屏幕显示异常（花屏、闪烁、颜色不正常）
-- 屏幕背光亮但无内容显示
+- Screen completely blank after power on (black screen)
+- Screen displaying abnormally (artifacts, flickering, incorrect colors)
+- Screen backlight on but no content displayed
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **检查供电**
+1. **Check Power Supply**
 
-   - 确认 Type-C 线已正确连接到 ESP32S3 模块
-   - 尝试更换 USB 电源适配器（建议使用 5V/2A 或更高规格）
-   - 检查 ESP32S3 上的电源指示灯是否亮起
-   - 尝试更换 Type-C 数据线
+   - Confirm Type-C cable is correctly connected to ESP32S3 module
+   - Try replacing USB power adapter (recommended 5V/2A or higher)
+   - Check if power indicator LED on ESP32S3 is lit
+   - Try replacing Type-C data cable
 
-2. **检查屏幕连接**
+2. **Check Screen Connection**
 
-   - 断开电源
-   - 确认 TFT 屏幕排针已正确插入底板的排母
-   - 如果是面包板的话确认连接是否正确
+   - Disconnect power
+   - Confirm TFT screen pin headers are correctly inserted into board socket
+   - If using breadboard, confirm connections are correct
 
-3. **检查跳线连接**
+3. **Check Jumper Wire Connections**
 
-   - 参考 :doc:`../assembly` 中的引脚对应表
-   - 检查所有跳线是否连接到正确的引脚
-   - 确认跳线没有松动或脱落
-   - 检查跳线是否有损坏
+   - Refer to pin mapping table in :doc:`../assembly`
+   - Check all jumper wires are connected to correct pins
+   - Confirm jumper wires are not loose or disconnected
+   - Check if jumper wires are damaged
 
-4. **检查固件**
+4. **Check Firmware**
 
-   - 重新烧录固件（参考 :doc:`../firmware/flash_tool`）
-   - 确认使用的是最新版本的固件
-   - 检查烧录过程是否成功完成
+   - Reflash firmware (refer to :doc:`../firmware/flash_tool`)
+   - Confirm using latest firmware version
+   - Check if flashing process completed successfully
 
 .. tip::
-   如果屏幕背光亮但无内容，通常是固件问题，尝试重新烧录固件。
+   If screen backlight is on but no content, it's usually a firmware issue - try reflashing firmware.
 
 .. _hardware-audio-issue:
 
-无声音输出
-==========
+No Audio Output
+===============
 
-症状
-----
+Symptoms
+--------
 
-- 游戏运行正常但完全无声音
-- 声音断断续续或有杂音
+- Game runs normally but completely no audio
+- Audio intermittent or has noise
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **检查功放模块连接**
+1. **Check Amplifier Module Connection**
 
-   - 断开电源
-   - 确认功放模块已正确安装在面包板上
-   - 检查功放模块的跳线连接是否正确
-   - 参考 :doc:`../assembly` 中的功放模块安装步骤
+   - Disconnect power
+   - Confirm amplifier module is correctly installed on breadboard
+   - Check if amplifier module jumper wire connections are correct
+   - Refer to amplifier module installation steps in :doc:`../assembly`
 
-2. **检查音频输出设备**
+2. **Check Audio Output Device**
 
-   - 确认扬声器或耳机已正确连接到功放模块
-   - 尝试更换扬声器或耳机
-   - 检查音频线是否有损坏
+   - Confirm speaker are correctly connected to amplifier module
+   - Try replacing speaker
+   - Check if audio cable is damaged
 
-3. **检查音量设置**
+3. **Check Volume Settings**
 
-   - 进入系统设置菜单
-   - 检查音量是否被设置为 0
-   - 尝试调高音量（参考 :doc:`../usage/settings`）
+   - Enter system settings menu
+   - Check if volume is set to 0
+   - Try increasing volume (refer to :doc:`../usage/settings`)
 
-4. **检查跳线连接**
+4. **Check Jumper Wire Connections**
 
-   - 确认功放模块的所有引脚都已正确连接
-   - 检查音频信号线和电源线是否连接正确
-   - 参考组装教程中的引脚对应表
+   - Confirm all pins of amplifier module are correctly connected
+   - Check if audio signal lines and power lines are connected correctly
+   - Refer to pin mapping table in assembly tutorial
 
 .. note::
-   某些游戏可能本身没有声音，请尝试运行其他游戏进行测试。
+   Some games may not have audio themselves - please try running other games for testing.
 
 .. _hardware-button-issue:
 
-按键无响应
-==========
+Buttons Not Responding
+=======================
 
-症状
-----
+Symptoms
+--------
 
-- 所有按键都无响应
-- 部分按键无响应
-- 按键响应延迟或不稳定
+- All buttons not responding
+- Some buttons not responding
+- Button response delayed or unstable
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **检查按键安装**
+1. **Check Button Installation**
 
-   - 断开电源
-   - 确认按键已正确插入面包板
-   - 检查按键引脚是否完全插入面包板孔中
-   - 确认按键方向正确（按键有方向性）
+   - Disconnect power
+   - Confirm buttons are correctly inserted into breadboard
+   - Check if button pins are fully inserted into breadboard holes
+   - Confirm button orientation is correct (buttons have directionality)
 
-2. **检查跳线连接**
+2. **Check Jumper Wire Connections**
 
-   - 参考 :doc:`../assembly` 中的按键跳线连接图
-   - 检查每个按键的跳线是否连接到正确的 GPIO 引脚
-   - 确认跳线没有松动
-   - 检查跳线是否有损坏或接触不良
+   - Refer to button jumper wire connection diagram in :doc:`../assembly`
+   - Check if each button's jumper wire is connected to correct GPIO pin
+   - Confirm jumper wires are not loose
+   - Check if jumper wires are damaged or have poor contact
 
-3. **测试按键**
+3. **Test Buttons**
 
-   - 使用万用表测试按键是否正常工作
-   - 按下按键时，对应引脚应该导通
-   - 如果按键损坏，请更换新的按键
+   - Use multimeter to test if buttons work normally
+   - When button is pressed, corresponding pin should conduct
+   - If button is damaged, replace with new button
 
-4. **检查面包板**
+4. **Check Breadboard**
 
-   - 面包板的某些孔可能接触不良
-   - 尝试将按键移到面包板的其他位置
-   - 确认面包板质量良好
+   - Some holes in breadboard may have poor contact
+   - Try moving button to other positions on breadboard
 
 .. warning::
-   请勿用力按压按键，可能导致按键损坏或面包板变形。
+   Do not press buttons forcefully - may cause button damage or breadboard deformation.
 
 .. _hardware-tfcard-issue:
 
-无法识别 TF 卡
-==============
+Cannot Recognize TF Card
+========================
 
-症状
-----
+Symptoms
+--------
 
-- 系统提示"未检测到 TF 卡"
-- TF 卡插入后无反应
-- 游戏列表为空
+- System prompts "TF card not detected"
+- No response after inserting TF card
+- Game list is empty
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **检查 TF 卡格式**
+1. **Check TF Card Format**
 
-   - 确认 TF 卡已格式化为 FAT32 格式
-   - 重新格式化 TF 卡（参考 :doc:`../tfcard/format`）
-   - 确认 TF 卡容量不超过 32GB
+   - Confirm TF card is formatted as FAT32
+   - Reformat TF card (refer to :doc:`../tfcard/format`)
+   - Confirm TF card capacity does not exceed 32GB
 
-2. **检查 TF 卡插入**
+2. **Check TF Card Insertion**
 
-   - 断开电源
-   - 重新插入 TF 卡，确保插入到位
-   - 检查 TF 卡方向是否正确（金属触点朝下）
-   - 确认听到"咔哒"声表示插入到位
+   - Disconnect power
+   - Reinsert TF card, ensure it's fully inserted
+   - Check if TF card direction is correct (metal contacts facing down)
+   - Confirm hearing "click" sound indicates proper insertion
 
-3. **检查 TF 卡模块连接**
+3. **Check TF Card Module Connection**
 
-   - 断开电源
-   - 确认 TF 卡模块已正确安装在面包板上
-   - 检查 TF 卡模块的跳线连接是否正确
-   - 参考 :doc:`../assembly` 中的 TF 卡模块安装步骤
+   - Disconnect power
+   - Confirm TF card module is correctly installed on breadboard
+   - Check if TF card module jumper wire connections are correct
+   - Refer to TF card module installation steps in :doc:`../assembly`
 
-4. **检查 TF 卡质量**
+4. **Check TF Card Quality**
 
-   - 尝试使用其他 TF 卡
-   - 确认 TF 卡没有物理损坏
-   - 在电脑上测试 TF 卡是否可以正常读写
+   - Try using another TF card
+   - Confirm TF card has no physical damage
+   - Test if TF card can read/write normally on computer
 
-5. **检查文件结构**
+5. **Check File Structure**
 
-   - 确认 TF 卡根目录下有正确的文件夹结构
-   - 参考 :doc:`../tfcard/file_structure` 了解正确的文件夹结构
-   - 首次使用时，系统会自动创建文件夹
-
-.. tip::
-   建议使用品牌 TF 卡（如 SanDisk、Samsung），避免使用劣质 TF 卡。
+   - Confirm TF card root directory has correct folder structure
+   - Refer to :doc:`../tfcard/file_structure` for correct folder structure
+   - On first use, system will automatically create folders
 
 .. _hardware-power-issue:
 
-供电问题
-========
+Power Supply Issues
+===================
 
-症状
-----
+Symptoms
+--------
 
-- 设备无法开机
-- 设备运行不稳定，频繁重启
-- 电源指示灯不亮或闪烁
+- Device cannot power on
+- Device runs unstably, frequently restarts
+- Power indicator LED not lit or flickering
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **检查电源适配器**
+1. **Check Power Adapter**
 
-   - 使用 5V/2A 或更高规格的 USB 电源适配器
-   - 避免使用电脑 USB 口供电（电流可能不足）
-   - 尝试更换电源适配器
+   - Use 5V/2A or higher specification USB power adapter
+   - Avoid using computer USB port for power (current may be insufficient)
+   - Try replacing power adapter
 
-2. **检查 Type-C 线**
+2. **Check Type-C Cable**
 
-   - 确认使用的是数据线，而非仅充电线
-   - 尝试更换 Type-C 线
-   - 检查线缆是否有损坏
+   - Confirm using data cable, not charge-only cable
+   - Try replacing Type-C cable
+   - Check if cable is damaged
 
-3. **检查连接**
+3. **Check Connection**
 
-   - 确认 Type-C 线已牢固插入 ESP32S3
-   - 检查 Type-C 接口是否有灰尘或异物
-   - 重新插拔 Type-C 线
-
-4. **检查功耗**
-
-   - 如果连接了过多外设，可能导致功耗过大
-   - 尝试断开部分外设进行测试
-   - 使用更高功率的电源适配器
+   - Confirm Type-C cable is firmly inserted into ESP32S3
+   - Check if Type-C port has dust or foreign objects
+   - Replug Type-C cable
 
 .. warning::
-   请勿使用劣质电源适配器，可能导致设备损坏或存在安全隐患。
+   Do not use low-quality power adapters - may cause device damage or safety hazards.
 
 .. _hardware-other-issues:
 
-其他硬件问题
-============
+Other Hardware Issues
+=====================
 
 .. _hardware-breadboard-contact:
 
-面包板接触不良
---------------
+Breadboard Poor Contact
+------------------------
 
-**症状**: 设备工作不稳定，时好时坏
+**Symptoms**: Device works unstably, intermittent
 
-**解决方法**:
+**Solutions**:
 
-- 检查所有模块和跳线是否插紧
-- 尝试重新插拔所有连接
-- 
+- Check if all modules and jumper wires are firmly inserted
+- Try replugging all connections
+- Replace breadboard if necessary
+
 .. _hardware-overheating:
 
-元件过热
---------
+Component Overheating
+----------------------
 
-**症状**: ESP32S3 或其他模块发热严重
+**Symptoms**: ESP32S3 or other modules heating severely
 
-**解决方法**:
+**Solutions**:
 
-- 检查是否有短路情况
-- 确认跳线连接正确
-- 改善散热条件，避免在密闭空间使用
-- 如果持续过热，请断开电源并检查硬件连接
+- Check for short circuit situations
+- Confirm jumper wire connections are correct
+- Improve heat dissipation conditions, avoid using in enclosed spaces
+- If continues to overheat, disconnect power and check hardware connections
 
 .. danger::
-   如果发现元件冒烟或有焦味，请立即断开电源！这可能表示严重的硬件故障。
+   If you notice components smoking or smell burning, immediately disconnect power! This may indicate serious hardware failure.

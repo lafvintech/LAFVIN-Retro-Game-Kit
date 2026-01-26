@@ -32,14 +32,14 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机套件,支持多
 
 .. toctree::
    :maxdepth: 2
-   :caption: 产品信息
+   :caption: Product Information
 
    about_this_kit
    component_list
 
 .. toctree::
    :maxdepth: 1
-   :caption: 入门教程
+   :caption: Tutorial
 
    download_code
    assembly
@@ -49,14 +49,14 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机套件,支持多
 
 .. toctree::
    :maxdepth: 2
-   :caption: 使用指南
+   :caption: Usage
 
    usage/usage
    advanced
 
 .. toctree::
    :maxdepth: 2
-   :caption: 附录
+   :caption: Appendix
 
    Appendix/appendix
 

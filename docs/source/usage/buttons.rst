@@ -1,11 +1,11 @@
 .. _buttons:
 
 ========
-按键说明
+Button Guide
 ========
 
-按键布局
-========
+Button Layout
+=============
 
 .. image:: ../img/usage/buttons_layout.jpg
    :alt: 按键布局图
@@ -14,51 +14,51 @@
 
 [占位符:需要按键布局图,显示所有按键的位置和标识]
 
-按键功能
-========
+Button Functions
+================
 
-游戏控制按键
-------------
-
-.. list-table::
-   :header-rows: 1
-   :widths: 20 80
-
-   * - 按键
-     - 功能
-   * - 方向键(上)
-     - 控制游戏角色向上移动或菜单向上选择
-   * - 方向键(下)
-     - 控制游戏角色向下移动或菜单向下选择
-   * - 方向键(左)
-     - 控制游戏角色向左移动或菜单向左选择
-   * - 方向键(右)
-     - 控制游戏角色向右移动或菜单向右选择
-   * - A 键
-     - 确认/跳跃/攻击
-   * - B 键
-     - 取消/返回/特殊功能
-
-系统功能按键
-------------
+Game Control Buttons
+--------------------
 
 .. list-table::
    :header-rows: 1
    :widths: 20 80
 
-   * - 按键
-     - 功能
-   * - Start 键
-     - 开始游戏/暂停游戏
-   * - Select 键
-     - 选择/切换选项
-   * - Menu 键
-     - 打开系统菜单
-   * - Option 键
-     - 打开选项设置
+   * - Button
+     - Function
+   * - D-pad (Up)
+     - Control game character to move up or menu selection up
+   * - D-pad (Down)
+     - Control game character to move down or menu selection down
+   * - D-pad (Left)
+     - Control game character to move left or menu selection left
+   * - D-pad (Right)
+     - Control game character to move right or menu selection right
+   * - A Button
+     - Confirm/Jump/Attack
+   * - B Button
+     - Cancel/Return/Special function
+
+System Function Buttons
+-----------------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 80
+
+   * - Button
+     - Function
+   * - Start Button
+     - Start game/Pause game
+   * - Select Button
+     - Select/Switch options
+   * - Menu Button
+     - Open system menu
+   * - Option Button
+     - Open option settings
 
 .. note::
-   不同游戏平台的按键映射可能略有不同,具体功能请参考各模拟器的说明。
+   Button mappings for different gaming platforms may vary slightly. For specific functions, please refer to each emulator's instructions.
 
 .. tip::
-   建议在开始游戏前先熟悉按键布局,以获得更好的游戏体验。
+   It's recommended to familiarize yourself with the button layout before starting games for a better gaming experience.

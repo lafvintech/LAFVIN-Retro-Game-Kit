@@ -1,373 +1,373 @@
 .. _software-troubleshooting:
 
 ================
-软件问题排查
+Software Troubleshooting
 ================
 
-本章节列出了常见的软件问题及其解决方法。
+This chapter lists common software issues and their solutions.
 
-固件烧录失败
-============
+Firmware Flashing Failure
+==========================
 
-症状
-----
+Symptoms
+--------
 
-- 烧录工具无法连接到 ESP32S3
-- 烧录过程中出现错误
-- 烧录完成但设备无法启动
+- Flashing tool cannot connect to ESP32S3
+- Errors occur during flashing process
+- Flashing completes but device cannot start
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **无法识别 COM 端口**
+1. **Cannot Recognize COM Port**
 
-   **症状**: 烧录工具中找不到 COM 端口
+   **Symptoms**: Cannot find COM port in flashing tool
 
-   **解决方法**:
+   **Solutions**:
 
-   - 检查 Type-C 线是否正确连接
-   - 确认使用的是数据线，而非仅充电线
-   - 安装 CH340 驱动程序（如果使用 CH340 芯片）
-   - 在设备管理器中检查是否识别到 USB 串口设备
-   - 尝试更换 USB 端口或电脑
-   - 重新插拔 Type-C 线
+   - Check if Type-C cable is correctly connected
+   - Confirm using data cable, not charge-only cable
+   - Install CH340 driver (if using CH340 chip)
+   - Check if USB serial device is recognized in Device Manager
+   - Try changing USB port or computer
+   - Replug Type-C cable
 
-2. **烧录过程中断**
+2. **Flashing Process Interrupted**
 
-   **症状**: 烧录进行到一半时失败或中断
+   **Symptoms**: Flashing fails or interrupts halfway through
 
-   **解决方法**:
+   **Solutions**:
 
-   - 确保 Type-C 线连接稳定，不要移动设备
-   - 使用质量好的 Type-C 线
-   - 关闭其他可能占用串口的程序
-   - 降低烧录波特率（从 921600 降到 115200）
-   - 重新下载固件文件，确保文件完整
+   - Ensure Type-C cable connection is stable, don't move device
+   - Use good quality Type-C cable
+   - Close other programs that may occupy serial port
+   - Reduce flashing baud rate (from 921600 to 115200)
+   - Re-download firmware file, ensure file is complete
 
-3. **烧录完成但无法启动**
+3. **Flashing Completes But Cannot Start**
 
-   **症状**: 烧录显示成功，但设备开机后无反应
+   **Symptoms**: Flashing shows success, but device has no response after power on
 
-   **解决方法**:
+   **Solutions**:
 
-   - 确认烧录的固件版本正确
-   - 检查烧录地址是否正确设置
-   - 尝试完全擦除 Flash 后重新烧录
-   - 使用官方推荐的烧录工具
-   - 参考 :doc:`../firmware/troubleshooting` 了解详细烧录问题
+   - Confirm correct firmware version is flashed
+   - Check if flashing address is set correctly
+   - Try completely erasing Flash then reflashing
+   - Use officially recommended flashing tool
+   - Refer to :doc:`../firmware/troubleshooting` for detailed flashing issues
 
 .. tip::
-   如果多次烧录失败，尝试使用 ESP32 官方的 Flash Download Tool。
+   If flashing fails multiple times, try using ESP32's official Flash Download Tool.
 
-游戏无法加载
-============
+Games Cannot Load
+=================
 
-症状
-----
+Symptoms
+--------
 
-- 游戏列表为空
-- 选择游戏后无法启动
-- 游戏运行时黑屏或崩溃
+- Game list is empty
+- Cannot start after selecting game
+- Game black screen or crashes during runtime
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **TF 卡格式问题**
+1. **TF Card Format Issue**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 确认 TF 卡已格式化为 FAT32 格式
-   - 重新格式化 TF 卡（参考 :doc:`../tfcard/format`）
-   - 确保使用正确的分配单元大小（建议 4096 字节）
+   - Confirm TF card is formatted as FAT32
+   - Reformat TF card (refer to :doc:`../tfcard/format`)
+   - Ensure using correct allocation unit size (recommended 4096 bytes)
 
-2. **文件格式不正确**
+2. **Incorrect File Format**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 检查游戏文件扩展名是否正确
-   - 参考 :doc:`../tfcard/file_structure` 了解各平台支持的文件格式
-   - 确认游戏文件没有损坏
-   - 尝试使用其他来源的游戏文件
+   - Check if game file extension is correct
+   - Refer to :doc:`../tfcard/file_structure` for supported file formats for each platform
+   - Confirm game file is not corrupted
+   - Try using game files from other sources
 
-3. **文件夹结构错误**
+3. **Incorrect Folder Structure**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 确认游戏文件放在正确的文件夹中
-   - 文件夹名称必须与模拟器名称匹配（如 NES、GB、SNES 等）
-   - 文件夹名称区分大小写
-   - 首次插入 TF 卡时，让系统自动创建文件夹结构
+   - Confirm game files are placed in correct folders
+   - Folder names must match emulator names (such as NES, GB, SNES, etc.)
+   - Folder names are case-sensitive
+   - When inserting TF card for first time, let system automatically create folder structure
 
-4. **游戏文件过大**
+4. **Game File Too Large**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 某些大型游戏可能不被支持
-   - 尝试使用较小的游戏文件进行测试
-   - 检查固件版本是否支持该游戏
+   - Some large games may not be supported
+   - Try using smaller game files for testing
+   - Check if firmware version supports the game
 
-5. **ROM 文件损坏**
+5. **ROM File Corrupted**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 重新下载游戏文件
-   - 使用 ROM 校验工具验证文件完整性
-   - 尝试其他游戏确认是否为个别文件问题
+   - Re-download game file
+   - Use ROM verification tool to verify file integrity
+   - Try other games to confirm if it's an individual file issue
 
 .. note::
-   并非所有游戏都能完美运行，某些游戏可能存在兼容性问题。
+   Not all games can run perfectly - some games may have compatibility issues.
 
-系统运行异常
-============
+System Running Abnormally
+==========================
 
-症状
-----
+Symptoms
+--------
 
-- 系统频繁死机或重启
-- 画面卡顿或闪烁
-- 音画不同步
-- 操作响应缓慢
+- System frequently freezes or restarts
+- Screen stuttering or flickering
+- Audio-video out of sync
+- Slow operation response
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **固件版本问题**
+1. **Firmware Version Issue**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 检查是否使用最新版本固件
-   - 下载并烧录最新固件
-   - 查看固件更新日志，了解已修复的问题
+   - Check if using latest firmware version
+   - Download and flash latest firmware
+   - View firmware update log to understand fixed issues
 
-2. **TF 卡读取速度慢**
+2. **Slow TF Card Read Speed**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 使用 Class 10 或 UHS-I 等级的高速 TF 卡
-   - 更换质量更好的 TF 卡
-   - 检查 TF 卡是否有坏块
+   - Use Class 10 or UHS-I grade high-speed TF card
+   - Replace with better quality TF card
+   - Check if TF card has bad blocks
 
-3. **供电不足**
+3. **Insufficient Power Supply**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 使用 5V/2A 或更高规格的电源适配器
-   - 避免使用电脑 USB 口供电
-   - 检查电源线质量
+   - Use 5V/2A or higher specification power adapter
+   - Avoid using computer USB port for power
+   - Check power cable quality
 
-4. **系统设置不当**
+4. **Improper System Settings**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 恢复默认设置
-   - 调整游戏速度设置（参考 :doc:`../usage/settings`）
-   - 降低音量或亮度以减少功耗
+   - Restore default settings
+   - Adjust game speed settings (refer to :doc:`../usage/settings`)
+   - Lower volume or brightness to reduce power consumption
 
-5. **内存不足**
+5. **Insufficient Memory**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 关闭不必要的后台功能
-   - 重启设备清理内存
-   - 避免同时运行多个大型游戏
+   - Close unnecessary background functions
+   - Restart device to clear memory
+   - Avoid running multiple large games simultaneously
 
 .. warning::
-   如果系统持续异常，建议完全擦除 Flash 并重新烧录固件。
+   If system continues to be abnormal, recommend completely erasing Flash and reflashing firmware.
 
-设置无法保存
-============
+Settings Cannot Be Saved
+=========================
 
-症状
-----
+Symptoms
+--------
 
-- 修改设置后重启失效
-- 音量、亮度等设置无法保存
-- 语言设置恢复默认
+- Settings become invalid after restart
+- Volume, brightness and other settings cannot be saved
+- Language settings revert to default
 
-可能原因和解决方法
-------------------
+Possible Causes and Solutions
+------------------------------
 
-1. **配置文件问题**
+1. **Configuration File Issue**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 检查 TF 卡是否有写保护
-   - 确认 TF 卡有足够的剩余空间
-   - 重新格式化 TF 卡
+   - Check if TF card has write protection
+   - Confirm TF card has sufficient remaining space
+   - Reformat TF card
 
-2. **固件问题**
+2. **Firmware Issue**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 更新到最新版本固件
-   - 重新烧录固件
-   - 检查固件是否完整
+   - Update to latest firmware version
+   - Reflash firmware
+   - Check if firmware is complete
 
-3. **TF 卡故障**
+3. **TF Card Failure**
 
-   **解决方法**:
+   **Solutions**:
 
-   - 更换 TF 卡
-   - 在电脑上测试 TF 卡读写功能
-   - 使用磁盘检查工具修复 TF 卡错误
+   - Replace TF card
+   - Test TF card read/write function on computer
+   - Use disk check tool to repair TF card errors
 
 .. tip::
-   某些设置可能需要重启后才能生效，请在修改设置后重启设备。
+   Some settings may require restart to take effect - please restart device after modifying settings.
 
-模拟器特定问题
-==============
+Emulator-Specific Issues
+=========================
 
-NES 模拟器问题
---------------
+NES Emulator Issues
+-------------------
 
-**常见问题**:
+**Common Issues**:
 
-- 某些游戏无法运行
-- 画面显示不正常
-- 声音有杂音
+- Some games cannot run
+- Screen displays abnormally
+- Audio has noise
 
-**解决方法**:
+**Solutions**:
 
-- 确认使用 .nes 格式的 ROM 文件
-- 尝试不同版本的 ROM（如 (U)、(E)、(J) 版本）
-- 检查 ROM 文件是否为 iNES 格式
-- 调整模拟器设置（参考 :doc:`../advanced/emulator_config`）
+- Confirm using .nes format ROM files
+- Try different ROM versions (such as (U), (E), (J) versions)
+- Check if ROM file is in iNES format
+- Adjust emulator settings (refer to :doc:`../advanced/emulator_config`)
 
-GB/GBC 模拟器问题
------------------
+GB/GBC Emulator Issues
+----------------------
 
-**常见问题**:
+**Common Issues**:
 
-- 游戏运行速度异常
-- 颜色显示不正确
-- 存档无法保存
+- Game running speed abnormal
+- Colors display incorrectly
+- Saves cannot be saved
 
-**解决方法**:
+**Solutions**:
 
-- 确认文件扩展名正确（.gb 或 .gbc）
-- 检查 ROM 文件头信息是否正确
-- 确保 TF 卡有写入权限以保存存档
-- 尝试调整游戏速度设置
+- Confirm file extension is correct (.gb or .gbc)
+- Check if ROM file header information is correct
+- Ensure TF card has write permission to save saves
+- Try adjusting game speed settings
 
-SNES 模拟器问题
----------------
+SNES Emulator Issues
+--------------------
 
-**常见问题**:
+**Common Issues**:
 
-- 大型游戏运行缓慢
-- 特殊芯片游戏不兼容
-- 音频播放异常
+- Large games run slowly
+- Special chip games incompatible
+- Audio playback abnormal
 
-**解决方法**:
+**Solutions**:
 
-- SNES 游戏对性能要求较高，某些大型游戏可能无法流畅运行
-- 使用 .smc 或 .sfc 格式的 ROM
-- 避免使用带特殊芯片的游戏（如 SuperFX、SA-1）
-- 降低音频质量以提升性能
+- SNES games have high performance requirements, some large games may not run smoothly
+- Use .smc or .sfc format ROMs
+- Avoid using games with special chips (such as SuperFX, SA-1)
+- Lower audio quality to improve performance
 
-DOOM 相关问题
--------------
+DOOM Related Issues
+-------------------
 
-**常见问题**:
+**Common Issues**:
 
-- DOOM 无法启动
-- 自定义 WAD 文件无法加载
-- 游戏运行卡顿
+- DOOM cannot start
+- Custom WAD files cannot load
+- Game runs with stuttering
 
-**解决方法**:
+**Solutions**:
 
-- 确认使用的是 DOOM 1 的 WAD 文件
-- 检查 WAD 文件大小是否合理（不要过大）
-- 参考 :doc:`../advanced/doom_mods` 了解 WAD 文件使用方法
-- 确保 WAD 文件放在正确的 DOOM 文件夹中
+- Confirm using DOOM 1 WAD files
+- Check if WAD file size is reasonable (not too large)
+- Refer to :doc:`../advanced/doom_mods` for WAD file usage
+- Ensure WAD files are placed in correct DOOM folder
 
-完全重置系统
-============
+Complete System Reset
+=====================
 
-如果以上方法都无法解决问题，可以尝试完全重置系统：
+If none of the above methods resolve the issue, you can try a complete system reset:
 
-步骤
-----
+Steps
+-----
 
-1. **备份重要数据**
+1. **Backup Important Data**
 
-   - 备份 TF 卡中的游戏文件和存档
-   - 记录当前的设置配置
+   - Backup game files and saves on TF card
+   - Record current settings configuration
 
-2. **擦除 Flash**
+2. **Erase Flash**
 
-   使用烧录工具完全擦除 ESP32S3 的 Flash：
+   Use flashing tool to completely erase ESP32S3's Flash:
 
    .. code-block:: bash
 
-      # 使用 esptool
+      # Using esptool
       esptool.py --chip esp32s3 --port COM3 erase_flash
 
-3. **重新烧录固件**
+3. **Reflash Firmware**
 
-   - 下载最新版本固件
-   - 按照 :doc:`../firmware/flash_tool` 重新烧录
-   - 确认烧录成功
+   - Download latest firmware version
+   - Reflash according to :doc:`../firmware/flash_tool`
+   - Confirm flashing success
 
-4. **重新格式化 TF 卡**
+4. **Reformat TF Card**
 
-   - 格式化为 FAT32 格式
-   - 让系统自动创建文件夹结构
-   - 重新复制游戏文件
+   - Format as FAT32
+   - Let system automatically create folder structure
+   - Recopy game files
 
-5. **重新配置设置**
+5. **Reconfigure Settings**
 
-   - 开机后重新配置语言、音量等设置
-   - 测试各项功能是否正常
+   - Reconfigure language, volume and other settings after power on
+   - Test if all functions work normally
 
 .. warning::
-   完全重置会清除所有数据和设置，请务必提前备份重要文件。
+   Complete reset will clear all data and settings - be sure to backup important files beforehand.
 
-获取技术支持
-============
+Get Technical Support
+=====================
 
-常见问题 FAQ
-=============
+Common Questions FAQ
+====================
 
-Q1: 固件烧录后设备无法启动怎么办？
------------------------------------
+Q1: Device Cannot Start After Firmware Flashing?
+-------------------------------------------------
 
-A: 首先检查烧录地址是否正确，然后尝试完全擦除 Flash 后重新烧录。如果问题依旧，可能是硬件连接问题，请检查所有跳线和模块连接。
+A: First check if flashing address is correct, then try completely erasing Flash and reflashing. If problem persists, may be hardware connection issue - please check all jumper wires and module connections.
 
-Q2: 为什么某些游戏无法运行？
------------------------------
+Q2: Why Can't Some Games Run?
+------------------------------
 
-A: 模拟器可能不支持所有游戏，特别是使用特殊芯片的游戏。建议尝试其他游戏，或查看固件更新日志了解兼容性改进。
+A: Emulator may not support all games, especially games using special chips. Recommend trying other games, or check firmware update log for compatibility improvements.
 
-Q3: 如何更新固件？
-------------------
+Q3: How to Update Firmware?
+----------------------------
 
-A: 下载最新版本固件，然后按照 :doc:`../firmware/flash_tool` 中的步骤重新烧录即可。更新前建议备份 TF 卡中的存档文件。
+A: Download latest firmware version, then reflash according to steps in :doc:`../firmware/flash_tool`. Recommend backing up save files on TF card before updating.
 
-Q4: TF 卡容量有限制吗？
------------------------
+Q4: Is There a TF Card Capacity Limit?
+---------------------------------------
 
-A: 建议使用 8GB-32GB 的 TF 卡，必须格式化为 FAT32 格式。超过 32GB 的卡可能需要使用第三方工具格式化为 FAT32。
+A: Recommend using 8GB-32GB TF cards, must be formatted as FAT32. Cards over 32GB may need third-party tools to format as FAT32.
 
-Q5: 可以使用充电宝供电吗？
----------------------------
+Q5: Can I Use Power Bank for Power?
+------------------------------------
 
-A: 可以，但请确保充电宝输出至少 5V/2A，并且使用质量好的 Type-C 线。某些充电宝可能因为功耗过低而自动关闭。
+A: Yes, but ensure power bank outputs at least 5V/2A and use good quality Type-C cable. Some power banks may automatically shut off due to low power consumption.
 
-Q6: 设备发热正常吗？
---------------------
+Q6: Is Device Heating Normal?
+------------------------------
 
-A: ESP32S3 在运行时会有一定发热，这是正常现象。但如果发热严重或有焦味，请立即断电检查硬件连接。
+A: ESP32S3 will have some heating during operation, this is normal. But if heating is severe or there's burning smell, immediately disconnect power and check hardware connections.
 
-Q7: 如何保存游戏进度？
-----------------------
-
-A: 某些模拟器支持存档功能，存档文件会自动保存在 TF 卡中。具体操作请参考 :doc:`../usage/emulators`。
-
-Q8: 可以自己开发游戏或应用吗？
+Q7: How to Save Game Progress?
 -------------------------------
 
-A: 可以！固件是开源的，您可以在 GitHub 上获取源代码并进行二次开发。详情请访问官方 GitHub 仓库。
+A: Some emulators support save function, save files will automatically save on TF card. For specific operations, refer to :doc:`../usage/emulators`.
+
+Q8: Can I Develop My Own Games or Applications?
+------------------------------------------------
+
+A: Yes! Firmware is open source, you can get source code on GitHub and do secondary development. For details, visit official GitHub repository.
 
 .. tip::
-   定期查看官方网站和 GitHub 仓库，获取最新的固件更新和功能改进。
+   Regularly check official website and GitHub repository for latest firmware updates and feature improvements.

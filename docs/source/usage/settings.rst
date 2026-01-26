@@ -1,27 +1,27 @@
 .. _settings:
 
 ============
-设置调节说明
+Settings Guide
 ============
 
-设置菜单概述
-============
+Settings Menu Overview
+======================
 
-本系统提供两个独立的设置菜单，各有不同的功能：
+This system provides two independent settings menus, each with different functions:
 
-.. list-table:: 两种菜单对比
+.. list-table:: Menu Comparison
    :header-rows: 1
    :widths: 20 40 40
 
-   * - 菜单类型
-     - 功能说明
-     - 打开方式
-   * - **Option 菜单**
-     - 系统全局设置（音量、亮度、语言、主题等）
-     - 按 **Option** 按键
-   * - **Menu 菜单**
-     - 游戏内操作（存档、读档等）
-     - 游戏中按 **Menu** 按键
+   * - Menu Type
+     - Function Description
+     - How to Open
+   * - **Option Menu**
+     - System global settings (volume, brightness, language, theme, etc.)
+     - Press **Option** button
+   * - **Menu Menu**
+     - In-game operations (save, load, etc.)
+     - Press **Menu** button during gameplay
 
 .. image:: ../img/usage/游戏内选项1.jpg
    :align: left
@@ -32,120 +32,120 @@
    :width: 400px
 
 .. note::
-   - **Option 菜单**：可在主界面或游戏中打开，修改系统级设置
-   - **Menu 菜单**：仅在游戏运行时可用，用于游戏内操作
+   - **Option Menu**: Can be opened from main interface or during gameplay to modify system-level settings
+   - **Menu Menu**: Only available during gameplay, used for in-game operations
 
-音量调节
-========
+Volume Adjustment
+=================
 
-调节音量大小
-------------
+Adjusting Volume Level
+----------------------
 
-**操作步骤：**
+**Steps:**
 
-1. 按 **Option** 按键打开系统菜单
-2. 选择 **Volume（音量）** 选项
-3. 使用方向键（左/右）调节音量大小
-4. 音量范围：0-100（0 为静音，100 为最大音量）
-5. 按 **B** 键返回并自动保存设置
+1. Press **Option** button to open system menu
+2. Select **Volume** option
+3. Use directional keys (left/right) to adjust volume level
+4. Volume range: 0-100 (0 is mute, 100 is maximum volume)
+5. Press **B** button to return and automatically save settings
 
 .. tip::
-   音量设置会立即生效，您可以边调节边试听效果。
+   Volume settings take effect immediately - you can listen while adjusting.
 
-亮度调节
-========
+Brightness Adjustment
+=====================
 
-调节屏幕亮度
-------------
+Adjusting Screen Brightness
+----------------------------
 
-**操作步骤：**
+**Steps:**
 
-1. 按 **Option** 按键打开系统菜单
-2. 选择 **Brightness（亮度）** 选项
-3. 使用方向键（左/右）调节屏幕亮度
-4. 亮度范围：0-100（建议设置在 70-90 之间）
-5. 按 **B** 键返回并自动保存设置
+1. Press **Option** button to open system menu
+2. Select **Brightness** option
+3. Use directional keys (left/right) to adjust screen brightness
+4. Brightness range: 0-100 (recommended setting: 70-90)
+5. Press **B** button to return and automatically save settings
 
-.. list-table:: 亮度调节快捷操作
+.. list-table:: Brightness Adjustment Quick Operations
    :header-rows: 1
    :widths: 30 70
 
-   * - 操作
-     - 说明
-   * - 方向键（右）
-     - 增加亮度（+10）
-   * - 方向键（左）
-     - 减少亮度（-10）
-   * - B 键
-     - 保存并返回
+   * - Operation
+     - Description
+   * - Directional key (right)
+     - Increase brightness (+10)
+   * - Directional key (left)
+     - Decrease brightness (-10)
+   * - B button
+     - Save and return
 
 .. tip::
-   - 建议根据环境光线调整亮度，避免眼睛疲劳
+   - Adjust brightness according to ambient lighting to avoid eye fatigue
 
-游戏速度调节
-============
+Game Speed Adjustment
+=====================
 
-调节游戏运行速度
-----------------
+Adjusting Game Running Speed
+-----------------------------
 
-在某些情况下，您可能需要调整游戏的运行速度（如练习难关或快速通关）。
+In some cases, you may need to adjust the game's running speed (such as practicing difficult levels or speed running).
 
-**操作步骤：**
+**Steps:**
 
-1. 在游戏中按 **Option** 按键打开菜单
-2. 选择 **Speed（速度）** 选项
-3. 使用方向键（左/右）选择速度倍率
-4. 可选速度：0.5x 、1.0x（正常）、1.5x、2.0x
-5. 按 **B** 键返回并保存设置
+1. Press **Option** button during gameplay to open menu
+2. Select **Speed** option
+3. Use directional keys (left/right) to select speed multiplier
+4. Available speeds: 0.5x, 1.0x (normal), 1.5x, 2.0x
+5. Press **B** button to return and save settings
 
-.. list-table:: 速度倍率说明
+.. list-table:: Speed Multiplier Description
    :header-rows: 1
    :widths: 20 80
 
-   * - 速度倍率
-     - 适用场景
+   * - Speed Multiplier
+     - Use Case
    * - 0.5x
-     - 慢速模式，适合练习难度较高的关卡或精确操作
+     - Slow mode, suitable for practicing high-difficulty levels or precise operations
    * - 1.0x
-     - 正常速度（默认），原汁原味的游戏体验
+     - Normal speed (default), authentic game experience
    * - 1.5x
-     - 快速模式，适合重复关卡
+     - Fast mode, suitable for repetitive levels
    * - 2.0x
-     - 超快模式，适合快速通关或跳过剧情
+     - Super fast mode, suitable for speed running or skipping cutscenes
 
 .. warning::
-   - 修改游戏速度可能会影响音频同步和游戏体验
-   - 某些游戏在非正常速度下可能出现卡顿或异常
-   - 建议在正常速度（1.0x）下游玩以获得最佳体验
+   - Modifying game speed may affect audio synchronization and game experience
+   - Some games may experience lag or anomalies at non-normal speeds
+   - Recommended to play at normal speed (1.0x) for best experience
 
-语言切换
-========
+Language Switching
+==================
 
-切换界面语言
-------------
+Switching Interface Language
+-----------------------------
 
-系统支持多种界面语言，方便不同地区的用户使用。
+The system supports multiple interface languages for users in different regions.
 
-**操作步骤：**
+**Steps:**
 
-1. 在启动器界面按 **Option** 按键打开系统菜单
-2. 选择 **Language（语言）** 选项
-3. 按 **A** 键进入语言选择子菜单
-4. 使用方向键（上/下）浏览可用语言
-5. 按 **A** 键确认选择，系统会自动切换语言并返回主界面
+1. Press **Option** button on launcher interface to open system menu
+2. Select **Language** option
+3. Press **A** button to enter language selection submenu
+4. Use directional keys (up/down) to browse available languages
+5. Press **A** button to confirm selection - system will automatically switch language and return to main interface
 
 .. image:: ../img/usage/游戏外选项1.jpg
    :align: left
 
 
-支持的语言
-----------
+Supported Languages
+-------------------
 
-.. list-table:: 可用语言列表
+.. list-table:: Available Languages List
    :header-rows: 1
    :widths: 30 30
 
-   * - 语言
+   * - Language
      - Language
    * - English
      - English
@@ -155,27 +155,27 @@
      - French
 
 .. note::
-   - 语言设置仅影响系统菜单和界面文字
-   - 不影响游戏内容的语言（游戏语言由 ROM 本身决定）
-   - 语言设置会立即生效并自动保存
+   - Language settings only affect system menus and interface text
+   - Does not affect in-game content language (game language is determined by the ROM itself)
+   - Language settings take effect immediately and are automatically saved
 
-其他设置选项
-============
+Other Settings Options
+======================
 
-系统还提供以下高级设置选项，可根据个人喜好进行调整：
+The system also provides the following advanced settings options that can be adjusted according to personal preferences:
 
-音频输出 (Audio Out)
+Audio Output (Audio Out)
 
-主题 (Theme)
+Theme (Theme)
 
-字体类型 (Font Type)
+Font Type (Font Type)
 
-启动器选项 (Launcher Options)
+Launcher Options (Launcher Options)
 
-时区设置 (Time Zone)
+Time Zone Settings (Time Zone)
 
-设置系统时区，影响存档时间戳和游戏内时钟：
+Set system time zone, affects save timestamps and in-game clock:
 
-以上设置选项的详细使用方法和高级功能，请访问原项目主页查看完整文档：
+For detailed usage methods and advanced features of the above settings options, please visit the original project homepage for complete documentation:
    
- - GitHub 项目地址：[https://github.com/ducalex/retro-go]
+ - GitHub Project: [https://github.com/ducalex/retro-go]

@@ -1,18 +1,18 @@
 .. _emulators:
 
 ============
-模拟器说明
+Emulator Guide
 ============
 
-模拟器概述
-==========
+Emulator Overview
+=================
 
-LAFVIN Retro Game Kit 内置了多个游戏平台的模拟器,支持运行经典的复古游戏。每个模拟器都针对 ESP32S3 进行了优化,提供流畅的游戏体验。
+The LAFVIN Retro Game Kit includes emulators for multiple gaming platforms, supporting classic retro games. Each emulator is optimized for ESP32S3 to provide smooth gaming experience.
 
-支持的游戏平台
-==============
+Supported Gaming Platforms
+===========================
 
-系统支持以下 13 个游戏平台:
+The system supports the following 13 gaming platforms:
 
 .. list-table:: Supported Gaming Platforms
    :header-rows: 1
@@ -64,42 +64,42 @@ LAFVIN Retro Game Kit 内置了多个游戏平台的模拟器,支持运行经典
      - MSX personal computer
      - .rom
 
-TF 卡文件夹结构
-===============
+TF Card Folder Structure
+========================
 
-游戏文件存储在 TF 卡的对应文件夹中。在SD卡的章节可以将下载的文件夹复制进去内存卡
+Game files are stored in corresponding folders on the TF card. In the SD card section, you can copy the downloaded folders into the memory card.
 
 .. code-block:: text
 
    /
-   ├── nes/          # 任天堂红白机游戏
-   ├── snes/         # 超级任天堂游戏
-   ├── gb/           # Game Boy 游戏
-   ├── gbc/          # Game Boy Color 游戏
-   ├── gw/           # Game & Watch 游戏
-   ├── sms/          # Master System 游戏
-   ├── gg/           # Game Gear 游戏
-   ├── md/           # Mega Drive/Genesis 游戏
-   ├── col/          # Colecovision 游戏
-   ├── pce/          # PC Engine 游戏
-   ├── lnx/          # Atari Lynx 游戏
-   ├── doom/         # DOOM WAD 文件
-   └── msx/          # MSX 游戏
+   ├── nes/          # Nintendo Entertainment System games
+   ├── snes/         # Super Nintendo games
+   ├── gb/           # Game Boy games
+   ├── gbc/          # Game Boy Color games
+   ├── gw/           # Game & Watch games
+   ├── sms/          # Master System games
+   ├── gg/           # Game Gear games
+   ├── md/           # Mega Drive/Genesis games
+   ├── col/          # Colecovision games
+   ├── pce/          # PC Engine games
+   ├── lnx/          # Atari Lynx games
+   ├── doom/         # DOOM WAD files
+   └── msx/          # MSX games
 
 .. note::
-   请将游戏文件放入对应的文件夹中,系统会自动识别并显示在游戏库中。
+   Please place game files in the corresponding folders - the system will automatically recognize and display them in the game library.
 
-基本操作说明
-============
+Basic Operations
+================
 
-启动游戏
---------
+Starting a Game
+---------------
 
-1. 确保 TF 卡已正确插入并包含游戏文件
-2. 在主菜单中选择模拟器平台
-3. 选择并进入模拟器
-4. 浏览并选择要玩的游戏
-5. 按 A 键启动游戏
+1. Ensure TF card is properly inserted and contains game files
+2. Select emulator platform from main menu
+3. Select and enter emulator
+4. Browse and select the game you want to play
+5. Press A button to start game
 
 .. image:: ../img/usage/game_start.jpg
    :alt: 启动游戏界面
@@ -108,72 +108,72 @@ TF 卡文件夹结构
 
 [占位符:需要游戏启动界面截图,显示游戏加载过程]
 
-游戏中操作
-----------
+In-Game Operations
+------------------
 
-在游戏运行时:
+During gameplay:
 
-- 使用 **方向键** 控制角色移动
-- 使用 **A/B 键** 进行游戏操作
-- 按 **Start 键** 暂停游戏
-- 按 **Menu 键** 打开游戏菜单
+- Use **directional keys** to control character movement
+- Use **A/B buttons** for game operations
+- Press **Start button** to pause game
+- Press **Menu button** to open game menu
 
-退出游戏
---------
+Exiting a Game
+--------------
 
-1. 按 **Menu 键** 打开游戏菜单
-2. 选择 **Quit**
+1. Press **Menu button** to open game menu
+2. Select **Quit**
 
 .. tip::
-   退出游戏前建议选择"Save & Quit",避免游戏进度丢失。
+   It's recommended to select "Save & Quit" before exiting to avoid losing game progress.
 
-游戏存档
-========
+Game Saves
+==========
 
-手动存档
---------
+Manual Save
+-----------
 
-在游戏中按 **Menu 键**,选择 **SAVE & Continue**:
+Press **Menu button** during gameplay and select **SAVE & Continue**:
 
-1. 选择存档槽位(通常有 4 个槽位)
-2. 按 A 键确认保存
-3. 系统会显示保存成功提示
+1. Select save slot (usually 4 slots available)
+2. Press A button to confirm save
+3. System will display save success message
 
-加载存档
---------
+Loading a Save
+--------------
 
-在游戏中按 **Menu 键**,选择 **Load Game**:
+Press **Menu button** during gameplay and select **Load Game**:
 
-1. 选择要加载的存档槽位
-2. 按 A 键确认加载
-3. 游戏会从存档点继续
+1. Select the save slot you want to load
+2. Press A button to confirm loading
+3. Game will continue from save point
 
 .. note::
-   不是所有游戏都支持存档功能,具体取决于游戏本身和模拟器的支持情况。
+   Not all games support save functionality - this depends on the game itself and emulator support.
 
-常见问题
-========
+Common Issues
+=============
 
-游戏无法启动
-------------
+Game Won't Start
+----------------
 
-**可能原因**:
+**Possible Causes:**
 
-- ROM 文件格式不正确
-- ROM 文件已损坏
-- 模拟器不支持该游戏
+- ROM file format is incorrect
+- ROM file is corrupted
+- Emulator doesn't support this game
 
-**解决方法**:
+**Solutions:**
 
-1. 检查文件格式是否正确
-2. 尝试重新下载 ROM 文件
+1. Check if file format is correct
+2. Try re-downloading ROM file
 
-游戏运行缓慢&卡顿
------------------
+Game Running Slow & Laggy
+--------------------------
 
-**可能原因**:
+**Possible Causes:**
 
-- 游戏对硬件要求较高
+- Game has high hardware requirements
 
 
-- 了解高级功能,请查看 :doc:`../advanced`
+- For advanced features, see :doc:`../advanced`

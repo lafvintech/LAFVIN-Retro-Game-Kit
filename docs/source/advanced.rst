@@ -1,91 +1,91 @@
 .. _advanced:
 
 ============
-高级功能(ok)
+Advanced Features (OK)
 ============
 
-欢迎来到高级功能章节!本章节介绍 LAFVIN Retro Game Kit 的高级功能和自定义选项,帮助您获得更好的使用体验。
+Welcome to the Advanced Features chapter! This chapter introduces the advanced features and customization options of the LAFVIN Retro Game Kit to help you get a better user experience.
 
 .. note::
-   高级功能需要对系统有一定了解。如果您是初次使用,建议先阅读 :ref:`使用说明 <usage>` 章节。
+   Advanced features require some understanding of the system. If you are a first-time user, it's recommended to read the :ref:`Usage Guide <usage>` chapter first.
 
-系统设置
-========
+System Settings
+===============
 
-游戏外选项
-----------
+Out-of-Game Options
+-------------------
 
 .. image:: img/advanced/游戏外选项1.jpg
    :alt: 游戏外选项界面1
 
-**系统选项设置**
+**System Options Settings**
 
-在此界面可以调整以下系统参数:
+In this interface, you can adjust the following system parameters:
 
-- **亮度调节** - 调整屏幕亮度
-- **音量控制** - 设置音频输出音量
-- **外部 DAC** - 启用/禁用外部数字音频转换器
-- **字体设置** - 更改系统显示字体
-- **主题管理** - 选择界面主题(需在 SD 卡中存放主题文件)
-- **时间设置** - 配置系统时间
-- **语言选择** - 切换系统语言
-- **WiFi 设置** - 配置无线网络连接
+- **Brightness Adjustment** - Adjust screen brightness
+- **Volume Control** - Set audio output volume
+- **External DAC** - Enable/disable external digital audio converter
+- **Font Settings** - Change system display font
+- **Theme Management** - Select interface theme (requires theme files stored on SD card)
+- **Time Settings** - Configure system time
+- **Language Selection** - Switch system language
+- **WiFi Settings** - Configure wireless network connection
 
 .. image:: img/advanced/游戏外选项2.jpg
    :alt: 游戏外选项界面2
 
-**启动器选项**
+**Launcher Options**
 
-此界面用于调整启动器的相关设置,包括启动方式、显示选项等。
+This interface is used to adjust launcher-related settings, including startup method, display options, etc.
 
 .. image:: img/advanced/游戏外菜单.jpg
    :alt: 游戏外菜单
 
-**系统菜单**
+**System Menu**
 
-包含系统信息和高级设置选项。
+Contains system information and advanced settings options.
 
 .. warning::
-   高级设置选项可能影响系统稳定性,如不了解其作用,请勿随意修改。
+   Advanced settings options may affect system stability. If you don't understand their purpose, please do not modify them arbitrarily.
 
-游戏内设置
-==========
+In-Game Settings
+=================
 
-游戏内菜单
-----------
+In-Game Menu
+------------
 
 .. image:: img/advanced/游戏内菜单.jpg
    :alt: 游戏内菜单
 
-**快速菜单功能**
+**Quick Menu Functions**
 
-在游戏运行时可以访问以下功能:
+While the game is running, you can access the following functions:
 
-- **存档** - 保存当前游戏进度
-- **读档** - 加载已保存的游戏进度
-- **退出游戏** - 返回启动器界面
+- **Save** - Save current game progress
+- **Load** - Load saved game progress
+- **Quit Game** - Return to launcher interface
 
-游戏内选项
-----------
+In-Game Options
+---------------
 
 .. image:: img/advanced/游戏内选项1.jpg
    :alt: 游戏内选项界面1
 
-**基础选项**
+**Basic Options**
 
-与游戏外选项类似,额外增加了以下游戏相关设置:
+Similar to out-of-game options, with the following additional game-related settings:
 
-- **画面设置** - 调整显示效果和滤镜
-- **速度控制** - 调节游戏运行速度
-- **超频选项** - 提升性能(可能影响稳定性)
+- **Display Settings** - Adjust display effects and filters
+- **Speed Control** - Adjust game running speed
+- **Overclocking Options** - Boost performance (may affect stability)
 
 .. image:: img/advanced/游戏内选项2.jpg
    :alt: 游戏内选项界面2
 
-**模拟器高级选项**
+**Emulator Advanced Options**
 
-此界面包含模拟器的专业配置选项。
+This interface contains professional configuration options for the emulator.
 
 .. warning::
-   模拟器高级选项涉及底层参数,如不明确其作用,请勿修改,以免影响游戏运行。
+   Emulator advanced options involve low-level parameters. If you don't clearly understand their purpose, please do not modify them to avoid affecting game operation.
 

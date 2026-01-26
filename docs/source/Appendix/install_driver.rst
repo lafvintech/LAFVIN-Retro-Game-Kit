@@ -42,6 +42,6 @@ You can install it following the video below
 MacOS Firmware Upload
 ---------------------------
 
-MacOS 系统不需要单独安装驱动程序,系统会自动识别 CP210X 设备。
+MacOS systems do not require separate driver installation; the system will automatically recognize CP210X devices.
 
-固件烧录步骤请参考: :ref:`macos_firmware`
+For firmware flashing steps, please refer to: :ref:`macos_firmware`
