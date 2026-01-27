@@ -7,12 +7,9 @@ Button Guide
 Button Layout
 =============
 
-.. image:: ../img/usage/buttons_layout.jpg
-   :alt: 按键布局图
+.. image:: ../img/usage/button_layout.png
    :align: center
    :width: 600px
-
-[占位符:需要按键布局图,显示所有按键的位置和标识]
 
 Button Functions
 ================

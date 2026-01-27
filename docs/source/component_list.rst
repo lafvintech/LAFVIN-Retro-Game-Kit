@@ -112,11 +112,9 @@ ESP32S3N16R8 Controller Module
 LAFVIN TFCard Module
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/tfcard_module.jpg
+.. image:: ./img/components/tfcard_module.png
    :align: center
    :width: 400px
-
-[占位符:TFCard 模块图片]
 
 **Key Features:**
 
@@ -130,11 +128,9 @@ LAFVIN TFCard Module
 LAFVIN Amplifier Module
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/amplifier.jpg
+.. image:: ./img/components/amplifier.png
    :align: center
    :width: 400px
-
-[占位符:功放模块图片]
 
 **Key Features:**
 
@@ -148,11 +144,9 @@ LAFVIN Amplifier Module
 2.4 Inch TFT Display
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/tft_screen.jpg
+.. image:: ./img/components/tft_screen.png
    :align: center
    :width: 400px
-
-[占位符:TFT 显示屏图片]
 
 **Key Features:**
 
@@ -167,11 +161,9 @@ LAFVIN Amplifier Module
 LAFVIN Retro Game Expansion Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/extension_board.jpg
+.. image:: ./img/components/extension_board.png
    :align: center
    :width: 400px
-
-[占位符:扩展底板图片]
 
 **Key Features:**
 
@@ -188,8 +180,6 @@ Button Components
 .. image:: img/components/button.png
    :align: center
    :width: 400px
-
-[占位符:按键组件图片,包括小按钮和大按钮]
 
 **Small Buttons (6x6mm):**
 

@@ -8,12 +8,9 @@ Product Introduction
 LAFVIN Retro Game Kit
 ----------------------
 
-.. image:: ./img/main_product.jpg
-   :alt: LAFVIN Retro Game Kit 产品图
+.. image:: ./img/other/main_product.png
    :align: center
    :width: 600px
-
-[占位符:需要产品主图,显示完整组装好的游戏机]
 
 Product Overview
 ================
