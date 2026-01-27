@@ -1,7 +1,7 @@
 .. _component_list:
 
-Component List (OK, Images Needed)
-===================================
+Component List
+===============
 
 Kit Components Overview
 -----------------------
