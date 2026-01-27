@@ -1,8 +1,8 @@
 .. _tfcard:
 
-=====================
-TF Card Preparation (OK, Images Needed)
-=====================
+====================
+TF Card Preparation
+====================
 
 The LAFVIN Retro Game Kit uses a TF card (also known as MicroSD card) to store game files. The TF card is read through the LAFVIN TFCard module, providing large-capacity game storage for the gaming console.
 
@@ -94,9 +94,11 @@ Import Game Files to SD Card
 
 1. Open the SD card using a card reader. You can open the SDCardFiles folder from the previously downloaded and extracted zip package, and copy all files to the SD card root directory.
 
-.. image:: path
+.. image:: img/other/sdfiles_copy_macos1.jpg
 
-[这里放下载到本地文件夹中的SD卡文件]
+.. image:: img/other/sdfiles_copy_macos2.jpg
+
+.. image:: img/other/sdfiles_copy_win10.png
 
 .. note:: We have already organized the relevant folder structure. You only need to add your own ROM files to the corresponding platform folders to run them.
 

@@ -1,8 +1,8 @@
 .. _advanced:
 
-============
-Advanced Features (OK)
-============
+========================
+Advanced Features
+========================
 
 Welcome to the Advanced Features chapter! This chapter introduces the advanced features and customization options of the LAFVIN Retro Game Kit to help you get a better user experience.
 

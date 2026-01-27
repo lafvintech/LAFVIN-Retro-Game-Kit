@@ -1,8 +1,8 @@
 .. _hardware-troubleshooting:
 
-================
+============================
 Hardware Troubleshooting
-================
+============================
 
 This chapter lists common hardware issues and their solutions.
 
@@ -116,14 +116,14 @@ Possible Causes and Solutions
 
 3. **Check Jumper Wire Connections**
 
-   - Refer to pin mapping table in :doc:`../assembly`
+   - Refer to pin mapping table in :doc:`../../assembly`
    - Check all jumper wires are connected to correct pins
    - Confirm jumper wires are not loose or disconnected
    - Check if jumper wires are damaged
 
 4. **Check Firmware**
 
-   - Reflash firmware (refer to :doc:`../firmware/flash_tool`)
+   - Reflash firmware (refer to :doc:`../../firmware`)
    - Confirm using latest firmware version
    - Check if flashing process completed successfully
 
@@ -149,7 +149,7 @@ Possible Causes and Solutions
    - Disconnect power
    - Confirm amplifier module is correctly installed on breadboard
    - Check if amplifier module jumper wire connections are correct
-   - Refer to amplifier module installation steps in :doc:`../assembly`
+   - Refer to amplifier module installation steps in :doc:`../../assembly`
 
 2. **Check Audio Output Device**
 
@@ -161,7 +161,7 @@ Possible Causes and Solutions
 
    - Enter system settings menu
    - Check if volume is set to 0
-   - Try increasing volume (refer to :doc:`../usage/settings`)
+   - Try increasing volume (refer to :doc:`../../usage/settings`)
 
 4. **Check Jumper Wire Connections**
 
@@ -196,7 +196,7 @@ Possible Causes and Solutions
 
 2. **Check Jumper Wire Connections**
 
-   - Refer to button jumper wire connection diagram in :doc:`../assembly`
+   - Refer to button jumper wire connection diagram in :doc:`../../assembly`
    - Check if each button's jumper wire is connected to correct GPIO pin
    - Confirm jumper wires are not loose
    - Check if jumper wires are damaged or have poor contact
@@ -233,7 +233,7 @@ Possible Causes and Solutions
 1. **Check TF Card Format**
 
    - Confirm TF card is formatted as FAT32
-   - Reformat TF card (refer to :doc:`../tfcard/format`)
+   - Reformat TF card (refer to :doc:`../../tfcard`)
    - Confirm TF card capacity does not exceed 32GB
 
 2. **Check TF Card Insertion**
@@ -248,7 +248,7 @@ Possible Causes and Solutions
    - Disconnect power
    - Confirm TF card module is correctly installed on breadboard
    - Check if TF card module jumper wire connections are correct
-   - Refer to TF card module installation steps in :doc:`../assembly`
+   - Refer to TF card module installation steps in :doc:`../../assembly`
 
 4. **Check TF Card Quality**
 
@@ -259,7 +259,7 @@ Possible Causes and Solutions
 5. **Check File Structure**
 
    - Confirm TF card root directory has correct folder structure
-   - Refer to :doc:`../tfcard/file_structure` for correct folder structure
+   - Refer to :doc:`../../tfcard` for correct folder structure
    - On first use, system will automatically create folders
 
 .. _hardware-power-issue:

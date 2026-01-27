@@ -1,8 +1,8 @@
 .. _assembly:
 
-====================
+=========================
 Assembly Tutorial
-====================
+=========================
 
 Welcome to the LAFVIN Retro Game Kit assembly tutorial! This guide provides two assembly methods - choose based on your needs and experience level.
 
@@ -97,16 +97,58 @@ Take out the LAFVIN Retro Game expansion board and check:
 - Pin labels are clearly visible
 
 .. image:: ./img/assembly/extension_board.jpg
-   :alt: LAFVIN Retro Game 扩展底板
    :align: center
    :width: 600px
-
-[占位符:需要扩展底板的整体图片,标注各个插槽位置]
 
 Step 2: Install Core Modules
 -----------------------------
 
-2.1 Install ESP32S3 Controller Module
+2.1 Install TFT Display
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Installation Steps:**
+1. First, secure the copper pillar to the base plate using the nut. 
+2. 2. Install the TFT screen onto the base plate as shown in the diagram (pay attention to the female connector and orientation). 
+3. 3. Tighten the screws using a Phillips screwdriver.
+
+.. image:: ./img/assembly/tft_on_board1.jpg
+   :align: center
+   :width: 600px
+
+.. image:: ./img/assembly/tft_on_board2.jpg
+   :align: center
+   :width: 600px
+
+2.2 Install TFCard Module
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Installation Steps:**
+
+1. Locate the socket labeled "TFCard Module" on the expansion board
+2. Align the TFCard module's pin headers with the socket
+3. Ensure the TF card slot faces outward for easy card insertion/removal
+4. Gently press down to ensure pins are fully inserted
+
+.. image:: ./img/assembly/tfcard_on_board.jpg
+   :align: center
+   :width: 600px
+
+2.3 Install Amplifier Module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Installation Steps:**
+
+1. Locate the socket labeled "Amplifier Module" on the expansion board
+2. Align the amplifier module's pin headers with the socket
+3. Ensure the audio output interface faces outward
+4. Gently press down to ensure pins are fully inserted, then connect the speaker to the amplifier module
+5. Finally, install the speaker onto the back using adhesive dispensing.
+
+.. image:: ./img/assembly/amp_on_board.jpg
+   :align: center
+   :width: 600px
+
+2.4 Install ESP32S3 Controller Module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The ESP32S3N16R8 is the core controller of the entire gaming console.
@@ -118,85 +160,28 @@ The ESP32S3N16R8 is the core controller of the entire gaming console.
 3. Align the ESP32S3 module with the socket and gently press down
 4. Ensure all pins are fully inserted and the module fits tightly against the board
 
-.. image:: ./img/assembly/esp32s3_on_board.jpg
-   :alt: ESP32S3 安装到扩展底板
+.. image:: ./img/assembly/extension_board_back.jpg
    :align: center
    :width: 600px
 
-[占位符:ESP32S3 模块安装到扩展底板的图片]
+.. image:: ./img/assembly/esp32s3_on_board.jpg
+   :align: center
+   :width: 600px
 
 .. warning::
    Do not apply excessive force during installation to avoid damaging pins. If pins cannot be inserted smoothly, check if they are properly aligned.
 
-2.2 Install TFT Display
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Installation Steps:**
-
-1. Locate the DISPLAY area on the front of the expansion board
-2. Align the 2.4-inch TFT display's pin headers with the socket
-3. Gently insert into the socket
-
-.. image:: ./img/assembly/tft_on_board.jpg
-   :alt: TFT 显示屏连接到扩展底板
-   :align: center
-   :width: 600px
-
-[占位符:TFT 显示屏连接到扩展底板的图片]
-
-2.3 Install TFCard Module
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Installation Steps:**
-
-1. Locate the socket labeled "TFCard Module" on the expansion board
-2. Align the TFCard module's pin headers with the socket
-3. Ensure the TF card slot faces outward for easy card insertion/removal
-4. Gently press down to ensure pins are fully inserted
-
-.. image:: ./img/assembly/tfcard_on_board.jpg
-   :alt: TFCard 模块安装到扩展底板
-   :align: center
-   :width: 600px
-
-[占位符:TFCard 模块安装到扩展底板的图片]
-
-2.4 Install Amplifier Module
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Installation Steps:**
-
-1. Locate the socket labeled "Amplifier Module" on the expansion board
-2. Align the amplifier module's pin headers with the socket
-3. Ensure the audio output interface faces outward
-4. Gently press down to ensure pins are fully inserted, then connect the speaker to the amplifier module (keyed connector)
-
-.. image:: ./img/assembly/amp_on_board.jpg
-   :alt: 功放模块安装到扩展底板
-   :align: center
-   :width: 600px
-
-[占位符:功放模块安装到扩展底板的图片]
 
 Step 3: Install Button Caps
 ----------------------------
 
 We provide button caps for the directional and A/B buttons. You can install the button caps onto the buttons.
 
-.. image:: ./img/assembly/install_cap.jpg
-   :alt: 安装按键帽
+.. image:: ./img/assembly/quick_assembly_done.jpg
    :align: center
    :width: 600px
 
 Quick Assembly Complete
------------------------
-
-.. image:: ./img/assembly/quick_assembly_done.jpg
-   :alt: 快速组装完成效果
-   :align: center
-   :width: 600px
-
-[占位符:使用扩展底板组装完成的整体效果图]
 
 Congratulations! You have completed the quick assembly. The expansion board greatly simplifies the wiring process. You can now proceed to :ref:`firmware flashing <firmware>` for quick testing.
 
@@ -378,8 +363,7 @@ Breadboard Mode Assembly Complete
 
 Congratulations! You have completed the breadboard mode assembly. Although this method is more complex, it gives you complete mastery of hardware connection principles.
 
-.. image:: ./img/assembly/breadboard_connect_done.jpg
-   :alt: 面包板模式组装完成效果
+.. image:: ./img/assembly/breadboard_done.jpg
    :align: center
    :width: 800px
 
@@ -401,10 +385,6 @@ Assembly Complete
 
 Regardless of which assembly method you chose, the hardware portion is now complete.
 
-.. image:: ./img/assembly/breadboard_completed.png
-   :align: center
-   :width: 600px
-
 Next Steps
 ==========
 
@@ -414,7 +394,7 @@ After hardware assembly is complete, you need to:
 2. :doc:`firmware` - Flash firmware to ESP32S3
 3. :doc:`usage/usage` - Learn how to use the gaming console
 
-If you encounter problems during assembly, please refer to :doc:`troubleshooting/troubleshooting`.
+If you encounter problems during assembly, please refer to :doc:`Appendix/Troubleshooting/troubleshooting`.
 
 Having Issues?
 ==============

@@ -11,7 +11,7 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机套件,支持多
 
 按照以下步骤快速开始使用您的 Retro Game Kit:
 
-1. 查看 :ref:`组件清单 <component-list>` 确认套件完整性
+1. 查看 :ref:`component_list` 确认套件完整性
 2. 按照 :ref:`组装教程 <assembly>` 组装硬件
 3. 准备 :ref:`TF 卡 <tfcard>` 并格式化
 4. 烧录 :ref:`固件 <firmware>` 到 ESP32S3
@@ -45,7 +45,6 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机套件,支持多
    assembly
    firmware
    tfcard
-   Tutorial/tutorial
 
 .. toctree::
    :maxdepth: 2

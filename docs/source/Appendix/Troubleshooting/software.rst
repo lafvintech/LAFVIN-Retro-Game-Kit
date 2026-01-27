@@ -1,8 +1,8 @@
 .. _software-troubleshooting:
 
-================
+============================
 Software Troubleshooting
-================
+============================
 
 This chapter lists common software issues and their solutions.
 
@@ -54,7 +54,7 @@ Possible Causes and Solutions
    - Check if flashing address is set correctly
    - Try completely erasing Flash then reflashing
    - Use officially recommended flashing tool
-   - Refer to :doc:`../firmware/troubleshooting` for detailed flashing issues
+   - Refer to :doc:`../../firmware` for detailed flashing issues
 
 .. tip::
    If flashing fails multiple times, try using ESP32's official Flash Download Tool.
@@ -77,7 +77,7 @@ Possible Causes and Solutions
    **Solutions**:
 
    - Confirm TF card is formatted as FAT32
-   - Reformat TF card (refer to :doc:`../tfcard/format`)
+   - Reformat TF card (refer to :doc:`../../tfcard`)
    - Ensure using correct allocation unit size (recommended 4096 bytes)
 
 2. **Incorrect File Format**
@@ -85,7 +85,7 @@ Possible Causes and Solutions
    **Solutions**:
 
    - Check if game file extension is correct
-   - Refer to :doc:`../tfcard/file_structure` for supported file formats for each platform
+   - Refer to :doc:`../../usage/emulators` for supported file formats for each platform
    - Confirm game file is not corrupted
    - Try using game files from other sources
 
@@ -160,7 +160,7 @@ Possible Causes and Solutions
    **Solutions**:
 
    - Restore default settings
-   - Adjust game speed settings (refer to :doc:`../usage/settings`)
+   - Adjust game speed settings (refer to :doc:`../../usage/settings`)
    - Lower volume or brightness to reduce power consumption
 
 5. **Insufficient Memory**
@@ -231,7 +231,7 @@ NES Emulator Issues
 - Confirm using .nes format ROM files
 - Try different ROM versions (such as (U), (E), (J) versions)
 - Check if ROM file is in iNES format
-- Adjust emulator settings (refer to :doc:`../advanced/emulator_config`)
+- Adjust emulator settings (refer to :doc:`../../advanced`)
 
 GB/GBC Emulator Issues
 ----------------------
@@ -278,7 +278,7 @@ DOOM Related Issues
 
 - Confirm using DOOM 1 WAD files
 - Check if WAD file size is reasonable (not too large)
-- Refer to :doc:`../advanced/doom_mods` for WAD file usage
+- Refer to :doc:`../../advanced` for WAD file usage
 - Ensure WAD files are placed in correct DOOM folder
 
 Complete System Reset
@@ -306,7 +306,7 @@ Steps
 3. **Reflash Firmware**
 
    - Download latest firmware version
-   - Reflash according to :doc:`../firmware/flash_tool`
+   - Reflash according to :doc:`../../firmware`
    - Confirm flashing success
 
 4. **Reformat TF Card**
@@ -342,7 +342,7 @@ A: Emulator may not support all games, especially games using special chips. Rec
 Q3: How to Update Firmware?
 ----------------------------
 
-A: Download latest firmware version, then reflash according to steps in :doc:`../firmware/flash_tool`. Recommend backing up save files on TF card before updating.
+A: Download latest firmware version, then reflash according to steps in :doc:`../../firmware`. Recommend backing up save files on TF card before updating.
 
 Q4: Is There a TF Card Capacity Limit?
 ---------------------------------------
@@ -362,7 +362,7 @@ A: ESP32S3 will have some heating during operation, this is normal. But if heati
 Q7: How to Save Game Progress?
 -------------------------------
 
-A: Some emulators support save function, save files will automatically save on TF card. For specific operations, refer to :doc:`../usage/emulators`.
+A: Some emulators support save function, save files will automatically save on TF card. For specific operations, refer to :doc:`../../usage/emulators`.
 
 Q8: Can I Develop My Own Games or Applications?
 ------------------------------------------------

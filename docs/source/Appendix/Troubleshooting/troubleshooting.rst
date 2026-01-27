@@ -1,8 +1,8 @@
 .. _troubleshooting:
 
-============
+========================
 Troubleshooting
-============
+========================
 
 This chapter helps you resolve common issues you may encounter while using the LAFVIN Retro Game Kit.
 

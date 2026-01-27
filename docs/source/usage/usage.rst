@@ -1,8 +1,8 @@
 .. _usage:
 
-====================
-Usage Guide (OK, Images Needed)
-====================
+=============
+Usage Guide
+=============
 
 Welcome to using the LAFVIN Retro Game Kit! This chapter will guide you on how to use the gaming console, including power on, button operations, menu system, settings adjustment, and emulator usage.
 

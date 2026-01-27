@@ -1,8 +1,8 @@
 .. _settings:
 
-============
+===============
 Settings Guide
-============
+===============
 
 Settings Menu Overview
 ======================
@@ -141,18 +141,7 @@ The system supports multiple interface languages for users in different regions.
 Supported Languages
 -------------------
 
-.. list-table:: Available Languages List
-   :header-rows: 1
-   :widths: 30 30
-
-   * - Language
-     - Language
-   * - English
-     - English
-   * - Deutsch
-     - German
-   * - Français
-     - French
+English German and French.
 
 .. note::
    - Language settings only affect system menus and interface text

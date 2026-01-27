@@ -1,16 +1,14 @@
-.. _component-list-en:
+.. _component_list:
 
-Component List
+Component List (OK, Images Needed)
 ===================================
 
 Kit Components Overview
 -----------------------
 
-.. image:: ./img/components/all_components.jpg
+.. image:: ./img/components/List.jpg
    :align: center
    :width: 800px
-
-[占位符:需要所有组件的合照,展示套件中包含的所有14项组件]
 
 Component List Table
 --------------------

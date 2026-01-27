@@ -1,8 +1,8 @@
 .. _emulators:
 
-============
+===============
 Emulator Guide
-============
+===============
 
 Emulator Overview
 =================
@@ -101,12 +101,9 @@ Starting a Game
 4. Browse and select the game you want to play
 5. Press A button to start game
 
-.. image:: ../img/usage/game_start.jpg
-   :alt: 启动游戏界面
+.. image:: ../img/usage/game_start.gif
    :align: center
-   :width: 600pxaaaaa
-
-[占位符:需要游戏启动界面截图,显示游戏加载过程]
+   :width: 600px
 
 In-Game Operations
 ------------------

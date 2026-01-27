@@ -23,7 +23,7 @@ The LAFVIN Retro Game Kit is a retro gaming console kit based on the ESP32S3N16R
 This kit uses open-source firmware, supports 13 classic gaming platforms, and provides a complete DIY assembly experience. Whether you're a retro gaming enthusiast, programming learner, or DIY collector, this kit offers a unique experience.
 
 Key Features
-===========
+================
 
 .. _key-features-en:
 

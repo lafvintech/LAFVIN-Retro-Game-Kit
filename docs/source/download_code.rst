@@ -1,8 +1,8 @@
 .. _download_code:
 
-==================================
+=======================================================
 Download Required Software and Code (OK, Images Needed)
-==================================
+=======================================================
 This section will guide you through downloading and flashing the software and firmware required for the LAFVIN Retro Game Kit.
 
 Flashing Software and Bin File Download
