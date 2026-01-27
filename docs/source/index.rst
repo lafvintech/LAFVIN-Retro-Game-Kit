@@ -1,34 +1,31 @@
-LAFVIN Retro Game Kit 中文文档
-================================
+LAFVIN Retro Game Kit
+======================
 
-欢迎使用 LAFVIN Retro Game Kit!
---------------------------------
+LAFVIN Retro Game Kit is an ESP32-S3 based retro gaming console kit that supports multiple classic gaming platform emulators, including NES, SNES, Game Boy, Game Boy Color, Sega Master System, Game Gear, Mega Drive/Genesis, and 13 gaming platforms in total.
 
-LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机套件,支持多种经典游戏平台模拟器,包括 NES、SNES、Game Boy、Game Boy Color、Sega Master System、Game Gear、Mega Drive/Genesis 等 13 个游戏平台。
+Quick Start
+-----------
 
-快速开始
---------
+Follow these steps to quickly get started with your Retro Game Kit:
 
-按照以下步骤快速开始使用您的 Retro Game Kit:
+1. Check the :ref:`component_list` to verify kit completeness
+2. Follow the :ref:`Assembly Guide <assembly>` to assemble the hardware
+3. Prepare and format your :ref:`TF Card <tfcard>`
+4. Flash the :ref:`firmware <firmware>` to ESP32-S3
+5. Read the :ref:`Usage Guide <usage>` to start gaming
 
-1. 查看 :ref:`component_list` 确认套件完整性
-2. 按照 :ref:`组装教程 <assembly>` 组装硬件
-3. 准备 :ref:`TF 卡 <tfcard>` 并格式化
-4. 烧录 :ref:`固件 <firmware>` 到 ESP32S3
-5. 阅读 :ref:`使用说明 <usage>` 开始游戏
+Key Features
+------------
 
-主要特性
---------
+- **Powerful Controller**: ESP32-S3N16R8 (16MB Flash + 8MB PSRAM)
+- **Clear Display**: 2.8-inch TFT color screen
+- **Rich Audio**: Built-in amplifier module with speaker output
+- **Massive Game Library**: Supports 13 classic gaming platforms
+- **Convenient Storage**: TF card storage, supports custom games
+- **Open Source Firmware**: Fully open source, freely customizable
 
-- **强大的主控**: ESP32S3N16R8 (16MB Flash + 8MB PSRAM)
-- **清晰显示**: 2.8 英寸 TFT 彩色屏幕
-- **丰富音效**: 内置功放模块,支持扬声器输出
-- **海量游戏**: 支持 13 个经典游戏平台
-- **便捷存储**: TF 卡存储,支持自定义游戏
-- **开源固件**: 完全开源,可自由定制
-
-文档目录
---------
+Documentation
+-------------
 
 .. toctree::
    :maxdepth: 2
@@ -58,9 +55,3 @@ LAFVIN Retro Game Kit 是一款基于 ESP32S3 的复古游戏机套件,支持多
    :caption: Appendix
 
    Appendix/appendix
-
-索引和搜索
-----------
-
-* :ref:`genindex`
-* :ref:`search`

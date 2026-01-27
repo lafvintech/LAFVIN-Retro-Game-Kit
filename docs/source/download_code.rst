@@ -8,10 +8,7 @@ This section will guide you through downloading and flashing the software and fi
 Flashing Software and Bin File Download
 ========================================
 
-.. figure:: img/github1.png
-   :align: center
-
-.. figure:: img/github2.png
+.. figure:: img/other/github.png
    :align: center
 
 1. You can visit our repository: `GitHub Repository <https://github.com/lafvintech/LAFVIN-Retro-Game-Kit>`_  or directly download the zip package from `this link <https://codeload.github.com/lafvintech/LAFVIN-Retro-Game-Kit/zip/refs/heads/main>`_
