@@ -96,7 +96,7 @@ Take out the LAFVIN Retro Game expansion board and check:
 - All sockets are intact
 - Pin labels are clearly visible
 
-.. image:: ./img/assembly/extension_board.jpg
+.. thumbnail:: ./img/assembly/extension_board.jpg
    :align: center
    :width: 600px
 
@@ -111,11 +111,11 @@ Step 2: Install Core Modules
 2. 2. Install the TFT screen onto the base plate as shown in the diagram (pay attention to the female connector and orientation). 
 3. 3. Tighten the screws using a Phillips screwdriver.
 
-.. image:: ./img/assembly/tft_on_board1.jpg
+.. thumbnail:: ./img/assembly/tft_on_board1.jpg
    :align: center
    :width: 600px
 
-.. image:: ./img/assembly/tft_on_board2.jpg
+.. thumbnail:: ./img/assembly/tft_on_board2.jpg
    :align: center
    :width: 600px
 
@@ -129,7 +129,7 @@ Step 2: Install Core Modules
 3. Ensure the TF card slot faces outward for easy card insertion/removal
 4. Gently press down to ensure pins are fully inserted
 
-.. image:: ./img/assembly/tfcard_on_board.jpg
+.. thumbnail:: ./img/assembly/tfcard_on_board.jpg
    :align: center
    :width: 600px
 
@@ -144,7 +144,7 @@ Step 2: Install Core Modules
 4. Gently press down to ensure pins are fully inserted, then connect the speaker to the amplifier module
 5. Finally, install the speaker onto the back using adhesive dispensing.
 
-.. image:: ./img/assembly/amp_on_board.jpg
+.. thumbnail:: ./img/assembly/amp_on_board.jpg
    :align: center
    :width: 600px
 
@@ -160,11 +160,11 @@ The ESP32S3N16R8 is the core controller of the entire gaming console.
 3. Align the ESP32S3 module with the socket and gently press down
 4. Ensure all pins are fully inserted and the module fits tightly against the board
 
-.. image:: ./img/assembly/extension_board_back.jpg
+.. thumbnail:: ./img/assembly/extension_board_back.jpg
    :align: center
    :width: 600px
 
-.. image:: ./img/assembly/esp32s3_on_board.jpg
+.. thumbnail:: ./img/assembly/esp32s3_on_board.jpg
    :align: center
    :width: 600px
 
@@ -177,7 +177,7 @@ Step 3: Install Button Caps
 
 We provide button caps for the directional and A/B buttons. You can install the button caps onto the buttons.
 
-.. image:: ./img/assembly/quick_assembly_done.jpg
+.. thumbnail:: ./img/assembly/quick_assembly_done.jpg
    :align: center
    :width: 600px
 
@@ -200,7 +200,7 @@ Step 1: Breadboard Preparation
 
 **You can refer to our installation diagram or design your own layout. The connection diagram and IO-module reference table are as follows:**
 
-.. image:: ./img/assembly/breadboard_connect.png
+.. thumbnail:: ./img/assembly/breadboard_connect.png
    :align: center
    :width: 600px
 
@@ -363,7 +363,7 @@ Breadboard Mode Assembly Complete
 
 Congratulations! You have completed the breadboard mode assembly. Although this method is more complex, it gives you complete mastery of hardware connection principles.
 
-.. image:: ./img/assembly/breadboard_done.jpg
+.. thumbnail:: ./img/assembly/breadboard_done.jpg
    :align: center
    :width: 800px
 

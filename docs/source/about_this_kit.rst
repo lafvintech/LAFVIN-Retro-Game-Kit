@@ -8,7 +8,7 @@ Product Introduction
 LAFVIN Retro Game Kit
 ----------------------
 
-.. image:: ./img/other/main_product.png
+.. thumbnail:: ./img/other/main_product.png
    :align: center
    :width: 600px
 

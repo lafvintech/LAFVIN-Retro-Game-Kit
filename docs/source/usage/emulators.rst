@@ -101,7 +101,7 @@ Starting a Game
 4. Browse and select the game you want to play
 5. Press A button to start game
 
-.. image:: ../img/usage/game_start.gif
+.. thumbnail:: ../img/usage/game_start.gif
    :align: center
    :width: 600px
 

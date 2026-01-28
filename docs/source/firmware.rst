@@ -17,13 +17,13 @@ Windows System Firmware Flashing
 
 1. Double-click to open Flash Download Tools, then select the options as shown below:
 
-.. image:: img/firmware/flashtool1.png
+.. thumbnail:: img/firmware/flashtool1.png
 
 1. Follow these steps to upload the firmware:
 
 A. Click the "Select File" button to choose your downloaded firmware file (.img format)
 
-.. image:: img/firmware/flashtool2.png
+.. thumbnail:: img/firmware/flashtool2.png
     
 B. In the address input box after the bin file selection box, enter 0 or 0x0 (this means the firmware will be downloaded to the starting position of the development board's memory)
     
@@ -33,7 +33,7 @@ D. Set the baud rate (we use 115200 here)
     
 E. Click the "START" button to begin downloading the firmware to the ESP32-S3 development board
 
-.. image:: img/firmware/flashtool3.png
+.. thumbnail:: img/firmware/flashtool3.png
 
 After download is complete, press the RST button on the development board. The board will automatically restart and enter the emulator selection interface.
 
@@ -49,40 +49,40 @@ Step 1: Prepare Firmware Files
 
 1. Ensure you have downloaded and extracted the firmware locally
 
-.. image:: img/firmware/project_files_macos.png
+.. thumbnail:: img/firmware/project_files_macos.png
 
 2. We have stored the bin files in the Firmware folder
 
-.. image:: img/firmware/firmware_macos.png
+.. thumbnail:: img/firmware/firmware_macos.png
 
 3. We need to prepare a Type-C to USB-A data cable to connect your Mac computer and the development board
 
 4. Open the `Online Flash Tool <https://espressif.github.io/esp-launchpad/>`_ (This is Espressif's official online flashing tool)
 
-.. image:: img/firmware/mac1.png
+.. thumbnail:: img/firmware/mac1.png
 
 5.click Settings to set the baud rate to 115200.
 
-.. image:: img/firmware/mac2.png
+.. thumbnail:: img/firmware/mac2.png
 
 6. Click the Connect button at the top, and a window will pop up on the left side to select your device and connect
 
-.. image:: img/firmware/mac3.png
+.. thumbnail:: img/firmware/mac3.png
 
 7. After the connection is complete, you can see that the Connect button changes to Disconnect, indicating successful connection. Click the DIY button
 
-.. image:: img/firmware/mac4.png
+.. thumbnail:: img/firmware/mac4.png
 
 8. Fill in 0 in the Flash Address field, and select Firmware in the Selected File section
 
-.. image:: img/firmware/mac5.png
+.. thumbnail:: img/firmware/mac5.png
 
 9. After selection is complete, click the Program button to start flashing
 
-.. image:: img/firmware/mac6.png
+.. thumbnail:: img/firmware/mac6.png
 
 10. After flashing is complete, click the Reset Device button in the upper right corner to restart the device, and you will see the screen display normally
 
-.. image:: img/firmware/mac7.png
+.. thumbnail:: img/firmware/mac7.png
 
-.. image:: img/firmware/mac8.png
+.. thumbnail:: img/firmware/mac8.png

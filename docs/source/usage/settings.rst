@@ -23,11 +23,11 @@ This system provides two independent settings menus, each with different functio
      - In-game operations (save, load, etc.)
      - Press **Menu** button during gameplay
 
-.. image:: ../img/usage/游戏内选项1.jpg
+.. thumbnail:: ../img/usage/游戏内选项1.jpg
    :align: left
    :width: 400px
 
-.. image:: ../img/usage/游戏内菜单.jpg
+.. thumbnail:: ../img/usage/游戏内菜单.jpg
    :align: left
    :width: 400px
 
@@ -134,7 +134,7 @@ The system supports multiple interface languages for users in different regions.
 4. Use directional keys (up/down) to browse available languages
 5. Press **A** button to confirm selection - system will automatically switch language and return to main interface
 
-.. image:: ../img/usage/游戏外选项1.jpg
+.. thumbnail:: ../img/usage/游戏外选项1.jpg
    :align: left
 
 

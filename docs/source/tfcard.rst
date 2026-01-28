@@ -29,39 +29,39 @@ You can choose the guide that matches your computer.
 computer. In the Windows search box, enter "Disk Management" and select "Create 
 and format hard disk partitions".
 
-.. image:: img/other/format1.png
+.. thumbnail:: img/other/format1.png
 
 2. In the new pop-up window, find an unallocated volume close to 1G in size.
 
-.. image:: img/other/format2.png
+.. thumbnail:: img/other/format2.png
 
 3. Click to select the volume, right-click and select "New Simple Volume".
 
-.. image:: img/other/format3.png
+.. thumbnail:: img/other/format3.png
 
 4. Click Next.
 
-.. image:: img/other/format4.png
+.. thumbnail:: img/other/format4.png
 
-.. image:: img/other/format5.png
+.. thumbnail:: img/other/format5.png
 
 5. You can choose the drive letter on the right, or you can choose the default. By 
 default, just click Next.
 
-.. image:: img/other/format6.png
+.. thumbnail:: img/other/format6.png
 
 6. File system is FAT (or FAT32). The Allocation unit size is 16K, and the Volume 
 label can be set to any name. After setting, click Next. (Note: If your card is larger than 2GB, it's recommended to use FAT32 formatting)
 
-.. image:: img/other/format7.png
+.. thumbnail:: img/other/format7.png
 
 7. Click Finish. Wait for the SD card initialization to complete.
 
-.. image:: img/other/format8.png
+.. thumbnail:: img/other/format8.png
 
 8. At this point, you can see the SD card in This PC.
 
-.. image:: img/other/format9.png
+.. thumbnail:: img/other/format9.png
 
 **MAC**
 
@@ -69,36 +69,36 @@ label can be set to any name. After setting, click Next. (Note: If your card is 
 computer. Some computers will prompt the following information, please click to 
 ignore it.
 
-.. image:: img/other/format_mac1.png
+.. thumbnail:: img/other/format_mac1.png
 
 2. Find "Disk Utility" in the MAC system and click to open it.
 
-.. image:: img/other/format_mac2.png
+.. thumbnail:: img/other/format_mac2.png
 
 3. Select "Generic MassStorageClass Media", note that its size is about 1G. Please 
 do not choose the wrong item. Click "Erase".
 
-.. image:: img/other/format_mac3.png
+.. thumbnail:: img/other/format_mac3.png
 
 4. Select the configuration as shown in the figure below, and then click "Erase".
 
-.. image:: img/other/format_mac4.png
+.. thumbnail:: img/other/format_mac4.png
 
 5. Wait for the formatting to complete. When finished, it will look like the picture 
 below. At this point, you can see a new disk on the desktop named "SD".
 
-.. image:: img/other/format_mac5.png
+.. thumbnail:: img/other/format_mac5.png
 
 Import Game Files to SD Card
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open the SD card using a card reader. You can open the SDCardFiles folder from the previously downloaded and extracted zip package, and copy all files to the SD card root directory.
 
-.. image:: img/other/sdfiles_copy_macos1.jpg
+.. thumbnail:: img/other/sdfiles_copy_macos1.jpg
 
-.. image:: img/other/sdfiles_copy_macos2.jpg
+.. thumbnail:: img/other/sdfiles_copy_macos2.jpg
 
-.. image:: img/other/sdfiles_copy_win10.png
+.. thumbnail:: img/other/sdfiles_copy_win10.png
 
 .. note:: We have already organized the relevant folder structure. You only need to add your own ROM files to the corresponding platform folders to run them.
 
@@ -107,7 +107,7 @@ Common Issues
 =============
 
 What to Do If TF Card Cannot Be Recognized?
---------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If the gaming console cannot recognize the TF card, please check:
 
@@ -119,7 +119,7 @@ If the gaming console cannot recognize the TF card, please check:
 For detailed troubleshooting methods, please refer to :doc:`Appendix/Troubleshooting/troubleshooting`.
 
 Where to Get Game Files?
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
    Users need to prepare legal game files themselves. Please ensure you have legal rights to use the games.

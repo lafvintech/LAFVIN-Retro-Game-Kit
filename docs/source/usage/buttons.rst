@@ -7,7 +7,7 @@ Button Guide
 Button Layout
 =============
 
-.. image:: ../img/usage/button_layout.png
+.. thumbnail:: ../img/usage/button_layout.png
    :align: center
    :width: 600px
 

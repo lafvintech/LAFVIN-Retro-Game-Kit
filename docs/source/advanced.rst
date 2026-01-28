@@ -15,7 +15,7 @@ System Settings
 Out-of-Game Options
 -------------------
 
-.. image:: img/advanced/游戏外选项1.jpg
+.. thumbnail:: img/advanced/游戏外选项1.jpg
    :alt: 游戏外选项界面1
 
 **System Options Settings**
@@ -31,14 +31,14 @@ In this interface, you can adjust the following system parameters:
 - **Language Selection** - Switch system language
 - **WiFi Settings** - Configure wireless network connection
 
-.. image:: img/advanced/游戏外选项2.jpg
+.. thumbnail:: img/advanced/游戏外选项2.jpg
    :alt: 游戏外选项界面2
 
 **Launcher Options**
 
 This interface is used to adjust launcher-related settings, including startup method, display options, etc.
 
-.. image:: img/advanced/游戏外菜单.jpg
+.. thumbnail:: img/advanced/游戏外菜单.jpg
    :alt: 游戏外菜单
 
 **System Menu**
@@ -54,7 +54,7 @@ In-Game Settings
 In-Game Menu
 ------------
 
-.. image:: img/advanced/游戏内菜单.jpg
+.. thumbnail:: img/advanced/游戏内菜单.jpg
    :alt: 游戏内菜单
 
 **Quick Menu Functions**
@@ -68,7 +68,7 @@ While the game is running, you can access the following functions:
 In-Game Options
 ---------------
 
-.. image:: img/advanced/游戏内选项1.jpg
+.. thumbnail:: img/advanced/游戏内选项1.jpg
    :alt: 游戏内选项界面1
 
 **Basic Options**
@@ -79,7 +79,7 @@ Similar to out-of-game options, with the following additional game-related setti
 - **Speed Control** - Adjust game running speed
 - **Overclocking Options** - Boost performance (may affect stability)
 
-.. image:: img/advanced/游戏内选项2.jpg
+.. thumbnail:: img/advanced/游戏内选项2.jpg
    :alt: 游戏内选项界面2
 
 **Emulator Advanced Options**
