@@ -17,13 +17,13 @@ Windows System Firmware Flashing
 
 1. Double-click to open Flash Download Tools, then select the options as shown below:
 
-.. figure:: img/firmware/flashtool1.png
+.. image:: img/firmware/flashtool1.png
 
 1. Follow these steps to upload the firmware:
 
 A. Click the "Select File" button to choose your downloaded firmware file (.img format)
 
-.. figure:: img/firmware/flashtool2.png
+.. image:: img/firmware/flashtool2.png
     
 B. In the address input box after the bin file selection box, enter 0 or 0x0 (this means the firmware will be downloaded to the starting position of the development board's memory)
     
@@ -33,7 +33,7 @@ D. Set the baud rate (we use 115200 here)
     
 E. Click the "START" button to begin downloading the firmware to the ESP32-S3 development board
 
-.. figure:: img/firmware/flashtool3.png
+.. image:: img/firmware/flashtool3.png
 
 After download is complete, press the RST button on the development board. The board will automatically restart and enter the emulator selection interface.
 
