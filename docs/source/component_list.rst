@@ -24,69 +24,77 @@ The following are all components included in the LAFVIN Retro Game Kit:
      - Quantity
      - Description
    * - 1
-     - ESP32S3 Module (Confirmed)
+     - ESP32S3 Module
      - 1
      - Main controller, 16MB Flash + 8MB PSRAM
    * - 2
-     - LAFVIN TFCard Module (Confirmed)
+     - LAFVIN TFCard Module
      - 1
      - TF card reader module for storing game files
    * - 3
-     - LAFVIN Amplifier Module (Confirmed)
+     - LAFVIN Amplifier Module
      - 1
      - Audio output module to drive speaker
    * - 4
-     - LAFVIN Retro Game Hub (Confirmed)
+     - LAFVIN Retro Game Hub
      - 1
      - Dedicated expansion board to simplify connections
    * - 5
-     - 2.4 Inch TFT-SPI Screen (Confirmed)
+     - 2.4 Inch TFT-SPI Screen
      - 1
      - Color display, 320x240 resolution
    * - 6
-     - Button (6x6mm) (Confirmed)
+     - Button (6x6mm)
      - 10
      - Game control buttons (D-pad, function keys, etc.)
    * - 7
-     - Button (12x12mm) (Confirmed)
+     - Button (12x12mm)
      - 4
      - Breadboard A/B buttons
    * - 8
-     - Button Cap (Confirmed)
+     - Button Cap
      - 4
      - Button caps for large buttons, improves feel
    * - 9
-     - 830 Breadboard (Confirmed)
+     - 830 Breadboard
      - 2
      - For circuit assembly
    * - 10
-     - Jumper Wires Box (Confirmed)
+     - Jumper Wires Box
      - Several
      - Fixed-length jumper wires for module connections
    * - 11
-     - 65 Jumper Wire (Confirmed)
+     - 65 Jumper Wire
      - Several
      - Flexible jumper wires for button connections
    * - 12
-     - Type C Cable (Confirmed)
+     - Type C Cable
      - 1
      - For power supply and firmware flashing
    * - 13
-     - 8Ω2W Speaker (Confirmed)
+     - 8Ω2W Speaker
      - 1
      - Audio output device
    * - 14
-     - Memory Card (Confirmed)
+     - Memory Card
      - 1
      - For storing game ROM files
    * - 15
-     - Memory Card Reader (Confirmed)
+     - Memory Card Reader
      - 1
      - For storing game ROM files
    * - 16
-     - M2x4mm Screw Set (Confirmed)
+     - M2x4mm Screw Set
      - 2
      - Includes screws, pillars & nuts
+   * - 17
+     - Glue
+     - 1
+     - Fixed rear speaker
+   * - 18
+     - Screwdriver
+     - 1
+     - Cross Screwdriver
 
 Main Component Details
 ----------------------
@@ -114,7 +122,7 @@ LAFVIN TFCard Module
 
 .. image:: ./img/components/tfcard_module.png
    :align: center
-   :width: 400px
+   :width: 200px
 
 **Key Features:**
 
@@ -130,7 +138,7 @@ LAFVIN Amplifier Module
 
 .. image:: ./img/components/amplifier.png
    :align: center
-   :width: 400px
+   :width: 200px
 
 **Key Features:**
 
@@ -179,7 +187,7 @@ Button Components
 
 .. image:: img/components/button.png
    :align: center
-   :width: 400px
+   :width: 600px
 
 **Small Buttons (6x6mm):**
 
@@ -213,11 +221,6 @@ Power Supply Instructions
    - Please use reliable Type-C data cables and power adapters
    - Insufficient power may cause screen flickering, audio anomalies, or system instability
    - Do not plug or unplug modules while powered on to avoid hardware damage
-
-Checklist
----------
-
-After receiving the kit, please check the components according to the following checklist:
 
 .. tip::
    If you find missing or damaged components, please contact after-sales service promptly.
