@@ -21,8 +21,19 @@ source_encoding = 'utf-8'
 extensions = [
     "myst_parser",
     "sphinx_copybutton",
-    "sphinxcontrib.video"
+    "sphinxcontrib.video",
+    "sphinxcontrib.images"
 ]
+
+# sphinxcontrib-images configuration
+images_config = {
+    'override_image_directive': False,
+    'cache_path': '_images',
+    'default_image_width': '100%',
+    'default_image_height': 'auto',
+    'default_show_title': False,
+    'download': True,
+}
 
 pygments_lexers = {
     "python-repl": Python3Lexer(),
