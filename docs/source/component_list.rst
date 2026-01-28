@@ -6,7 +6,7 @@ Component List
 Kit Components Overview
 -----------------------
 
-.. image:: ./img/components/List.jpg
+.. thumbnail:: ./img/components/List.jpg
    :align: center
    :width: 800px
 
@@ -102,7 +102,7 @@ Main Component Details
 ESP32S3N16R8 Controller Module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/esp32s3.png
+.. thumbnail:: ./img/components/esp32s3.png
    :align: center
    :width: 120px
 
@@ -120,7 +120,7 @@ ESP32S3N16R8 Controller Module
 LAFVIN TFCard Module
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/tfcard_module.png
+.. thumbnail:: ./img/components/tfcard_module.png
    :align: center
    :width: 200px
 
@@ -136,7 +136,7 @@ LAFVIN TFCard Module
 LAFVIN Amplifier Module
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/amplifier.png
+.. thumbnail:: ./img/components/amplifier.png
    :align: center
    :width: 200px
 
@@ -152,7 +152,7 @@ LAFVIN Amplifier Module
 2.4 Inch TFT Display
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/tft_screen.png
+.. thumbnail:: ./img/components/tft_screen.png
    :align: center
    :width: 400px
 
@@ -169,7 +169,7 @@ LAFVIN Amplifier Module
 LAFVIN Retro Game Expansion Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ./img/components/extension_board.png
+.. thumbnail:: ./img/components/extension_board.png
    :align: center
    :width: 400px
 
@@ -185,7 +185,7 @@ LAFVIN Retro Game Expansion Board
 Button Components
 ~~~~~~~~~~~~~~~~~
 
-.. image:: img/components/button.png
+.. thumbnail:: img/components/button.png
    :align: center
    :width: 600px
 
