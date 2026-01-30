@@ -1,8 +1,8 @@
 .. _advanced:
 
-========================
-Advanced Features
-========================
+===========
+Advanced
+===========
 
 Welcome to the Advanced Features chapter! This chapter introduces the advanced features and customization options of the LAFVIN Retro Game Kit to help you get a better user experience.
 
@@ -89,3 +89,14 @@ This interface contains professional configuration options for the emulator.
 .. warning::
    Emulator advanced options involve low-level parameters. If you don't clearly understand their purpose, please do not modify them to avoid affecting game operation.
 
+Secondary Development
+---------------------
+
+You can clone our `GitHub repository <https://github.com/lafvintech/LAFVIN-Retro-Game-Kit/tree/dev>`_ and switch to the ``dev`` branch, or `download the ZIP archive <https://codeload.github.com/lafvintech/LAFVIN-Retro-Game-Kit/zip/refs/heads/dev>`_ directly.
+
+After cloning or downloading, you will find the ``retro-go`` folder or archive. Open it with VS Code to start secondary development. This version is adapted for the current hardware kit, and you can freely modify the language settings and features.
+
+.. note::
+   To compile and debug the firmware, you need to have **ESP-IDF** (Espressif IoT Development Framework) installed on your system. 
+   
+   For installation instructions, please refer to the official documentation: `ESP-IDF Get Started <https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/get-started/>`_
