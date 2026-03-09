@@ -1,6 +1,10 @@
 LAFVIN Retro Game Kit
 ======================
 
+.. thumbnail:: ./img/other/main_product.png
+   :align: center
+   :width: 600px
+
 LAFVIN Retro Game Kit is an ESP32-S3 based retro gaming console kit that supports multiple classic gaming platform emulators, including NES, SNES, Game Boy, Game Boy Color, Sega Master System, Game Gear, Mega Drive/Genesis, and 13 gaming platforms in total.
 
 Quick Start
